@@ -1,0 +1,360 @@
+.preloader{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    z-index: 1000;
+    svg#city__bgk{
+        width: 100%;
+        #allCity.city-animate{
+            transform: translateX(-3500px);
+            transition: 4s ease;
+        }
+        #trumpet{
+            animation: trumpetJump 1s infinite alternate;
+        }
+        @keyframes trumpetJump {
+            0%{
+                transform: translateY(10px);
+            }
+            100%{
+                transform: translateY(-10px);
+            }
+        }
+        #clouds{
+            animation: cloudFly 1s infinite linear;
+            animation-delay: 1.05s;
+        }
+        @keyframes cloudFly {
+            0%{
+                transform: translateY(10px);
+            }
+            100%{
+                transform: translateY(-10px);
+                opacity: 0;
+            }
+        }
+        #circleWindowOne{
+            animation: windowBlick 1s infinite;
+        }
+        #circleWindowTwo{
+            animation: windowBlick 1s infinite;
+            animation-delay: 1s;
+        }
+        #circleWindowThree{
+            animation: windowBlick 1s infinite;
+            animation-delay: 2s;
+        }
+        #secBuildTrumpOne{
+            animation: wo 0.3s infinite alternate ease-in;
+        }
+        @keyframes wo {
+            0%{
+                transform: translate(612px, 524px);
+            }
+            100%{
+                transform: translate(612px, 532px);
+            }
+        }
+        #secBuildTrumpTwo{
+            animation: woo 0.3s infinite alternate ease-in;
+            animation-delay: 0.3s;
+        }
+        @keyframes woo {
+            0%{
+                transform: translate(671px, 524px);
+            }
+            100%{
+                transform: translate(671px, 532px);
+            }
+        }
+        #secBuildTrumpThree{
+            animation: wooo 0.3s infinite alternate ease-in;
+        }
+        @keyframes wooo {
+            0%{
+                transform: translate(730px, 524px);
+            }
+            100%{
+                transform: translate(730px, 532px);
+            }
+        }
+        #bigSmokeOne{
+            animation: smokingOne 1s infinite ease-in-out;
+        }
+        @keyframes smokingOne {
+            0%{
+                transform: translate(622px, 507px) rotate(-19deg);
+            }
+            50%{
+                transform: translate(618px, 506px) rotate(-44deg);
+            }
+            100%{
+                transform: translate(621px,508px) rotate(-4deg) scale(1.2);
+            }
+        }
+        #bigSmokeTwo{
+            animation: smokingTwo 0.7s infinite ease-in-out;
+            animation-delay: 1s;
+        }
+        @keyframes smokingTwo {
+            0%{
+                transform: translate(681px, 507px) rotate(-19deg);
+            }
+            50%{
+                transform: translate(681px, 506px) rotate(-44deg);
+            }
+            100%{
+                transform: translate(681px,508px) rotate(-10deg) scale(1.2);
+            }
+        }
+        #bigSmokeThree{
+            animation: smokingThree 0.8s infinite ease-in-out;
+            animation-delay: 0.1s;
+        }
+        @keyframes smokingThree {
+            0%{
+                transform: translate(737px, 507px) rotate(-19deg);
+            }
+            50%{
+                transform: translate(737px, 506px) rotate(-44deg);
+            }
+            100%{
+                transform: translate(737px,508px) rotate(-4deg) scale(1.2);
+            }
+        }
+        #smallSmokeOne{
+            animation: smokOne 0.8s infinite ease-in-out;
+            transform-origin: left;
+
+        }
+        @keyframes smokOne {
+            0%{
+                transform: translate(3219.52px, -8567.7px);
+            }
+            50%{
+                transform: translate(3218.52px, -8567.7px);
+            }
+            100%{
+                transform: translate(3219.52px, -8567.7px);
+            }
+        }
+        #thrdBuildTrumpOne{
+            animation: trumpedThird 0.8s infinite ease-in;
+        }
+        @keyframes trumpedThird {
+            0%{
+                transform: translate(508px, 320px)
+            }
+            50%{
+                transform: translate(508px,273px) scaleY(4);
+            }
+            100%{
+                transform: translate(508px, 320px)
+            }
+        }
+        #thrdBuildTrumpTwo{
+            animation: trumpedThirdTwo 0.9s infinite ease-in;
+            animation-delay: 0.3s;
+        }
+        @keyframes trumpedThirdTwo {
+            0%{
+                transform: translate(574px, 320px)
+            }
+            50%{
+                transform: translate(574px, 273px) scaleY(4);
+            }
+            100%{
+                transform: translate(574px, 320px)
+            }
+        }
+        #thrdBuildTrumpThree{
+            animation: trumpedThree 0.9s infinite ease-in;
+        }
+        @keyframes trumpedThree {
+            0%{
+                transform: translate(656px, 252px)
+            }
+            50%{
+                transform: translate(656px,224px) scaleY(1.6);
+            }
+            100%{
+                transform: translate(656px, 252px)
+            }
+        }
+        #thrdBuildTrumpFour{
+            animation: trumpedFour 0.8s infinite ease-in;
+        }
+        @keyframes  trumpedFour{
+            0%{
+                transform: translate(678px, 278px)
+            }
+            50%{
+                transform: translate(678px, 261px) scaleY(1.4);
+            }
+            100%{
+                transform: translate(678px, 278px)
+            }
+        }
+        #cloudFly{
+            animation: cloud 0.8s infinite ease-in;
+        }
+        @keyframes cloud {
+            0%{
+                transform: translate(10px,-17px);
+            }
+            50%{
+                transform: translate(-191px,243px) scale(1.2) rotate(-21deg);
+            }
+            100%{
+                transform: translate(10px,-17px);
+            }
+        }
+        .factories-moved{
+            transform: translate(-1474px, 0);
+            transition: 1.2s ease-in;
+        }
+        .box-transported{
+            transform: scale(0.3) translate(-158px, 674px);
+            transition: 0.5s ease-in-out;
+        }
+        #fullbox2.box-transported{
+            transform: scale(.3) translate(-158px, 625px);
+        }
+        #fullbox3.box-transported{
+            transform: scale(.3) translate(-158px, 569px);
+        }
+        .box-merged{
+            transform: translate(73px, 10px);
+            opacity: 0;
+            transition: 0.2s ease-in;
+        }
+        .elips-moving{
+            transform: scale(.4) translate(1617px,2500px);
+            transition: 0.5s ease-in-out;
+        }
+        [data-name="boxTogether"],[data-name="boxBack"], [data-name="Ellipse 4"], [data-name="figure"]{
+            opacity: 0;
+        }
+        .figureThreeMoving{
+            transform: translate(33px, -7px) scale(2);
+            transition: 0.3s ease-in-out;
+        }
+        .figureTwoMoving{
+            transform: translate(28px, -16px) scale(3);
+            transition: 0.3s ease-in-out;
+        }
+        .figureOneMoving{
+            transform: translate(30px,-13px) scale(1.5);
+            transition: 0.3s ease-in-out;
+        }
+        #car{
+            transform: translate(-620px, -251px) scale(0.5);
+        }
+        #car.autoCar{
+            transform: translate(-568px, -1045px) scale(1);
+            transition: 0.3s ease-out;
+        }
+        
+    }
+    .car-wrapper{
+        position: absolute;
+        top: 311px;
+        transform: scale(0.5);
+        left: -385px;
+        max-height: 210px;
+        .carBody-wrapper{
+            margin: -213px 20px 20px 100px;
+        }
+        .carBody-wrapper.carBody-animated{
+            animation: carBodyAnimated 1.3s infinite;
+        }
+        @keyframes carBodyAnimated {
+            0%{
+                transform: scale(0.95);
+            }
+            50%{
+                transform: scaleX(1.001) scaleY(1.021);
+            }
+            100%{
+                transform: scale(0.95);
+            }
+        }
+        .whells-wrapper{
+            display: flex;
+            justify-content: space-between;
+            margin: -20px 71px 17px 145px;
+            #whell{
+                animation: whellRolingFst 0.3s infinite;
+                animation-timing-function: linear;
+                // transform-origin: 50% 50%;
+            }
+            @keyframes whellRolingFst {
+                to{
+                    transform: rotate(360deg);
+                }
+            }
+            #whell2{
+                animation: whellRoling 0.3s infinite;
+                animation-timing-function: linear;
+                // transform-origin: 50% 50%;
+            }
+            @keyframes whellRoling {
+                to{
+                    transform: rotate(360deg);
+                }
+            }
+            #whell.whell-stopped, #whell2.whell-stopped{
+                animation-play-state: paused;
+            }
+            #whell.whell-running, #whell2.whell-running{
+                animation-play-state: running;
+            }
+        }
+        #Line_128{
+            animation: smallLineAnimated 1.355s infinite;
+            animation-delay: 9.2s;
+        }
+        @keyframes smallLineAnimated {
+            0%{
+                transform: translate(668px, 1496px);
+            }
+            50%{
+                transform: translate(644px, 1496px) scaleX(1.5);
+            }
+            100%{
+                transform: translate(668px, 1496px);
+            }
+        }
+        #Path_296{
+            animation: bigLineAnimated 1.355s infinite;
+            animation-delay: 9.2s;
+        }
+        @keyframes bigLineAnimated {
+            0%{
+                transform: translate(672px, 1510px);
+            }
+            50%{
+                transform: translate(672px, 1510px) scaleX(1.5);
+            }
+            100%{
+                transform: translate(672px, 1510px);
+            }
+        }
+
+    }
+    .car-wrapper.car-arrived{
+        transition: 0.4s ease-in-out;
+        left: 127px;
+        transform: scale(1);
+    }
+    .car-wrapper.car-arrived.car-center-moved{
+        transition: 0.4s ease-in-out;
+        left: 50%;
+        transform: scale(1) translateX(-50%);
+    }
+    
+}
+

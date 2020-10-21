@@ -9,6 +9,10 @@ const boxMerged = document.querySelector('#allBoxes');
 const factories = document.querySelector('#factories');
 const carBody = document.querySelector('.carBody-wrapper');
 const cityAnimate = document.querySelector("#allCity");
+const allPreloader = document.querySelector('.preloader');
+const bilboard = document.querySelector('.bilboard-wrapper');
+const preloaderBanner = document.querySelector('.preloader-banner');
+const logoZoom = document.querySelector('.davWord-wrapper');
 
 setTimeout(() =>{
     boxes.forEach(item => {
@@ -74,4 +78,22 @@ setTimeout(() => {
     carBody.classList.add('carBody-animated');
     cityAnimate.classList.add('city-animate');
 }, 9000);
+
+setTimeout(() => {
+    allPreloader.classList.add('preloader-transform');
+}, 12000);
+
+setTimeout(() => {
+    bilboard.classList.add('bilboard-animated');
+}, 12500);
+
+// setTimeout(() => {
+//     carBody.classList.add('to-bilboard');
+// }, 13000);
+
+setTimeout(() => {
+    logoZoom.classList.add('logo-zoom-animated');
+}, 13001)
+
+
 

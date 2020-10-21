@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1673" height="1671" viewBox="0 0 1673 1671">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.5" x2="0.305" y2="1.318" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#fff"/>
+      <stop offset="1" stop-color="#7e7e7e"/>
+    </linearGradient>
+    <filter id="DavywayFON" x="195" y="598" width="1284" height="404" filterUnits="userSpaceOnUse">
+      <feOffset dy="5" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="8" result="blur"/>
+      <feFlood/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <linearGradient id="linear-gradient-2" x1="0.5" x2="0.837" y2="4.539" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#fff"/>
+      <stop offset="1" stop-color="#fff"/>
+    </linearGradient>
+  </defs>
+  <g id="davyyyyy" transform="translate(153 450)">
+    <g id="des" opacity="0.204">
+      <rect id="Rectangle_218" data-name="Rectangle 218" width="1366" height="768" opacity="0.098" fill="url(#linear-gradient)"/>
+      <text id="MENU" transform="translate(1213 72)" fill="#212121" font-size="18" font-family="HelveticaNeue-Light, Helvetica Neue" font-weight="300"><tspan x="0" y="0">MENU</tspan></text>
+      <g transform="matrix(1, 0, 0, 1, -153, -450)" filter="url(#DavywayFON)">
+        <text id="DavywayFON-2" data-name="DavywayFON" transform="translate(219 908)" fill="#fff" font-size="306" font-family="HelveticaNeue, Helvetica Neue" opacity="0.06"><tspan x="0" y="0">Davyway</tspan></text>
+      </g>
+      <g id="Icon_ionic-ios-menu" data-name="Icon ionic-ios-menu" transform="translate(1271.064 47)">
+        <path id="Path_17" data-name="Path 17" d="M28.458,25.375H5.542A.972.972,0,0,1,4.5,24.5h0a.972.972,0,0,1,1.042-.875H28.458A.972.972,0,0,1,29.5,24.5h0A.972.972,0,0,1,28.458,25.375Z" transform="translate(0 -0.625)" fill="#7c7c7c"/>
+        <path id="Path_18" data-name="Path 18" d="M28.458,25.375H5.542A.972.972,0,0,1,4.5,24.5h0a.972.972,0,0,1,1.042-.875H28.458A.972.972,0,0,1,29.5,24.5h0A.972.972,0,0,1,28.458,25.375Z" transform="translate(0 -6.625)" fill="#7c7c7c"/>
+        <path id="Path_19" data-name="Path 19" d="M28.458,25.375H5.542A.972.972,0,0,1,4.5,24.5h0a.972.972,0,0,1,1.042-.875H28.458A.972.972,0,0,1,29.5,24.5h0A.972.972,0,0,1,28.458,25.375Z" transform="translate(0 -12.625)" fill="#7c7c7c"/>
+      </g>
+      <text id="is_your_preferred_online_retailer_on_the_Amazon.com_marketplace._" data-name="is your preferred online retailer on the Amazon.com marketplace.
+" transform="translate(167 488)" fill="#3c3b3b" font-size="16" font-family="HelveticaNeue, Helvetica Neue" letter-spacing="0.05em"><tspan x="0" y="0">is your preferred online retailer on the Amazon.com marketplace.</tspan><tspan x="0" y="18"></tspan></text>
+      <text id="or" transform="translate(147 706)" fill="#3e3e3e" font-size="16" font-family="HelveticaNeue, Helvetica Neue" letter-spacing="0.05em"><tspan x="0" y="0">or</tspan></text>
+      <text id="_About_us" data-name=" About us" transform="translate(60 706)" fill="#212121" font-size="16" font-family="HelveticaNeue-Medium, Helvetica Neue" font-weight="500" letter-spacing="0.05em"><tspan x="0" y="0" xml:space="preserve"> About Us</tspan></text>
+      <text id="Our_mission" data-name="Our mission" transform="translate(169 706)" fill="#212121" font-size="16" font-family="HelveticaNeue-Medium, Helvetica Neue" font-weight="500" letter-spacing="0.05em"><tspan x="0" y="0">Our Mission</tspan></text>
+      <text id="CONTACT_US" data-name="CONTACT US" transform="translate(1216 707)" fill="#212121" font-size="16" font-family="HelveticaNeue-Medium, Helvetica Neue" font-weight="500" letter-spacing="0.05em"><tspan x="0" y="0">Contact Us</tspan></text>
+      <g id="logo" transform="translate(46 27.71)">
+        <path id="Path_125" data-name="Path 125" d="M29.684,252.483a6.385,6.385,0,0,1-6.406,6.6H18V245.89h5.278A6.385,6.385,0,0,1,29.684,252.483Zm-2.9,0a3.377,3.377,0,0,0-3.5-3.683H21.012v7.383h2.266A3.4,3.4,0,0,0,26.782,252.483Z" transform="translate(0 -156.669)"/>
+        <path id="Path_126" data-name="Path 126" d="M73.342,258.523v9.42H70.509v-.887a3.531,3.531,0,0,1-2.8,1.15,5,5,0,0,1,0-9.947,3.53,3.53,0,0,1,2.8,1.147v-.884Zm-2.833,4.709a2.242,2.242,0,1,0-2.241,2.3A2.148,2.148,0,0,0,70.509,263.232Z" transform="translate(-32.395 -165.535)"/>
+        <path id="Path_127" data-name="Path 127" d="M112.865,259.19l-3.485,9.42h-3.2l-3.485-9.42h3.116l1.958,5.972,1.96-5.972Z" transform="translate(-60.704 -166.201)"/>
+        <path id="Path_128" data-name="Path 128" d="M148.564,259.19l-3.221,9.137c-1.054,2.995-2.731,4.182-5.369,4.048v-2.638a2.1,2.1,0,0,0,2.354-1.561l-3.748-8.986H141.7l2.091,5.762,1.771-5.762Z" transform="translate(-86.419 -166.201)"/>
+        <path id="Path_129" data-name="Path 129" d="M188.478,259.183l-3.014,9.42h-2.638l-1.507-5.031-1.507,5.031h-2.638l-3.014-9.42h3.014l1.357,5.046L180,259.18h2.638l1.47,5.049,1.357-5.049Z" transform="translate(-111.919 -166.194)"/>
+        <path id="Path_130" data-name="Path 130" d="M235.812,258.523v9.42h-2.833v-.887a3.533,3.533,0,0,1-2.808,1.15,5,5,0,0,1,0-9.947,3.532,3.532,0,0,1,2.808,1.147v-.884Zm-2.833,4.709a2.246,2.246,0,1,0,.008,0Z" transform="translate(-148.836 -165.535)"/>
+        <path id="Path_131" data-name="Path 131" d="M275.081,259.19l-3.224,9.137c-1.057,2.995-2.734,4.182-5.383,4.048v-2.638a2.1,2.1,0,0,0,2.357-1.561l-3.751-8.986H268.2l2.094,5.762,1.771-5.762Z" transform="translate(-177.081 -166.201)"/>
+        <path id="Path_132" data-name="Path 132" d="M74.257,27.29H42.7v3.417l9.972.921c.19,7.383.19,14.808.19,22.172v3.25c0,8.341,0,15.908-.19,23.194l-9.972.924v3.42H68.688a52.919,52.919,0,0,0,5.666-3.825,81.983,81.983,0,0,0,6.233-5.836c4.966-4.913,1.337-7.448-.615-8.87S70.549,61.471,67.7,58.609c-7.918-7.964,8.5-10.664,9.882-10.879-1.133.116-12.426,1.357-15.075,5.686v-.034c0-7.482,0-14.9.2-22.16h9.746c15.834,0,25.036,8.638,25.036,24.8a29.759,29.759,0,0,1-1.773,10.6,24.525,24.525,0,0,0-1.9-1.669c-1.47-1.179-12.31-6.729-16.607-8.91s-4.221-2.955-4.105-4.312,4.55-4.014,4.55-4.014a35.383,35.383,0,0,0-7.026,2.655c-3.04,1.652-3.312,3.606-1.878,5.731s9.632,6.318,9.632,6.318,10.726,4.19,9.485,9.632c-.487,2.13-2.232,4.482-4.182,6.559a52.639,52.639,0,0,1-6.516,5.76h.181c7.989-.694,15.015-3,20.4-6.819a25.351,25.351,0,0,0,10.938-21.531C108.7,37.379,94.582,27.29,74.257,27.29ZM64.393,59.955c2.094,2.136,2.833,2.85,8.2,7.68,3.4,3.063-3.881,9.037-9.678,13.032H62.69a.153.153,0,0,1,0-.051c-.2-7.406-.2-14.961-.2-23.174A10.513,10.513,0,0,0,64.393,59.955Z" transform="translate(-17.702)"/>
+      </g>
+    </g>
+    <rect id="Rectangle_40" data-name="Rectangle 40" width="1673" height="1671" rx="835.5" transform="translate(-153 -450)" fill="url(#linear-gradient-2)"/>
+    <text id="Davyway" transform="translate(443 425)" font-size="111" font-family="HelveticaNeue-Medium, Helvetica Neue" font-weight="500"><tspan x="0" y="0">Davyway</tspan></text>
+    <text id="Choose_the_right_way_with" data-name="Choose the right way with" transform="translate(451 318)" fill="#030303" font-size="26" font-family="HelveticaNeue, Helvetica Neue" letter-spacing="0.1em"><tspan x="0" y="0">CHOOSE THE RIGHT WAY WITH</tspan></text>
+  </g>
+</svg>

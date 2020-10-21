@@ -1600,6 +1600,10 @@ var boxMerged = document.querySelector('#allBoxes');
 var factories = document.querySelector('#factories');
 var carBody = document.querySelector('.carBody-wrapper');
 var cityAnimate = document.querySelector("#allCity");
+var allPreloader = document.querySelector('.preloader');
+var bilboard = document.querySelector('.bilboard-wrapper');
+var preloaderBanner = document.querySelector('.preloader-banner');
+var logoZoom = document.querySelector('.davWord-wrapper');
 setTimeout(function () {
   boxes.forEach(function (item) {
     item.style.opacity = 1;
@@ -1656,6 +1660,18 @@ setTimeout(function () {
   carBody.classList.add('carBody-animated');
   cityAnimate.classList.add('city-animate');
 }, 9000);
+setTimeout(function () {
+  allPreloader.classList.add('preloader-transform');
+}, 12000);
+setTimeout(function () {
+  bilboard.classList.add('bilboard-animated');
+}, 12500); // setTimeout(() => {
+//     carBody.classList.add('to-bilboard');
+// }, 13000);
+
+setTimeout(function () {
+  logoZoom.classList.add('logo-zoom-animated');
+}, 13001);
 
 /***/ })
 

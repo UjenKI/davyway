@@ -1,0 +1,50 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html {
+    scroll-behavior: smooth;
+  }
+body{
+    scroll-behavior: smooth;
+    font-family: 'Montserrat','Roboto', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    position: relative;
+    overflow-x: hidden;
+    color: #3C3B3B;
+    .container{
+        max-width: 1231px;
+        margin: 0 auto;
+        padding: 0 15px;
+    }
+    img{
+        width: 100%;
+    }
+    p.simple__text{
+        line-height: 32px;
+        font-weight: 300;
+        letter-spacing: 1px;
+        font-size: 16px;
+        color: #000000;
+    }
+    h3.title__underline{
+        font-size: 36px;
+        color: #000000;
+        font-weight: 300;
+        text-align: center;
+        display: block;
+        position: relative;
+        margin-bottom: -35px;
+        &::after{
+            content: url(../image/underline.svg);
+            display: block;
+            position: absolute;
+            bottom: -24px;
+            left: 50%;
+            transform: translateX(-50%);
+
+        }
+    }
+}
+

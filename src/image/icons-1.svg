@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="81" height="94" viewBox="0 0 81 94">
+  <defs>
+    <filter id="Rectangle_340" x="0" y="0" width="81" height="81" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="Polygon_2" x="24" y="63" width="34" height="31" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur-2"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur-2"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="icons-1" transform="translate(9 6)">
+    <g transform="matrix(1, 0, 0, 1, -9, -6)" filter="url(#Rectangle_340)">
+      <rect id="Rectangle_340-2" data-name="Rectangle 340" width="63" height="63" transform="translate(9 6)" fill="#01bbd6"/>
+    </g>
+    <g transform="matrix(1, 0, 0, 1, -9, -6)" filter="url(#Polygon_2)">
+      <path id="Polygon_2-2" data-name="Polygon 2" d="M8,0l8,13H0Z" transform="translate(49 82) rotate(180)" fill="#01bbd6"/>
+    </g>
+    <g id="develop" transform="translate(-390.608 -151.691)">
+      <g id="Group_147" data-name="Group 147" transform="translate(401.456 161.988)">
+        <g id="Group_146" data-name="Group 146" transform="translate(0 0)">
+          <path id="Path_298" data-name="Path 298" d="M427.776,202.685a5.816,5.816,0,0,1-.855-.683,5.4,5.4,0,0,0-3.611-1.9c-2.361-.365-4.7-.935-7.074-1.11a18.307,18.307,0,0,0-4.024.667,3.171,3.171,0,0,1-1.541.025A6.329,6.329,0,0,1,409,198.552c-.973-.816-1.789-1.548-1.142-3.162a5.659,5.659,0,0,0-.215-3.428c-.669-2.192-1.558-4.32-2.4-6.456a6.211,6.211,0,0,0-3.1-3.433c-.283-.139-.7-.472-.684-.678.151-1.509.374-3.013.646-4.505.033-.18.488-.365.767-.4a7.091,7.091,0,0,0,4.664-2.972c1.084-1.386,2.217-2.735,3.277-4.139a6.534,6.534,0,0,0,1.6-5,1.427,1.427,0,0,1,.709-1.1,21.019,21.019,0,0,1,3.27-1.254,1.3,1.3,0,0,1,1.142.362,6.242,6.242,0,0,0,4.659,2.408c2.053.291,4.106.581,6.163.834a5.145,5.145,0,0,0,4.1-.935.657.657,0,0,1,.219-.156c1.64-.4,2.323,1.085,3.365,1.8.481.33,1.045,1.278.888,1.672a6.957,6.957,0,0,0,.342,5.386c.691,1.761,1.41,3.512,2.118,5.266a6.664,6.664,0,0,0,3.206,3.7c.252.126.627.416.612.6-.126,1.507-.313,3.011-.538,4.508-.027.18-.379.427-.6.444-2.111.165-3.375,1.621-4.606,3.057-1.321,1.54-2.542,3.166-3.776,4.779a6.331,6.331,0,0,0-1.483,4.247.975.975,0,0,1-.312.778C430.54,201.439,429.156,202.05,427.776,202.685Zm-5.44-7.1a13.323,13.323,0,1,0-13.357-13.352A13.348,13.348,0,0,0,422.336,195.585Z" transform="translate(-401.456 -161.988)" fill="#fff"/>
+          <path id="Path_300" data-name="Path 300" d="M471.17,223.451c-2.152,2.516-4.152,5.065-6.4,7.376-.908.935-2.353,1.348-3.734,2.1.692-5.251,4.969-7.788,7.535-11.663Zm-8.648,5.5v2.218l1.905-.576Z" transform="translate(-444.894 -205.2)" fill="#fff"/>
+          <path id="Path_301" data-name="Path 301" d="M459.641,216.646l-4.476-1.579,1.923-3.888L454.66,209.9c2.336-1.272,4.471-.118,4.764,2.323a14.785,14.785,0,0,0,1.061,3.06l.376-.023Z" transform="translate(-440.244 -196.534)" fill="#fff"/>
+          <path id="Path_302" data-name="Path 302" d="M484.815,243.793l1.768-2.054c1.344,1,2.714,1.92,3.953,2.99a1.488,1.488,0,0,1,.02,2.281,1.667,1.667,0,0,1-2.521.152C486.926,246.133,485.934,244.976,484.815,243.793Zm6.017,2.237c-.657-.377-1.064-.8-1.391-.746s-.6.577-.9.895c.33.295.648.8.993.822C489.861,247.016,490.215,246.519,490.832,246.029Z" transform="translate(-462.229 -220.13)" fill="#fff"/>
+          <path id="Path_303" data-name="Path 303" d="M493.732,218.608l-2.678-2.275c.483-.373,1.079-1.052,1.281-.951A6.331,6.331,0,0,1,494.37,217C494.529,217.2,494.012,217.941,493.732,218.608Z" transform="translate(-466.777 -200.907)" fill="#fff"/>
+          <path id="Path_304" data-name="Path 304" d="M450.023,219.326l-1.1-2.671.322-.208,2.163,1.029-.9,1.792Z" transform="translate(-436.065 -201.691)" fill="#fff"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

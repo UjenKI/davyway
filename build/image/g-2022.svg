@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="169.003" height="264.997" viewBox="0 0 169.003 264.997">
+  <g id="g-2022" transform="translate(1.815 1.995)">
+    <ellipse id="Ellipse_44" data-name="Ellipse 44" cx="82.501" cy="82.499" rx="82.501" ry="82.499" transform="translate(0.185 0.005)" fill="#059aaf" stroke="#049aaf" stroke-width="4"/>
+    <line id="Line_124" data-name="Line 124" y1="84" transform="translate(83.342 166.034)" fill="none" stroke="#049aaf" stroke-width="4"/>
+    <ellipse id="Ellipse_45" data-name="Ellipse 45" cx="8.5" cy="9" rx="8.5" ry="9" transform="translate(75.186 245.002)" fill="#049aaf"/>
+    <path id="Path_294" data-name="Path 294" d="M31.657,126.376H119.9V78.791Z" transform="translate(8 -9.618)" fill="none" stroke="#f2f2f2" stroke-linejoin="round" stroke-width="6"/>
+    <line id="Line_125" data-name="Line 125" y1="25" transform="translate(116.685 91.502)" fill="none" stroke="#f2f2f2" stroke-linecap="round" stroke-width="6"/>
+    <line id="Line_126" data-name="Line 126" y1="19" transform="translate(105.685 97.502)" fill="none" stroke="#f2f2f2" stroke-linecap="round" stroke-width="6"/>
+    <line id="Line_127" data-name="Line 127" y1="14" transform="translate(94.685 102.502)" fill="none" stroke="#f2f2f2" stroke-linecap="round" stroke-width="6"/>
+    <g id="Icon_feather-trending-up" data-name="Icon feather-trending-up" transform="translate(52.157 38.986)">
+      <path id="Path_292" data-name="Path 292" d="M59,9,34.169,33.828,21.1,20.761,1.5,40.362" transform="translate(0 0)" fill="none" stroke="#f2f2f2" stroke-linecap="round" stroke-linejoin="round" stroke-width="6"/>
+      <path id="Path_293" data-name="Path 293" d="M25.5,9H41.181V24.681" transform="translate(17.816 0)" fill="none" stroke="#f2f2f2" stroke-linecap="round" stroke-linejoin="round" stroke-width="6"/>
+    </g>
+  </g>
+</svg>

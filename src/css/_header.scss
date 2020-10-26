@@ -7,22 +7,24 @@
     transition: 1.7s ease-out;
     width: 100%;
     text-align: center;
-    height: 100vh;
-    padding-top: 296px;
+    height: 50vh;
+    padding-top: 190px;
     animation: slogan 1s ease-in-out;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
     p{
-        font-size: 26px;
+        font-family: 'Helvetica';
+        font-size: 18px;
         text-transform: uppercase;
         letter-spacing: 2.4px;
-        margin-left: 28px;
+        font-weight: 400;
+        margin-left: -26px;
 
     }
     h1{
         font-size: 120px;
         margin: 0;
-        font-weight: 400;
+        font-weight: 500;
         text-transform: none;
     }
 }
@@ -42,19 +44,28 @@ header{
     width: 100%;
     max-height: 822px;
     background: url(../image/header-bgk2.png) 50% no-repeat;
-    background-size: contain;
     transition: 0.3s ease-in-out;
 
     .container.banner-wrapper{
         .top-menu{
+            position: fixed;
+            width: 100%;
+            left: 0;
+            top: 0;
+            z-index: 9;
             display: flex;
-            // display: none;
             justify-content: space-between;
             align-items: center;
-            padding: 54px 0;
+            padding: 55px 70px;
             transition: 0.3s ease-in-out;
             .logo-wrapper{
                 z-index: 10;
+                transition: 0.3s ease-in;
+                a{
+                    img{
+                        transition: 0.3s ease-in;
+                    }
+                }
             }
             .menu-wrapper{
                 display: flex;
@@ -70,6 +81,7 @@ header{
                         width: 25px;
                         height: 13px;
                         cursor: pointer;
+                        transition: 0.3s ease-in;
                         p{
                             color: #000000;
                             font-size: 18px;
@@ -142,7 +154,7 @@ header{
                         list-style-type: none;
                         position: absolute;
                         transition: 0.6s ease-out;
-                        width: 0;
+                        width: 90%;
                         height: 100vh;
                         text-align: center;
                         top: 6000px;
@@ -285,18 +297,26 @@ header{
                 
             }
         }
-        .top-menu.fixed-item{
-            position: fixed;
-            width: 100%;
-            transition: 0.3s ease-in-out;
-            left: 0%;
-            padding: 35px 40px;
-            z-index: 9;
-            .for-burger{
-                top: 62px;
-                right: 105px;
-            }
-        }
+        // .top-menu.fixed-item{
+        //     position: fixed;
+        //     width: 100%;
+        //     // transition: 0.3s ease-in-out;
+        //     left: 0;
+        //     top: 0;
+        //     padding: 35px 97px;
+        //     z-index: 9;
+        //     .menu-wrapper{
+        //         .menu-item{
+        //             .for-burger{
+        //                 top: 62px;
+        //                 right: 12%;
+        //             }
+        //             .top__menu{
+        //                 width: 92%;
+        //             }
+        //         }
+        //     }
+        // }
         .banner-item{
             display: flex;
             justify-content: space-between;
@@ -304,7 +324,8 @@ header{
             max-height: 360px;
             margin-top: 95px;
             .banner-item-text{
-                padding: 226px 0px 0px 85px;
+                margin-top: 500px;
+                margin-left: 72px;
                 p{
                     font-size: 16px;
                     text-transform: none;
@@ -313,6 +334,7 @@ header{
             .banner-item-animation{
                 padding: 0;
                 display: block;
+                margin-top: 250px;
                 position: relative;
                 .box-shadow-wrapper{
                     display: block;
@@ -358,16 +380,27 @@ header{
                 position: absolute;
                 display: block;
                 left: -50%;
+                top: 230px;
                 animation: carHmoving 3.3s ease-out forwards 2s;
                 @keyframes carHmoving {
                     0%{
                         left:-50%
                     }
-                    20%, 50%, 90%{
+                    20%, 50%, 80%{
                         left: 65%;
                     }
                     100%{
+                        width: 0;
                         left: 100%;
+                    }
+                }
+                svg{
+                    animation: svgOpacity 0.3s forwards;
+                    animation-delay: 5.3s;
+                }
+                @keyframes svgOpacity {
+                    to{
+                        opacity: 0;
                     }
                 }
                 .carBodyHeader-wrapper{
@@ -453,24 +486,24 @@ header{
                 }
             }
         }
-       .header-bottom-line{
-           padding: 200px 0 60px;
-           display: flex;
-           justify-content: space-between;
-           .header-bottom-item{
-               display: block;
-               a{
-                   cursor: pointer;
-                   text-transform: none;
-                   text-decoration: none;
-                   color: #212121;
-                   font-size: 16px;
-                   span{
-                        color: #3E3E3E;
-                   }
-               }
-           }
-       }
-        
+    }
+    .header-bottom-line{
+        padding: 200px 85px 77px 75px;
+        display: flex;
+        justify-content: space-between;
+        .header-bottom-item{
+            display: block;
+            a{
+                cursor: pointer;
+                text-transform: none;
+                text-decoration: none;
+                color: #212121;
+                font-size: 16px;
+                span{
+                     color: #3E3E3E;
+                     font-weight: 300;
+                }
+            }
+        }
     }
 }

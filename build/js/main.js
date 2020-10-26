@@ -1699,8 +1699,7 @@ setTimeout(function () {
     itm.classList.add('whell-stopped');
   });
 }, 23000);
-setTimeout(function () {
-  carHeaderWrapper.classList.add('aWay');
+setTimeout(function () {// carHeaderWrapper.classList.add('aWay');
 }, 24000);
 setTimeout(function () {
   var menu = document.querySelector('.top__menu'),
@@ -1717,7 +1716,8 @@ function menuActive() {
   var menuInput = document.querySelector('#burger').checked,
       menuItem = document.querySelector('.top__menu'),
       open = document.querySelector('.open'),
-      close = document.querySelector('.close');
+      chekerFixed = document.querySelector('.top-menu');
+  close = document.querySelector('.close');
 
   function closeAll() {
     open.style.opacity = 1;
@@ -1750,7 +1750,12 @@ function menuActive() {
     menuItem.style.display = 'block';
     menuItem.style.top = 0;
     menuItem.style.opacity = 1;
-    menuItem.style.width = '100%';
+    menuItem.style.width = '93%'; // if(chekerFixed.classList.contains('fixed-item')){
+    //     menuItem.style.width = '90%';
+    // } else {
+    //     menuItem.style.width = '100%';
+    // }
+
     open.style.opacity = 0;
     close.style.opacity = 1;
     setTimeout(function () {
@@ -1799,23 +1804,29 @@ labelFor.addEventListener('click', function () {
   menuActive();
 });
 readMoreBtn.forEach(function (btn, itemBlock) {
+  var readingBox = false;
   btn.addEventListener('click', function () {
-    cardTextBox[itemBlock].style.maxHeight = '300px';
+    if (readingBox === false) {
+      cardTextBox[itemBlock].style.maxHeight = '300px';
+      readingBox = true;
+      btn.innerHTML = 'READ LESS';
+    } else {
+      cardTextBox[itemBlock].style.maxHeight = '100px';
+      readingBox = false;
+      btn.innerHTML = 'READ MORE';
+    }
   });
-});
-
-function fixedMenuScrolling() {
-  if (window.scrollY >= 80) {
-    topMenuFixed.classList.add('fixed-item');
-  } else {
-    topMenuFixed.classList.remove('fixed-item');
-  }
-}
-
-setInterval(function () {
-  fixedMenuScrolling();
-  console.log(window.scrollY);
-}, 100);
+}); // function fixedMenuScrolling(){
+//     if(window.scrollY >= 80){
+//         topMenuFixed.classList.add('fixed-item');
+//     } else{
+//         topMenuFixed.classList.remove('fixed-item');
+//     }
+// }
+//  setInterval(() => {
+//     fixedMenuScrolling();
+//     console.log(window.scrollY);
+//  },100);
 
 /***/ })
 

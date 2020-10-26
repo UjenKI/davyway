@@ -125,17 +125,18 @@ setTimeout(() => {
     })
 }, 23000);
 setTimeout(() => {
-    carHeaderWrapper.classList.add('aWay');
+    // carHeaderWrapper.classList.add('aWay');
+
     
 }, 24000);
 setTimeout(() => {
     const menu = document.querySelector('.top__menu'),
           label = document.querySelector('.for-burger'),
           logoWrapper = document.querySelector('.logo-wrapper');
-    headerOverfow.style.zIndex = 1;
-    menu.style.zIndex = 8;
-    label.style.zIndex = 9;
-    logoWrapper.style.zIndex = 9;
+            headerOverfow.style.zIndex = 1;
+            menu.style.zIndex = 8;
+            label.style.zIndex = 9;
+            logoWrapper.style.zIndex = 9;
 },18000);
 
 const labelFor = document.querySelector('.for-burger');
@@ -143,6 +144,7 @@ function menuActive(){
     const menuInput = document.querySelector('#burger').checked,
           menuItem = document.querySelector('.top__menu'),
           open = document.querySelector('.open'),
+          chekerFixed = document.querySelector('.top-menu');
           close = document.querySelector('.close');
           function closeAll(){
             open.style.opacity = 1;
@@ -175,7 +177,12 @@ function menuActive(){
         menuItem.style.display = 'block';
         menuItem.style.top = 0;
         menuItem.style.opacity = 1;
-        menuItem.style.width = '100%';
+        menuItem.style.width = '93%';
+        // if(chekerFixed.classList.contains('fixed-item')){
+        //     menuItem.style.width = '90%';
+        // } else {
+        //     menuItem.style.width = '100%';
+        // }
         open.style.opacity = 0;
         close.style.opacity = 1;
         setTimeout(() => {
@@ -224,22 +231,31 @@ labelFor.addEventListener('click', () =>{
 });
 
 readMoreBtn.forEach((btn, itemBlock) => {
+    let readingBox = false;
     btn.addEventListener('click', () => {
-        cardTextBox[itemBlock].style.maxHeight = '300px';
+        if(readingBox === false){
+            cardTextBox[itemBlock].style.maxHeight = '300px';
+            readingBox = true;
+            btn.innerHTML = 'READ LESS';
+        } else {
+            cardTextBox[itemBlock].style.maxHeight = '100px';
+            readingBox = false;
+            btn.innerHTML = 'READ MORE';
+        }
     })
 });
 
-function fixedMenuScrolling(){
-    if(window.scrollY >= 80){
-        topMenuFixed.classList.add('fixed-item');
-    } else{
-        topMenuFixed.classList.remove('fixed-item');
-    }
-}
- setInterval(() => {
-    fixedMenuScrolling();
-    console.log(window.scrollY);
- },100);
+// function fixedMenuScrolling(){
+//     if(window.scrollY >= 80){
+//         topMenuFixed.classList.add('fixed-item');
+//     } else{
+//         topMenuFixed.classList.remove('fixed-item');
+//     }
+// }
+//  setInterval(() => {
+//     fixedMenuScrolling();
+//     console.log(window.scrollY);
+//  },100);
 
 
 

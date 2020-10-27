@@ -1716,8 +1716,8 @@ function menuActive() {
   var menuInput = document.querySelector('#burger').checked,
       menuItem = document.querySelector('.top__menu'),
       open = document.querySelector('.open'),
-      chekerFixed = document.querySelector('.top-menu');
-  close = document.querySelector('.close');
+      chekerFixed = document.querySelector('.top-menu'),
+      close = document.querySelector('.close');
 
   function closeAll() {
     open.style.opacity = 1;
@@ -1756,8 +1756,8 @@ function menuActive() {
     //     menuItem.style.width = '100%';
     // }
 
-    open.style.opacity = 0;
-    close.style.opacity = 1;
+    open.innerHTML = 'CLOSE'; // close.style.opacity = 1;
+
     setTimeout(function () {
       menuItem.classList.remove('skew-true');
       menuItem.classList.add('skew-false');
@@ -1770,8 +1770,8 @@ function menuActive() {
       });
     }, 1000);
   } else {
-    open.style.opacity = 1;
-    close.style.opacity = 0;
+    open.innerHTML = 'MENU'; // close.style.opacity = 0;
+
     menuItem.style.top = '-2000px';
     setTimeout(function () {}, 1000);
     setTimeout(function () {

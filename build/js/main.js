@@ -1677,9 +1677,9 @@ setTimeout(function () {
   car.classList.add('zoom-in');
 }, 12000);
 setTimeout(function () {
-  var svgBillBoard = document.querySelector('.billBoard');
-  svgBillBoard.classList.add('circle-transform');
-}, 20000); // setTimeout(() => {
+  var newTextAnimation = document.querySelector('.svgText');
+  newTextAnimation.classList.add('newAnimation');
+}, 18000); // setTimeout(() => {
 //     bilboard.classList.add('bilboard-animated');
 // }, 12500);
 // setTimeout(() => {

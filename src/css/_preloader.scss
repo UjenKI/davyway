@@ -305,17 +305,11 @@
             }
             // ---------------
             .zoomIn-wrapper{
-                transform: translate(-81px,-1948px) scale(0.18);
+                transform: translate(-81px,-1327px) scale(0.18);
                 .billboardZoom-wrapper{
                     svg.billBoard{
                         width: 3px;
                         transform: translate(680px,-804px);
-                        #Group_230{
-                            transform: translate(715px,328px) scale(.01);
-                            rect{
-                                fill: rgba(255,255,255,0.5);
-                            }
-                        }
                     }
                     .circleZoom{
                         display: block;
@@ -330,20 +324,16 @@
                     }
                     .circle-davyway-wrapper{
                         svg{
-                            &:nth-child(1){
-                                transform: translate(-177px,-1897px) scale(.65) rotate(6deg);
-                                #Rectangle_40{
-                                    fill: rgba(255,255,255,0.1);
-                                    transform: scale(0.1) translate(5777px, 2950px);
-                                }
+                            transform: translate(-188px,-1901px) scale(.01);
+                            rect{
+                                fill: rgba(255, 255, 255, 0.1);
                             }
-                            &:nth-child(2){
-                                // width: 57px;
-                                // transform: translate(625px,-3571px) scale(.65) rotate(9deg);
-                                transform: translate(-175px,-3571px) scale(0.65) rotate(9deg);
-                                width: 1673px;
-                                opacity: 0;
-                            }
+                        }
+                    }
+                    .text-board-wrapper{
+                        svg{
+                            transform: translate(632px,-2856px) scale(0.1);
+                            width: 10px;
                         }
                     }
                 }
@@ -554,48 +544,12 @@
                     }
                 } 
                 .billboardZoom-wrapper{
-                    // animation-fill-mode: forwards;
-                    // animation-delay: 3s;
                     svg.billBoard{
                         width: 3px;
                         transform: translate(680px,-804px);
                         animation: svgZoomIn 3s ease-in-out;
                         animation-fill-mode: forwards;
                         animation-delay: 3s;
-                        #Group_229{
-                            #Group_230{
-                                transform: translate(715px,328px) scale(.01);
-                                animation: whiteCircleZoom 0.6s ease-in-out;
-                                animation-fill-mode: forwards;
-                                animation-delay: 7s;
-                                rect{
-                                    fill: rgba(255,255,255,0.5);
-                                    animation: circleColor 0.6s ease-in-out;
-                                    animation-fill-mode: forwards;
-                                    animation-delay: 7s;
-                                }
-                                @keyframes circleColor {
-                                    to{
-                                        fill: rgba(255,255,255,1);
-                                    }
-                                }
-                                @keyframes whiteCircleZoom {
-                                    to{
-                                        transform: translate(376px,291px) scale(.6);
-                                    }
-                                }
-                            }
-                            .allText{
-                                animation: textMoving 0.6s ease-in-out;
-                                animation-fill-mode: forwards;
-                                animation-delay: 7s;
-                            }
-                            @keyframes textMoving{
-                                to{
-                                    transform: translate(-423px,16px) rotate(-5deg) scale(1.5);
-                                }
-                            }
-                        }
                     }
                     @keyframes svgZoomIn {
                         to{
@@ -603,6 +557,72 @@
                             transform: translate(410px, -667px);
                         }
                     }
+                    .circle-davyway-wrapper{
+                        svg{
+                            transform: translate(-188px,-1901px) scale(.01);
+                            animation: circleDiametrScale 2s ease-in-out;
+                            animation-fill-mode: forwards;
+                            animation-delay: 6s;
+                            rect{
+                                fill: rgba(255, 255, 255, 0.1);
+                                animation: rectColor 0.6s ease-in-out;
+                                animation-fill-mode: forwards;
+                                animation-delay: 6s;
+                            }
+                            @keyframes rectColor{
+                                to{
+                                    fill: rgba(255,255,255,1);
+                                }
+                            }
+                        }
+                        @keyframes circleDiametrScale {
+                            to{
+                                transform: translate(-188px,-1801px) scale(2.5);
+                            }
+                        }
+                    }
+                    .text-board-wrapper{
+                        svg{
+                            // transform: translate(682px,-2856px) scale(0.1);
+                            transform: translate(682px,-2856px) scale(1);
+                            width: 10px;
+                            animation: textZoomIn 3s ease-in-out;
+                            animation-fill-mode: forwards;
+                            animation-delay: 3s;
+                        }
+                        @keyframes textZoomIn {
+                            to{
+                                transform: translate(492px,-2828px) scale(1) rotate(10deg);
+                                width: 313px;
+                            }
+                        }
+                        svg.svgText.newAnimation{
+                            transform: translate(492px,-2828px) scale(1) rotate(10deg);
+                            width: 313px;
+                            animation: forZoom 1s ease-in-out;
+                            animation-fill-mode: forwards;
+                            // animation-delay: 2s;
+                            transition: 0.3s ease-in-out;
+                        }
+                        @keyframes forZoom {
+                            from{
+                                transform: translate(492px,-2828px) scale(1) rotate(10deg);
+                                width: 313px;
+                            }
+                            to{
+                                transform: translate(438px,-2772px) scale(1) rotate(0deg);
+                                width: 463px;
+                            }
+                        }
+                        // animation: textScaleCenter 2s ease-in-out;
+                        // animation-fill-mode: forwards;
+                        // animation-delay: 6s;
+                    }
+                    // @keyframes textScaleCenter {
+                    //     to{
+                    //         transform: translate(469px, 701px) rotate(-9.5deg) scale(1.2);
+                    //     }
+                    // }
                 }
                 @keyframes billboardZoonIn {
                     to{
@@ -618,18 +638,6 @@
             to{
                 transform: translate(20px,428px) scale(8.5);
             }
-        }
-    
-        .circleZoom{
-            display: block;
-            border-radius: 50%;
-            background: rgba(255,255,255,1);
-            width: 50px;
-            height: 50px;
-            position: absolute;
-            top: 33%;
-            left: 50%;
-            transform: translate(-50%, -33%);
         }
 }
     

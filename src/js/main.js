@@ -97,12 +97,12 @@ setTimeout(() => {
     car.classList.add('zoom-in');
 }, 12000);
 
-
-
 setTimeout(() => {
-    const svgBillBoard = document.querySelector('.billBoard');
-    svgBillBoard.classList.add('circle-transform');
-}, 20000);
+    const newTextAnimation = document.querySelector('.svgText');
+    newTextAnimation.classList.add('newAnimation');
+}, 18000);
+
+
 
 // setTimeout(() => {
 //     bilboard.classList.add('bilboard-animated');

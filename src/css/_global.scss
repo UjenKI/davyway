@@ -21,6 +21,10 @@ body{
     img{
         width: 100%;
     }
+    p{
+        font-size: 16px;
+        font-weight: 400;
+    }
     p.simple__text{
         line-height: 32px;
         font-weight: 300;
@@ -28,10 +32,13 @@ body{
         font-size: 16px;
         color: #000000;
     }
+    h3{
+        font-weight: 400px;
+    }
     h3.title__underline{
         font-size: 36px;
         color: #000000;
-        font-weight: 300;
+        font-weight: 400;
         text-align: center;
         display: block;
         position: relative;
@@ -40,11 +47,13 @@ body{
             content: url(../image/underline.svg);
             display: block;
             position: absolute;
-            bottom: -24px;
+            bottom: -31px;
             left: 50%;
             transform: translateX(-50%);
 
         }
     }
+    
+    
 }
 

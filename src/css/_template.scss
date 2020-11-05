@@ -8,7 +8,7 @@ main{
             content: "";
             position: absolute;
             box-shadow: 0 -35px 35px -22px rgba(0,0,0,.2);
-            transform: translateY(7%) skewY(4deg);
+            transform: translateY(7%) skewY(3deg);
             width: 100%;
             height: 110px;
             top: -55px;
@@ -20,7 +20,7 @@ main{
             h3{
                 font-size: 36px;
                 color: #000000;
-                font-weight: 300;
+                font-weight: 400;
                 display: block;
                 position: relative;
                 margin-bottom: 89px;
@@ -41,6 +41,7 @@ main{
                 justify-content: space-between;
                 .about_item_description{
                     max-width: 44%;
+                    margin-top: -11px;
                     text-indent: 15px;
                     p.simple__text{
                         margin-bottom: 41px;
@@ -107,7 +108,7 @@ main{
                 display: block;
                 max-width: 645px;
                 height: 168px;
-                box-shadow: 0 3px 9px -2px rgba(0,0,0,.6);
+                box-shadow: 0px 3px 19px 0px rgba(0,0,0,0.6);
                 background: #fff;
                 transform: translate(182px, 155px) skewY(10deg);
                 h3{
@@ -122,30 +123,30 @@ main{
                 background: #fff;
                 display: block;
                 max-width: 931px;
-                box-shadow: 0px 3px 9px -2px rgba(0,0,0,.6);
+                box-shadow: 0px 3px 19px 0px rgba(0,0,0,.6);
                 transform: skewY(-10deg);
                 position: relative;
-                padding-top: 80px;
+                padding-top: 103px;
                 padding-bottom: 43px;
                 &::after{
                     content: "";
                     display: block;
                     width: 100%;
                     height: 200px;
-                    box-shadow: 5px 9px 11px -1px rgba(0,0,0,0.2);
+                    box-shadow: 9px 16px 9px -2px rgba(0,0,0,0.2);
                     transform: skewY(10deg);
                     background: #fff;
                     position: absolute;
-                    top: 90%;
+                    top: 91%;
                     left: 0;
                 }
                 &::before{
-                    content: url(../image/foto-story.svg);
+                    content: url(../image/foto-story1.png);
                     display: block;
                     position: absolute;
-                    top: -55px;
-                    right: -50px;
-                    transform: skewY(10deg);
+                    top: -633px;
+                    right: -574px;
+                    transform: scale(0.25) skewY(10deg);
                 }
                 .letter__item{
                     max-width: 100%;
@@ -154,17 +155,22 @@ main{
                     display: block;
                     font-family: 'Chalkduster';
                     p{
-                        font-size: 16px;
-                        font-weight: 300;
+                        font-family: 'Caveat';
+                        font-size: 26px;
+                        font-weight: 400;
                         color: #606060;
                         letter-spacing: 1px;
-                        text-indent: 25px;
-                        margin: 30px 0;
+                        margin: 12px 0;
                         line-height: 34px;
                     }
                     h4{
+                        font-family: 'Caveat';
                         color: #2b2b2b;
-                       font-size: 20px;
+                       font-size: 30px;
+                       font-weight: 400;
+                       &:nth-child(1){
+                           margin-bottom: 30px;
+                       }
                     }
                 }
             }
@@ -182,7 +188,7 @@ main{
                 p{
                     font-size: 16px;
                     line-height: 30px;
-                    font-weight: 300;
+                    font-weight: 400;
                 }
             }
             .why__us__item{
@@ -435,10 +441,9 @@ main{
                             padding: 0 40px;
                             color: #000000;
                             text-align: center;
-                            font-weight: 300;
                             h4{
                                 font-size: 24px;
-                                font-weight: 300;
+                                font-weight: 400;
                             }
                             p{
                                 margin: 25px 0;
@@ -446,6 +451,7 @@ main{
                                 line-height: 32px;
                                 display: block;
                                 padding: 0 12px;
+                                font-weight: 300;
                             }
                         }
                     }
@@ -465,6 +471,7 @@ main{
             display: flex;
             justify-content: center;
             position: sticky;
+            transition: 0.1s ease-in-out;
             top: 100px;
             z-index: 0;
             .roadmap__title{
@@ -477,15 +484,15 @@ main{
                 p{
                     font-size: 16px;
                     line-height: 30px;
-                    font-weight: 300;
+                    font-weight: 400;
                 }
             }
         }
         .roadmap__city{
             height: 230px;
             position: sticky;
-            top: -300px;
-            margin-bottom: 134px;
+            top: -400px;
+            margin-bottom: 131px;
         }
         .roadmap__story{
            top: 0;
@@ -502,8 +509,8 @@ main{
            }
        }
        .roadmap__way{
-           background: url(../image/road.svg) no-repeat center;
-           background-size: cover;
+        //    background: url(../image/road.svg) no-repeat center;
+        //    background-size: cover;
            max-height: 942px;
            .city-container{
             //    position: relative;
@@ -515,8 +522,24 @@ main{
                     z-index: 2;
                 }
        }
-           .container.roadway__breakpoints{
+           .roadway__breakpoints{
+               position: relative;
+               .road__img{
+                   display: block;
+                   margin-top: -3px;
+                   position: relative;
+                   background: linear-gradient(to bottom, #DADADA, #F0F0F0);
+                   svg{
+                       width: 100%;
+                   }
+               }
                ul{
+                   display: block;
+                   position: absolute;
+                   top: 0;
+                   width: 100%;
+                   left: 50%;
+                   transform: translateX(-50%);
                    list-style-type: none;
                    li{
                        display: block;
@@ -576,7 +599,6 @@ main{
                             &::before{
                                 position: absolute;
                                 opacity: 0;
-                                // transition: 0.3s ease-in;
                                 content: "";
                                 width: 0px;
                                 height: 0px;
@@ -604,9 +626,6 @@ main{
                             // }
                             
                         }
-                       }
-                       &:nth-child(2), &:nth-child(3), &:nth-child(4){
-                           padding: 120px 0;
                        }
                        &:nth-child(1){
                         .break__points{
@@ -659,9 +678,9 @@ main{
                         }
                          }
                        &:nth-child(2){
-                           padding-top: 110px;
+                           padding-top: 80px;
                            .break__points{
-                               margin-left: 40%;
+                               margin-left: 39%;
                                .break__img{
                                    svg{
                                     left: 108px;
@@ -712,10 +731,10 @@ main{
                        &:nth-child(3){
                         padding-top: 0;
                         .break__points{
-                            margin-left: 74%;
+                            margin-left: 67%;
                             .break__img{
                                 svg{
-                                    left: 25%;
+                                    left: 110px;
                                     top: -287px;
                                 }
                                 &:hover{
@@ -727,7 +746,7 @@ main{
                                     h5{
                                         font-size: 18px;
                                         top: -17px;
-                                        left: 138px;
+                                        left: 166px;
                                     }
                                     &::before{
                                         opacity: 1;
@@ -740,7 +759,7 @@ main{
                                 h5{
                                     font-size: 42px;
                                     top: -25px;
-                                    left: 115px;
+                                    left: 144px;
 
                                 }
                                 p{
@@ -761,13 +780,13 @@ main{
                         }
                         }
                         &:nth-child(4){
-                            padding-top: 0;
+                            padding-top: 60px;
                             .break__points{
-                                margin-left: 18%;
+                                margin-left: 8%;
                                 .break__img{
                                     display: block;
                                     svg{
-                                        left: 16.5%;
+                                        left: 168px;
                                         top: -300px;
                                     }
                                     &:hover{
@@ -799,13 +818,6 @@ main{
                                         left: 39%;
                                         top: -21px;
                                     }
-                                    // &:hover{
-                                    //     h5{
-                                    //         font-size: 18px;
-                                    //         top: -17px;
-                                    //         left: 230px;
-                                    //     }
-                                    // }
                                 }
                             }
                         }
@@ -836,12 +848,12 @@ main{
                         .social__box{
                             cursor: pointer;
                             transition: 0.3s ease-in;
-                            #Layer_1{
+                            img{
                                 position: absolute;
-                                top: 0;
+                                top: 6px;
                                 left: 0;
                                 opacity: 0;
-                                transform: scale(1.2);
+                                transform: scale(0.9);
                                 transition: 0.3s ease-in-out;
                             }
                             #Group_135{
@@ -849,11 +861,14 @@ main{
                             }
                         }
                         &:hover{
-                            #Layer_1{
+                            img{
                                 opacity: 1;
                             }
                             #Group_135{
-                                opacity: 0;
+                                // opacity: 0;
+                                rect{
+                                    fill: #ffffff;
+                                }
                             }
                         }
                     }
@@ -887,12 +902,45 @@ main{
                         .social__box{
                             cursor: pointer;
                             transition: 0.3s ease-in;
+                            display: block;
+                            position: relative;
                             &:hover{
                                 svg{
                                     rect{
                                         fill: #00bf60;
                                     }
                                 }
+                            }
+                            &:hover::before{
+                                opacity: 1;
+                            }
+                            &:hover::after{
+                                opacity: 1;
+                            }
+                            &::before{
+                                content: url(../image/qr-codeE.png);
+                                display: block;
+                                position: absolute;
+                                top: -50px;
+                                left: 100px;
+                                opacity: 0;
+                                transition: 0.3s ease-out;
+                            }
+                            &::after{
+                                position: absolute;
+                                opacity: 1;
+                                content: "";
+                                width: 0px;
+                                opacity: 0;
+                                height: 0px;
+                                border-top: 28px solid #ffffff;
+                                border-right: 53px solid transparent;
+                                border-bottom: 15px solid transparent;
+                                border-left: 53px solid transparent;
+                                left: 26px;
+                                top: 30px;
+                                transform: translateY(-50%) rotate(90deg);
+                                transition: 0.3s ease-out;
                             }
                         }
                     }

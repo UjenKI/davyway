@@ -265,12 +265,17 @@
     .car-wrapper{
         position: absolute;
         top: 311px;
+        transition: 0.5s ease-in-out;
         transform: scale(0.5);
         left: -385px;
         max-height: 210px;
+        
         .carBody-wrapper{
-            margin: -213px 20px 20px 100px;
+            margin: -213px 20px -21px 100px;
             max-height: 129px;
+            // ----------
+            max-width: 200px;
+            // -------------
             .davWord-wrapper{
                 transform: scale(.20);
                 display: block;
@@ -298,6 +303,52 @@
             .bilboard-wrapper{
                 opacity: 0;
             }
+            // ---------------
+            .zoomIn-wrapper{
+                transform: translate(-81px,-1948px) scale(0.18);
+                .billboardZoom-wrapper{
+                    svg.billBoard{
+                        width: 3px;
+                        transform: translate(680px,-804px);
+                        #Group_230{
+                            transform: translate(715px,328px) scale(.01);
+                            rect{
+                                fill: rgba(255,255,255,0.5);
+                            }
+                        }
+                    }
+                    .circleZoom{
+                        display: block;
+                        border-radius: 50%;
+                        background: rgba(255,255,255,1);
+                        width: 50px;
+                        height: 50px;
+                        position: absolute;
+                        top: 33%;
+                        left: 50%;
+                        transform: translate(-50%, -33%);
+                    }
+                    .circle-davyway-wrapper{
+                        svg{
+                            &:nth-child(1){
+                                transform: translate(-177px,-1897px) scale(.65) rotate(6deg);
+                                #Rectangle_40{
+                                    fill: rgba(255,255,255,0.1);
+                                    transform: scale(0.1) translate(5777px, 2950px);
+                                }
+                            }
+                            &:nth-child(2){
+                                // width: 57px;
+                                // transform: translate(625px,-3571px) scale(.65) rotate(9deg);
+                                transform: translate(-175px,-3571px) scale(0.65) rotate(9deg);
+                                width: 1673px;
+                                opacity: 0;
+                            }
+                        }
+                    }
+                }
+            }
+            // -------------
         }
         .carBody-wrapper.carBody-animated{
             animation: carBodyAnimated 1.1s ease-in-out;
@@ -481,8 +532,107 @@
             transform: scale(1) translateX(-50%) translateY(0);
         }
     }
+    .car-wrapper.car-arrived.car-center-moved.zoom-in{
+        animation: carZoomIn 0.6s ease-in-out;
+         animation-delay: 1s;
+         animation-fill-mode: forwards;
+         .carBody-wrapper{
+            //  --------------------------------------
+            .zoomIn-wrapper{
+                // transform: translate(-81px,-573px) scale(0.18);
+                svg{
+                    transform: translate(10px, -6px);
+                }
+                #Group_159{
+                    animation: davywayZoom 3s ease-out;
+                    animation-fill-mode: forwards;
+                    animation-delay: 3s;
+                }
+                @keyframes davywayZoom {
+                    to{
+                        transform: translate(-3900px,-2786px) scale(15);
+                    }
+                } 
+                .billboardZoom-wrapper{
+                    // animation-fill-mode: forwards;
+                    // animation-delay: 3s;
+                    svg.billBoard{
+                        width: 3px;
+                        transform: translate(680px,-804px);
+                        animation: svgZoomIn 3s ease-in-out;
+                        animation-fill-mode: forwards;
+                        animation-delay: 3s;
+                        #Group_229{
+                            #Group_230{
+                                transform: translate(715px,328px) scale(.01);
+                                animation: whiteCircleZoom 0.6s ease-in-out;
+                                animation-fill-mode: forwards;
+                                animation-delay: 7s;
+                                rect{
+                                    fill: rgba(255,255,255,0.5);
+                                    animation: circleColor 0.6s ease-in-out;
+                                    animation-fill-mode: forwards;
+                                    animation-delay: 7s;
+                                }
+                                @keyframes circleColor {
+                                    to{
+                                        fill: rgba(255,255,255,1);
+                                    }
+                                }
+                                @keyframes whiteCircleZoom {
+                                    to{
+                                        transform: translate(376px,291px) scale(.6);
+                                    }
+                                }
+                            }
+                            .allText{
+                                animation: textMoving 0.6s ease-in-out;
+                                animation-fill-mode: forwards;
+                                animation-delay: 7s;
+                            }
+                            @keyframes textMoving{
+                                to{
+                                    transform: translate(-423px,16px) rotate(-5deg) scale(1.5);
+                                }
+                            }
+                        }
+                    }
+                    @keyframes svgZoomIn {
+                        to{
+                            width: 463px;
+                            transform: translate(410px, -667px);
+                        }
+                    }
+                }
+                @keyframes billboardZoonIn {
+                    to{
+                        transform: translate(474px, -680px) scale(1);
+                    }
+                }
+            }
+            // ------------
+         }
+       
+     }
+     @keyframes carZoomIn{
+            to{
+                transform: translate(20px,428px) scale(8.5);
+            }
+        }
     
+        .circleZoom{
+            display: block;
+            border-radius: 50%;
+            background: rgba(255,255,255,1);
+            width: 50px;
+            height: 50px;
+            position: absolute;
+            top: 33%;
+            left: 50%;
+            transform: translate(-50%, -33%);
+        }
 }
+    
 .preloader.preloader-transform{
     transform: scale(8.0) translate(28px, 108px);
     transition: 0.6s ease-in-out;

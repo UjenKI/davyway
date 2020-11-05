@@ -1,0 +1,3324 @@
+@media screen and (max-width: 1140px){
+    header{
+        .container.banner-wrapper{
+            .top-menu.menu-screen{
+                padding: 20px;
+                .menu-wrapper{
+                    .menu-item.label{
+                        label{
+                            top: 73px;
+                            right: 37px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    main{
+        section.about__us{
+            .container.about{
+                h3{
+                    padding: 0 38px;
+                    &::after{
+                        left: 211px;
+                    }
+                }
+                .about__item{
+                    padding: 0 25px;
+                }
+            }
+        }
+        section.our__mission{
+            .container.mission{
+                padding: 0 35px;
+                margin-top: 45px;
+                .mission__text__item{
+                    margin-left: 70px;
+                    margin-top: 77px;
+                    .text__box{
+                        &::after{
+                            margin-left: -27px;
+                            margin-top: -249px;
+                        }
+                    }
+                }
+            }
+        }
+        section.why__shop{
+            .container.shop{
+                h3{
+                    padding: 0 30px;
+                }
+                ul{
+
+                }
+            }
+        }
+        section.our__story{
+            .container.story{
+                .title-story{
+                    transform: translate(70px,132px) skewY(10deg);
+                }
+                .story__letter{
+                    &::before{
+                        top: -649px;
+                        right: -574px;
+                        transform: scale(.23) skewY(10deg);
+                    }
+                }
+            }
+        }
+        section.why__us{
+            .container.why{
+                .why__us__item{
+                    margin-top: 35px;
+                }
+            }
+        }
+        section.davyway__roadmap{
+            .container.roadmap{
+                .roadmap__title{
+                    height: 235px;
+                    margin-bottom: 0;
+                }
+            }
+            .roadmap__city{
+                margin-bottom: 0;
+            }
+            .roadmap__way{
+                .roadway__breakpoints{
+                    .road__img{
+                        margin-top: -20px;
+                        svg{
+                            g#slave_3{
+                                transform: translate(10px, -540px);
+                            }
+                        }
+                    }
+                    ul{
+                        li{
+                            .break__points{
+                                .break__img{
+                                    transform: scale(0.8);
+                                }
+                            }
+                            &:nth-child(1){
+                                padding-top: 35px;
+                                .break__points{
+                                    .break__img{
+                                        svg{
+                                            left: -60px;
+                                            top: -162px;
+                                        }
+                                    }
+                                }
+                            }
+                            &:nth-child(2){
+                                padding-top: 20px;
+                                .break__points{
+                                    margin-left: 45%;
+                                    .break__img{
+                                        svg{
+                                            top: -197px;
+                                            left: 51px;
+                                        }
+                                        &:hover ~ .break__text{
+                                            h5{
+                                                left: 126px;
+                                            }
+                                        }
+                                    }
+                                    .break__text{
+                                        max-width: 257px;
+                                        h5{
+                                            font-size: 30px;
+                                        }
+                                        p{
+                                            font-size: 20px;
+                                        }
+                                    }
+                                }
+                            }
+                            &:nth-child(3){
+                                .break__points{
+                                    margin-top: -45px;
+                                    .break__img{
+                                        svg{
+                                            top: -301px;
+                                            left: 76px;
+                                        }
+                                        &:hover ~ .break__text{
+                                            h5{
+                                                left: 143px;
+                                            }
+                                        }
+                                    }
+                                    .break__text{
+                                        padding: 20px 5px;
+                                        h5{
+                                            font-size: 36px;
+                                            left: 117px;
+                                        }
+                                        p{
+                                            font-size: 24px;
+                                        }
+                                    }
+                                }
+                            }
+                            &:nth-child(4){
+                                margin-top: -115px;
+                                .break__points{
+                                    margin-left: 10%;
+                                    .break__img{
+                                        svg{
+                                            left: 117px;
+                                            top: -287px;
+                                        }
+                                    }
+                                    .break__text{
+                                        h5{
+                                            font-size: 44px;
+                                        }
+                                        p{
+                                            font-size: 30px;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        section.contact__us{
+            margin-top: -163px;
+        }
+    }
+}
+@media screen and (max-width: 992px){
+    .header-overflow.overflow-animated {
+        left: 38px;
+        max-height: 170px;
+        p{
+            font-size: 16px;
+        }
+        h1{
+            font-size: 100px;
+            padding-right: 47px;
+        }
+    }
+    header{
+        .container.banner-wrapper{
+            .top-menu.menu-screen{
+                padding: 22px;
+                .menu-wrapper{
+                    .menu-item.label{
+                        label{
+                            right: 40px;
+                            top: 71px;
+                        }
+                    }
+                }
+            }
+            .banner-item{
+                position: relative;
+                .banner-item-text{
+                    margin-top: 398px;
+                    margin-left: 46px;
+                    p{
+                        line-height: 27px;
+                    }
+                }
+                .banner-item-animation{
+                    transform: scale(0.7);
+                    max-width: 50%;
+                    svg{
+                        transform: scale(0) translate(476px,-330px);
+                        margin-right: 0;
+                        margin-left: 65px;
+                        animation: salesMoving 2s ease-in-out;
+                        animation-delay: 3.5s;
+                        animation-fill-mode: forwards;
+                    }
+                    @keyframes salesMoving {
+                        0%{
+                            transform: scale(0) translate(476px,-330px);
+                        }
+                        50%{
+                            transform: scale(0.5) translate(75px, -330px);
+                            margin-left: 35px;
+                        }
+                        100%{
+                            transform: scale(1) translate(58px, -8px);
+                            margin-right: 150px;
+                            margin-left: 0;
+                        }
+                    }
+                }
+                .carHeader-wrapper{
+                    transform: scale(0.7);
+                    left: -570px;
+                    animation: carHmoving 3.3s ease-out forwards 2s;
+                    .wheelsHeader-wrapper{
+                        #whellH{
+                            animation: whellRolingHeadFst 0.3s  2s;
+                            animation-timing-function: linear;
+                            animation-iteration-count: 3;
+                            // transform-origin: 50% 50%;
+                        }
+                        @keyframes whellRolingHeadFst {
+                            to{
+                                transform: rotate(360deg);
+                            }
+                        }   
+                        #whellH2{
+                            animation: whellRolingHead 0.3s 2s;
+                            animation-timing-function: linear;
+                            animation-iteration-count: 3;
+                            // transform-origin: 50% 50%;
+                        }
+                        @keyframes whellRolingHead {
+                            to{
+                                transform: rotate(360deg);
+                            }
+                        } 
+                    }
+                }
+                @keyframes carHmoving {
+                    0%{
+                        left:-570px;
+                    }
+                    20%, 50%, 80%{
+                        left: 330px;
+                    }
+                    100%{
+                        // width: 0;
+                        left: 1000px;
+                    }
+                }
+            }
+        }
+    }
+    main{
+        section.about__us{
+            .container.about{
+                h3{
+                    padding: 0 85px;
+                    &::after{
+                        left: 251px;
+                    }
+                }
+                .about__item{
+                    padding: 0 25px;
+                    flex-direction: column-reverse;
+                    justify-content: center;
+                    .about_item_description{
+                        max-width: 100%;
+                        padding: 60px 30px 30px 60px;
+                        text-align: justify;
+                    }
+                    .about_item_image{
+                        max-width: 100%;
+                    }
+                }
+            }
+        }
+        section.our__mission{
+            margin-top: 100px;
+            .container.mission{
+                padding: 0 35px;
+                margin-top: 15px;
+                .mission__text__item{
+                    margin-left: 24px;
+                    margin-top: 175px;
+                    .text__box{
+                        padding: 22px;
+                        &::after{
+                            margin-left: -15px;
+                            margin-top: -201px;
+                            border: 4px solid rgba(4,154,175,.3);
+                        }
+                        p{
+                            line-height: 27px;
+                        }
+                    }
+                }
+            }
+        }
+        section.our__story{
+            .container.story{
+                padding-top: 65px;
+                .title-story{
+                    transform: translate(80px,151px) skewY(10deg);
+                    h3{
+                        font-size: 31px;
+                        margin-left: 29px;
+                    }
+                }
+                .story__letter{
+                    max-width: 900px;
+                    &::before{
+                        top: -654px;
+                        right: -559px;
+                        transform: skewY(10deg) scale(.23);
+                    }
+                    .letter__item{
+                        p{
+                            font-size: 28px;
+                            line-height: 34px;
+                            margin: 8px 0;
+                        }
+                    }
+                }
+            }
+        }
+        section.why__shop{
+            .container.shop{
+                h3{
+                    padding: 0 30px;
+                }
+                ul{
+                    flex-direction: column;
+                    padding-bottom: 20px;
+                }
+            }
+        }
+        section.why__us{
+            margin-top: 210px;
+            .container.why{
+                padding: 0 32px;
+                .why__us__item{
+                    margin-top: 35px;
+                    ul{
+                        justify-content: center;
+                        li{
+                            max-width: 300px;
+                            .card__item{
+                                padding: 40px;
+                                .icon__item{
+                                    h5{
+                                        font-size: 17px;
+                                    }
+                                }
+                            }
+                            &:nth-child(2){
+                                &::after{
+                                    content: "";
+                                    display: block;
+                                    position: absolute;
+                                    width: 4px;
+                                    height: 4px;
+                                    background: rgba(4,154,175,.3);
+                                    top: 100%;
+                                    border-radius: 50%;
+                                    left: 0;
+                                    transform: translateX(-50%);
+                                }
+                            }
+                            &:nth-child(3){
+                                &::before{
+                                    content: "";
+                                    display: block;
+                                    position: absolute;
+                                    width: 192px;
+                                    height: 2px;
+                                    background: rgba(4,154,175,.3);
+                                    top: 100%;
+                                    left: 50%;
+                                    transform: translateX(-50%);
+                                }
+                            }
+                            &:nth-child(4){
+                                &::after{
+                                    content: "";
+                                    display: block;
+                                    position: absolute;
+                                    width: 4px;
+                                    height: 4px;
+                                    background: rgba(4,154,175,.3);
+                                    top: 100%;
+                                    border-radius: 50%;
+                                    left: 0;
+                                    transform: translateX(-50%);
+                                }
+                                &::before{
+                                    content: "";
+                                    display: block;
+                                    position: absolute;
+                                    width: 2px;
+                                    height: 192px;
+                                    background: rgba(4,154,175,.3);
+                                    top: 50%;
+                                    left: 0;
+                                    transform: translateY(-50%);
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        section.davyway__roadmap{
+            .container.roadmap{
+                .roadmap__title{
+                    height: 235px;
+                    margin-bottom: 0;
+                    h3{
+                        font-size: 36px;
+                    }
+                    p{
+                        font-size: 14px;
+                    }
+                }
+            }
+            .roadmap__city{
+                margin-bottom: 0;
+            }
+            .roadmap__way{
+                .roadway__breakpoints{
+                    .road__img{
+                        margin-top: -20px;
+                        svg{
+                            g#slave_3{
+                                transform: translate(10px, -529px);
+                            }
+                        }
+                    }
+                    ul{
+                        li{
+                            .break__points{
+                                .break__img{
+                                    transform: scale(0.65);
+                                }
+                            }
+                            &:nth-child(1){
+                                .break__points{
+                                    .break__img{
+                                        svg{
+                                            left: -179px;
+                                        }
+                                    }
+                                    .break__text{
+                                        h5{
+                                            font-size: 21px;
+                                            left: 36%;
+                                        }
+                                        p{
+                                            font-size: 15px;
+                                        }
+                                    }
+                                }
+                            }
+                            &:nth-child(2){
+                                padding-top: 20px;
+                                .break__points{
+                                    margin-left: 365px;
+                                    .break__img{
+                                        svg{
+                                            top: -194px;
+                                            left: -42px;
+                                        }
+                                        &:hover ~ .break__text{
+                                            h5{
+                                                left: 100px;
+                                            }
+                                        }
+                                    }
+                                    .break__text{
+                                        max-width: 215px;
+                                        padding: 28px 10px;
+                                        &::before{
+                                            left: 29%;
+                                        }
+                                        h5{
+                                            font-size: 25px;
+                                        }
+                                        p{
+                                            font-size: 19px;
+                                        }
+                                    }
+                                }
+                            }
+                            &:nth-child(3){
+                                padding-top: 10px;
+                                .break__points{
+                                    margin-left: 600px;
+                                    .break__img{
+                                        svg{
+                                            top: -279px;
+                                            left: 12px;
+                                        }
+                                        &:hover ~ .break__text{
+                                            h5{
+                                                left: 110px;
+                                            }
+                                        }
+                                    }
+                                    .break__text{
+                                        padding: 20px 5px;
+                                        max-width: 237px;
+                                        h5{
+                                            font-size: 30px;
+                                            left: 93px;
+                                            top: -13px;
+                                        }
+                                        p{
+                                            font-size: 21px;
+                                        }
+                                        &::before{
+                                            left: 30%;
+                                        }
+                                    }
+                                }
+                            }
+                            &:nth-child(4){
+                                margin-top: -40px;
+                                .break__points{
+                                    margin-left: 143px;
+                                    margin-top: 20px;
+                                    .break__img{
+                                        svg{
+                                            left: -47px;
+                                            top: -302px;
+                                        }
+                                        &:hover ~ .break__text{
+                                            h5{
+                                                left: 156px;
+                                                top: -19px;
+                                            }
+                                        }
+                                    }
+                                    .break__text{
+                                        max-width: 340px;
+                                        padding: 14px 0;
+                                        h5{
+                                            font-size: 35px;
+                                            top: -23px;
+                                        }
+                                        p{
+                                            font-size: 25px;
+                                        }
+                                        &::before{
+                                            left: 36%;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        section.contact__us{
+            margin-top: -220px;
+        }
+    }
+}
+@media screen and (max-width: 950px){
+    .header-overflow.overflow-animated {
+        left: 38px;
+        max-height: 170px;
+        p{
+            font-size: 16px;
+        }
+        h1{
+            font-size: 100px;
+            padding-right: 47px;
+        }
+    }
+    header{
+        .container.banner-wrapper{
+            .top-menu.menu-screen{
+                padding: 22px;
+                .menu-wrapper{
+                    .menu-item.label{
+                        label{
+                            right: 40px;
+                            top: 71px;
+                        }
+                    }
+                }
+            }
+            .banner-item{
+                position: relative;
+                .banner-item-text{
+                    margin-top: 398px;
+                    margin-left: 46px;
+                    p{
+                        line-height: 27px;
+                    }
+                }
+                .banner-item-animation{
+                    transform: scale(0.7);
+                    max-width: 50%;
+                    svg{
+                        transform: scale(0) translate(476px,-330px);
+                        margin-right: 0;
+                        margin-left: 65px;
+                        animation: salesMoving 2s ease-in-out;
+                        animation-delay: 3.5s;
+                        animation-fill-mode: forwards;
+                    }
+                    @keyframes salesMoving {
+                        0%{
+                            transform: scale(0) translate(476px,-330px);
+                        }
+                        50%{
+                            transform: scale(0.5) translate(75px, -330px);
+                            margin-left: 35px;
+                        }
+                        100%{
+                            transform: scale(1) translate(58px, -8px);
+                            margin-right: 150px;
+                            margin-left: 0;
+                        }
+                    }
+                }
+                .carHeader-wrapper{
+                    transform: scale(0.7);
+                    left: -570px;
+                    animation: carHmoving 3.3s ease-out forwards 2s;
+                    .wheelsHeader-wrapper{
+                        #whellH{
+                            animation: whellRolingHeadFst 0.3s  2s;
+                            animation-timing-function: linear;
+                            animation-iteration-count: 3;
+                            // transform-origin: 50% 50%;
+                        }
+                        @keyframes whellRolingHeadFst {
+                            to{
+                                transform: rotate(360deg);
+                            }
+                        }   
+                        #whellH2{
+                            animation: whellRolingHead 0.3s 2s;
+                            animation-timing-function: linear;
+                            animation-iteration-count: 3;
+                            // transform-origin: 50% 50%;
+                        }
+                        @keyframes whellRolingHead {
+                            to{
+                                transform: rotate(360deg);
+                            }
+                        } 
+                    }
+                }
+                @keyframes carHmoving {
+                    0%{
+                        left:-570px;
+                    }
+                    20%, 50%, 80%{
+                        left: 330px;
+                    }
+                    100%{
+                        // width: 0;
+                        left: 1000px;
+                    }
+                }
+            }
+        }
+    }
+    main{
+        section.about__us{
+            .container.about{
+                h3{
+                    padding: 0 85px;
+                    &::after{
+                        left: 251px;
+                    }
+                }
+                .about__item{
+                    padding: 0 25px;
+                    flex-direction: column-reverse;
+                    justify-content: center;
+                    .about_item_description{
+                        max-width: 100%;
+                        padding: 60px 30px 30px 60px;
+                        text-align: justify;
+                    }
+                    .about_item_image{
+                        max-width: 100%;
+                        img{
+                            transform: scale(0.7);
+                        }
+                    }
+                }
+            }
+        }
+        section.our__mission{
+            margin-top: 100px;
+            .container.mission{
+                padding: 0 35px;
+                margin-top: 20px;
+                .mission__image__item{
+                    svg{
+                        transform: scale(0.9);
+                    }
+                }
+                .mission__text__item{
+                    margin-left: 24px;
+                    margin-top: 157px;
+                    .text__box{
+                        padding: 22px;
+                        &::after{
+                            margin-left: -15px;
+                            margin-top: -203px;
+                            border: 4px solid rgba(4,154,175,.3);
+                        }
+                        p{
+                            line-height: 27px;
+                        }
+                    }
+                }
+            }
+        }
+        section.our__story{
+            .container.story{
+                padding-top: 65px;
+                .title-story{
+                    transform: translate(78px,151px) skewY(10deg);
+                    h3{
+                        font-size: 31px;
+                        margin-left: 29px;
+                    }
+                }
+                .story__letter{
+                    max-width: 780px;
+                    &::before{
+                        top: -656px;
+                        right: -569px;
+                        transform: skewY(10deg) scale(.22);
+                    }
+                    .letter__item{
+                        padding: 67px;
+                        p{
+                            font-size: 26px;
+                            line-height: 34px;
+                            margin: 8px 0;
+                        }
+                    }
+                }
+            }
+        }
+        section.why__shop{
+            .container.shop{
+                h3{
+                    padding: 0 30px;
+                }
+                ul{
+                    flex-direction: column;
+                    padding-bottom: 20px;
+                }
+            }
+        }
+        // section.why__us{
+        //     margin-top: 210px;
+        //     .container.why{
+        //         padding: 0 32px;
+        //         .why__us__item{
+        //             margin-top: 35px;
+        //             ul{
+        //                 justify-content: center;
+        //                 li{
+        //                     max-width: 300px;
+        //                     .card__item{
+        //                         padding: 40px;
+        //                         .icon__item{
+        //                             h5{
+        //                                 font-size: 17px;
+        //                             }
+        //                         }
+        //                     }
+        //                     &:nth-child(2){
+        //                         &::after{
+        //                             content: "";
+        //                             display: block;
+        //                             position: absolute;
+        //                             width: 4px;
+        //                             height: 4px;
+        //                             background: rgba(4,154,175,.3);
+        //                             top: 100%;
+        //                             border-radius: 50%;
+        //                             left: 0;
+        //                             transform: translateX(-50%);
+        //                         }
+        //                     }
+        //                     &:nth-child(3){
+        //                         &::before{
+        //                             content: "";
+        //                             display: block;
+        //                             position: absolute;
+        //                             width: 192px;
+        //                             height: 2px;
+        //                             background: rgba(4,154,175,.3);
+        //                             top: 100%;
+        //                             left: 50%;
+        //                             transform: translateX(-50%);
+        //                         }
+        //                     }
+        //                     &:nth-child(4){
+        //                         &::after{
+        //                             content: "";
+        //                             display: block;
+        //                             position: absolute;
+        //                             width: 4px;
+        //                             height: 4px;
+        //                             background: rgba(4,154,175,.3);
+        //                             top: 100%;
+        //                             border-radius: 50%;
+        //                             left: 0;
+        //                             transform: translateX(-50%);
+        //                         }
+        //                         &::before{
+        //                             content: "";
+        //                             display: block;
+        //                             position: absolute;
+        //                             width: 2px;
+        //                             height: 192px;
+        //                             background: rgba(4,154,175,.3);
+        //                             top: 50%;
+        //                             left: 0;
+        //                             transform: translateY(-50%);
+        //                         }
+        //                     }
+        //                 }
+        //             }
+        //         }
+        //     }
+        // }
+        section.davyway__roadmap{
+            padding-top: 40px;
+            .container.roadmap{
+                .roadmap__title{
+                    height: 200px;
+                    margin-bottom: 0;
+                    h3{
+                        font-size: 36px;
+                    }
+                    p{
+                        font-size: 14px;
+                    }
+                }
+            }
+            .roadmap__city{
+                margin-bottom: 0;
+            }
+            .roadmap__way{
+                .roadway__breakpoints{
+                    .road__img{
+                        margin-top: -28px;
+                        svg{
+                            g#slave_3{
+                                transform: translate(10px, -560px);
+                            }
+                        }
+                    }
+                    ul{
+                        li{
+                            .break__points{
+                                .break__img{
+                                    transform: scale(0.65);
+                                }
+                            }
+                            &:nth-child(1){
+                                .break__points{
+                                    .break__img{
+                                        svg{
+                                            left: -166px;
+                                        }
+                                    }
+                                    .break__text{
+                                        h5{
+                                            font-size: 21px;
+                                            left: 36%;
+                                        }
+                                        p{
+                                            font-size: 15px;
+                                        }
+                                    }
+                                }
+                            }
+                            &:nth-child(2){
+                                padding-top: 16px;
+                                .break__points{
+                                    margin-left: 358px;
+                                    .break__img{
+                                        svg{
+                                            top: -194px;
+                                            left: -33px;
+                                        }
+                                        &:hover ~ .break__text{
+                                            h5{
+                                                left: 100px;
+                                            }
+                                        }
+                                    }
+                                    .break__text{
+                                        max-width: 215px;
+                                        padding: 28px 10px;
+                                        &::before{
+                                            left: 29%;
+                                        }
+                                        h5{
+                                            font-size: 25px;
+                                        }
+                                        p{
+                                            font-size: 19px;
+                                        }
+                                    }
+                                }
+                            }
+                            &:nth-child(3){
+                                padding-top: 22px;
+                                .break__points{
+                                    margin-left: 534px;
+                                    .break__img{
+                                        svg{
+                                            top: -279px;
+                                            left: 8px;
+                                        }
+                                        &:hover ~ .break__text{
+                                            h5{
+                                                left: 110px;
+                                            }
+                                        }
+                                    }
+                                    .break__text{
+                                        padding: 20px 5px;
+                                        max-width: 237px;
+                                        h5{
+                                            font-size: 30px;
+                                            left: 93px;
+                                            top: -13px;
+                                        }
+                                        p{
+                                            font-size: 21px;
+                                        }
+                                        &::before{
+                                            left: 30%;
+                                        }
+                                    }
+                                }
+                            }
+                            &:nth-child(4){
+                                margin-top: -85px;
+                                .break__points{
+                                    margin-left: 122px;
+                                    margin-top: 20px;
+                                    .break__img{
+                                        svg{
+                                            left: -38px;
+                                            top: -302px;
+                                        }
+                                        &:hover ~ .break__text{
+                                            h5{
+                                                left: 156px;
+                                                top: -19px;
+                                            }
+                                        }
+                                    }
+                                    .break__text{
+                                        max-width: 340px;
+                                        padding: 14px 0;
+                                        h5{
+                                            font-size: 35px;
+                                            top: -23px;
+                                        }
+                                        p{
+                                            font-size: 25px;
+                                        }
+                                        &::before{
+                                            left: 36%;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        section.contact__us{
+            margin-top: -326px;
+        }
+    }
+}
+@media screen and (max-width: 910px){
+    .header-overflow.overflow-animated {
+        left: 38px;
+        max-height: 170px;
+        p{
+            font-size: 16px;
+        }
+        h1{
+            font-size: 100px;
+            padding-right: 47px;
+        }
+    }
+    header{
+        .container.banner-wrapper{
+            .top-menu.menu-screen{
+                padding: 22px;
+                .menu-wrapper{
+                    .menu-item.label{
+                        label{
+                            right: 40px;
+                            top: 71px;
+                        }
+                    }
+                }
+            }
+            .banner-item{
+                position: relative;
+                .banner-item-text{
+                    margin-top: 398px;
+                    margin-left: 46px;
+                    p{
+                        line-height: 27px;
+                    }
+                }
+                .banner-item-animation{
+                    transform: scale(0.7);
+                    max-width: 50%;
+                    svg{
+                        transform: scale(0) translate(476px,-330px);
+                        margin-right: 0;
+                        margin-left: 65px;
+                        animation: salesMoving 2s ease-in-out;
+                        animation-delay: 3.5s;
+                        animation-fill-mode: forwards;
+                    }
+                    @keyframes salesMoving {
+                        0%{
+                            transform: scale(0) translate(476px,-330px);
+                        }
+                        50%{
+                            transform: scale(0.5) translate(75px, -330px);
+                            margin-left: 35px;
+                        }
+                        100%{
+                            transform: scale(1) translate(58px, -8px);
+                            margin-right: 150px;
+                            margin-left: 0;
+                        }
+                    }
+                }
+                .carHeader-wrapper{
+                    transform: scale(0.7);
+                    left: -570px;
+                    animation: carHmoving 3.3s ease-out forwards 2s;
+                    .wheelsHeader-wrapper{
+                        #whellH{
+                            animation: whellRolingHeadFst 0.3s  2s;
+                            animation-timing-function: linear;
+                            animation-iteration-count: 3;
+                            // transform-origin: 50% 50%;
+                        }
+                        @keyframes whellRolingHeadFst {
+                            to{
+                                transform: rotate(360deg);
+                            }
+                        }   
+                        #whellH2{
+                            animation: whellRolingHead 0.3s 2s;
+                            animation-timing-function: linear;
+                            animation-iteration-count: 3;
+                            // transform-origin: 50% 50%;
+                        }
+                        @keyframes whellRolingHead {
+                            to{
+                                transform: rotate(360deg);
+                            }
+                        } 
+                    }
+                }
+                @keyframes carHmoving {
+                    0%{
+                        left:-570px;
+                    }
+                    20%, 50%, 80%{
+                        left: 330px;
+                    }
+                    100%{
+                        // width: 0;
+                        left: 1000px;
+                    }
+                }
+            }
+        }
+    }
+    main{
+        section.about__us{
+            .container.about{
+                h3{
+                    padding: 0 85px;
+                    &::after{
+                        left: 251px;
+                    }
+                }
+                .about__item{
+                    padding: 0 25px;
+                    flex-direction: column-reverse;
+                    justify-content: center;
+                    .about_item_description{
+                        max-width: 100%;
+                        padding: 60px 30px 30px 60px;
+                        text-align: justify;
+                    }
+                    .about_item_image{
+                        max-width: 100%;
+                    }
+                }
+            }
+        }
+        section.our__mission{
+            margin-top: 100px;
+            .container.mission{
+                padding: 0 35px;
+                margin-top: 20px;
+                .mission__image__item{
+                    svg{
+                        transform: scale(0.9);
+                    }
+                }
+                .mission__text__item{
+                    margin-left: 24px;
+                    margin-top: 82px;
+                    .text__box{
+                        padding: 22px;
+                        &::after{
+                            margin-left: -15px;
+                            margin-top: -203px;
+                            border: 4px solid rgba(4,154,175,.3);
+                        }
+                        p{
+                            line-height: 27px;
+                        }
+                    }
+                }
+            }
+        }
+        section.our__story{
+            .container.story{
+                padding-top: 65px;
+                .title-story{
+                    transform: translate(78px,151px) skewY(10deg);
+                    h3{
+                        font-size: 31px;
+                        margin-left: 29px;
+                    }
+                }
+                .story__letter{
+                    max-width: 780px;
+                    &::before{
+                        top: -656px;
+                        right: -569px;
+                        transform: skewY(10deg) scale(.22);
+                    }
+                    .letter__item{
+                        padding: 67px;
+                        p{
+                            font-size: 26px;
+                            line-height: 34px;
+                            margin: 8px 0;
+                        }
+                    }
+                }
+            }
+        }
+        section.why__shop{
+            .container.shop{
+                h3{
+                    padding: 0 30px;
+                }
+                ul{
+                    flex-direction: column;
+                    padding-bottom: 20px;
+                }
+            }
+        }
+        // section.why__us{
+        //     margin-top: 210px;
+        //     .container.why{
+        //         padding: 0 32px;
+        //         .why__us__item{
+        //             margin-top: 35px;
+        //             ul{
+        //                 justify-content: center;
+        //                 li{
+        //                     max-width: 300px;
+        //                     .card__item{
+        //                         padding: 40px;
+        //                         .icon__item{
+        //                             h5{
+        //                                 font-size: 17px;
+        //                             }
+        //                         }
+        //                     }
+        //                     &:nth-child(2){
+        //                         &::after{
+        //                             content: "";
+        //                             display: block;
+        //                             position: absolute;
+        //                             width: 4px;
+        //                             height: 4px;
+        //                             background: rgba(4,154,175,.3);
+        //                             top: 100%;
+        //                             border-radius: 50%;
+        //                             left: 0;
+        //                             transform: translateX(-50%);
+        //                         }
+        //                     }
+        //                     &:nth-child(3){
+        //                         &::before{
+        //                             content: "";
+        //                             display: block;
+        //                             position: absolute;
+        //                             width: 192px;
+        //                             height: 2px;
+        //                             background: rgba(4,154,175,.3);
+        //                             top: 100%;
+        //                             left: 50%;
+        //                             transform: translateX(-50%);
+        //                         }
+        //                     }
+        //                     &:nth-child(4){
+        //                         &::after{
+        //                             content: "";
+        //                             display: block;
+        //                             position: absolute;
+        //                             width: 4px;
+        //                             height: 4px;
+        //                             background: rgba(4,154,175,.3);
+        //                             top: 100%;
+        //                             border-radius: 50%;
+        //                             left: 0;
+        //                             transform: translateX(-50%);
+        //                         }
+        //                         &::before{
+        //                             content: "";
+        //                             display: block;
+        //                             position: absolute;
+        //                             width: 2px;
+        //                             height: 192px;
+        //                             background: rgba(4,154,175,.3);
+        //                             top: 50%;
+        //                             left: 0;
+        //                             transform: translateY(-50%);
+        //                         }
+        //                     }
+        //                 }
+        //             }
+        //         }
+        //     }
+        // }
+        section.davyway__roadmap{
+            .container.roadmap{
+                .roadmap__title{
+                    height: 235px;
+                    margin-bottom: 0;
+                    h3{
+                        font-size: 36px;
+                    }
+                    p{
+                        font-size: 14px;
+                    }
+                }
+            }
+            .roadmap__city{
+                margin-bottom: 0;
+            }
+            .roadmap__way{
+                .roadway__breakpoints{
+                    .road__img{
+                        margin-top: -37px;
+                        svg{
+                            g#slave_3{
+                                transform: translate(10px, -587px);
+                            }
+                        }
+                    }
+                    ul{
+                        li{
+                            .break__points{
+                                .break__img{
+                                    transform: scale(0.65);
+                                }
+                            }
+                            &:nth-child(1){
+                                .break__points{
+                                    .break__img{
+                                        svg{
+                                            left: -155px;
+                                        }
+                                    }
+                                    .break__text{
+                                        h5{
+                                            font-size: 21px;
+                                            left: 36%;
+                                        }
+                                        p{
+                                            font-size: 15px;
+                                        }
+                                    }
+                                }
+                            }
+                            &:nth-child(2){
+                                padding-top: 16px;
+                                .break__points{
+                                    margin-left: 358px;
+                                    .break__img{
+                                        svg{
+                                            top: -194px;
+                                            left: -23px;
+                                        }
+                                        &:hover ~ .break__text{
+                                            h5{
+                                                left: 100px;
+                                            }
+                                        }
+                                    }
+                                    .break__text{
+                                        max-width: 215px;
+                                        padding: 28px 10px;
+                                        &::before{
+                                            left: 29%;
+                                        }
+                                        h5{
+                                            font-size: 25px;
+                                        }
+                                        p{
+                                            font-size: 19px;
+                                        }
+                                    }
+                                }
+                            }
+                            &:nth-child(3){
+                                padding-top: 22px;
+                                .break__points{
+                                    margin-left: 534px;
+                                    .break__img{
+                                        svg{
+                                            top: -279px;
+                                            left: 17px;
+                                        }
+                                        &:hover ~ .break__text{
+                                            h5{
+                                                left: 110px;
+                                            }
+                                        }
+                                    }
+                                    .break__text{
+                                        padding: 20px 5px;
+                                        max-width: 237px;
+                                        h5{
+                                            font-size: 30px;
+                                            left: 93px;
+                                            top: -13px;
+                                        }
+                                        p{
+                                            font-size: 21px;
+                                        }
+                                        &::before{
+                                            left: 30%;
+                                        }
+                                    }
+                                }
+                            }
+                            &:nth-child(4){
+                                margin-top: -85px;
+                                .break__points{
+                                    margin-left: 122px;
+                                    margin-top: 20px;
+                                    .break__img{
+                                        svg{
+                                            left: -29px;
+                                            top: -302px;
+                                        }
+                                        &:hover ~ .break__text{
+                                            h5{
+                                                left: 156px;
+                                                top: -19px;
+                                            }
+                                        }
+                                    }
+                                    .break__text{
+                                        max-width: 340px;
+                                        padding: 14px 0;
+                                        h5{
+                                            font-size: 35px;
+                                            top: -23px;
+                                        }
+                                        p{
+                                            font-size: 25px;
+                                        }
+                                        &::before{
+                                            left: 36%;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        section.contact__us{
+            margin-top: -326px;
+        }
+    }
+}
+@media screen and (max-width: 880px){
+    .header-overflow.overflow-animated {
+        left: 38px;
+        max-height: 170px;
+        p{
+            font-size: 16px;
+        }
+        h1{
+            font-size: 100px;
+            padding-right: 47px;
+        }
+    }
+    header{
+        .container.banner-wrapper{
+            .top-menu.menu-screen{
+                padding: 22px;
+                .menu-wrapper{
+                    .menu-item.label{
+                        label{
+                            right: 40px;
+                            top: 71px;
+                        }
+                    }
+                }
+            }
+            .banner-item{
+                position: relative;
+                .banner-item-text{
+                    margin-top: 398px;
+                    margin-left: 46px;
+                    p{
+                        line-height: 27px;
+                    }
+                }
+                .banner-item-animation{
+                    transform: scale(0.7);
+                    max-width: 50%;
+                    svg{
+                        transform: scale(0) translate(476px,-330px);
+                        margin-right: 0;
+                        margin-left: 65px;
+                        animation: salesMoving 2s ease-in-out;
+                        animation-delay: 3.5s;
+                        animation-fill-mode: forwards;
+                    }
+                    @keyframes salesMoving {
+                        0%{
+                            transform: scale(0) translate(476px,-330px);
+                        }
+                        50%{
+                            transform: scale(0.5) translate(75px, -330px);
+                            margin-left: 35px;
+                        }
+                        100%{
+                            transform: scale(1) translate(58px, -8px);
+                            margin-right: 150px;
+                            margin-left: 0;
+                        }
+                    }
+                }
+                .carHeader-wrapper{
+                    transform: scale(0.7);
+                    left: -570px;
+                    animation: carHmoving 3.3s ease-out forwards 2s;
+                    .wheelsHeader-wrapper{
+                        #whellH{
+                            animation: whellRolingHeadFst 0.3s  2s;
+                            animation-timing-function: linear;
+                            animation-iteration-count: 3;
+                            // transform-origin: 50% 50%;
+                        }
+                        @keyframes whellRolingHeadFst {
+                            to{
+                                transform: rotate(360deg);
+                            }
+                        }   
+                        #whellH2{
+                            animation: whellRolingHead 0.3s 2s;
+                            animation-timing-function: linear;
+                            animation-iteration-count: 3;
+                            // transform-origin: 50% 50%;
+                        }
+                        @keyframes whellRolingHead {
+                            to{
+                                transform: rotate(360deg);
+                            }
+                        } 
+                    }
+                }
+                @keyframes carHmoving {
+                    0%{
+                        left:-570px;
+                    }
+                    20%, 50%, 80%{
+                        left: 330px;
+                    }
+                    100%{
+                        // width: 0;
+                        left: 1000px;
+                    }
+                }
+            }
+        }
+    }
+    main{
+        section.about__us{
+            .container.about{
+                h3{
+                    padding: 0 85px;
+                    &::after{
+                        left: 251px;
+                    }
+                }
+                .about__item{
+                    padding: 0 25px;
+                    flex-direction: column-reverse;
+                    justify-content: center;
+                    .about_item_description{
+                        max-width: 100%;
+                        padding: 60px 30px 30px 60px;
+                        text-align: justify;
+                    }
+                    .about_item_image{
+                        max-width: 100%;
+                    }
+                }
+            }
+        }
+        section.our__mission{
+            margin-top: 100px;
+            .container.mission{
+                padding: 0 35px;
+                margin-top: 20px;
+                .mission__image__item{
+                    svg{
+                        transform: scale(0.9);
+                    }
+                }
+                .mission__text__item{
+                    margin-left: 24px;
+                    margin-top: 82px;
+                    .text__box{
+                        padding: 22px;
+                        &::after{
+                            margin-left: -15px;
+                            margin-top: -203px;
+                            border: 4px solid rgba(4,154,175,.3);
+                        }
+                        p{
+                            line-height: 27px;
+                        }
+                    }
+                }
+            }
+        }
+        section.our__story{
+            .container.story{
+                padding-top: 65px;
+                .title-story{
+                    transform: translate(78px,151px) skewY(10deg);
+                    h3{
+                        font-size: 31px;
+                        margin-left: 29px;
+                    }
+                }
+                .story__letter{
+                    max-width: 780px;
+                    &::before{
+                        top: -656px;
+                        right: -569px;
+                        transform: skewY(10deg) scale(.22);
+                    }
+                    .letter__item{
+                        padding: 67px;
+                        p{
+                            font-size: 26px;
+                            line-height: 34px;
+                            margin: 8px 0;
+                        }
+                    }
+                }
+            }
+        }
+        section.why__shop{
+            .container.shop{
+                h3{
+                    padding: 0 30px;
+                }
+                ul{
+                    flex-direction: column;
+                    padding-bottom: 20px;
+                }
+            }
+        }
+        section.why__us{
+            margin-top: 210px;
+            .container.why{
+                padding: 0 32px;
+                .why__us__item{
+                    margin-top: 35px;
+                    ul{
+                        justify-content: center;
+                        li{
+                            max-width: 300px;
+                            .card__item{
+                                padding: 40px;
+                                .icon__item{
+                                    h5{
+                                        font-size: 17px;
+                                    }
+                                }
+                            }
+                            &:nth-child(2){
+                                &::after{
+                                    content: "";
+                                    display: block;
+                                    position: absolute;
+                                    width: 4px;
+                                    height: 4px;
+                                    background: rgba(4,154,175,.3);
+                                    top: 100%;
+                                    border-radius: 50%;
+                                    left: 0;
+                                    transform: translateX(-50%);
+                                }
+                            }
+                            &:nth-child(3){
+                                &::before{
+                                    content: "";
+                                    display: block;
+                                    position: absolute;
+                                    width: 192px;
+                                    height: 2px;
+                                    background: rgba(4,154,175,.3);
+                                    top: 100%;
+                                    left: 50%;
+                                    transform: translateX(-50%);
+                                }
+                            }
+                            &:nth-child(4){
+                                &::after{
+                                    content: "";
+                                    display: block;
+                                    position: absolute;
+                                    width: 4px;
+                                    height: 4px;
+                                    background: rgba(4,154,175,.3);
+                                    top: 100%;
+                                    border-radius: 50%;
+                                    left: 0;
+                                    transform: translateX(-50%);
+                                }
+                                &::before{
+                                    content: "";
+                                    display: block;
+                                    position: absolute;
+                                    width: 2px;
+                                    height: 192px;
+                                    background: rgba(4,154,175,.3);
+                                    top: 50%;
+                                    left: 0;
+                                    transform: translateY(-50%);
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        section.davyway__roadmap{
+            .container.roadmap{
+                .roadmap__title{
+                    height: 235px;
+                    margin-bottom: 0;
+                    h3{
+                        font-size: 36px;
+                    }
+                    p{
+                        font-size: 14px;
+                    }
+                }
+            }
+            .roadmap__city{
+                margin-bottom: 0;
+            }
+            .roadmap__way{
+                .roadway__breakpoints{
+                    .road__img{
+                        margin-top: -43px;
+                        svg{
+                            g#slave_3{
+                                transform: translate(10px, -623px);
+                            }
+                        }
+                    }
+                    ul{
+                        li{
+                            .break__points{
+                                .break__img{
+                                    transform: scale(0.65);
+                                }
+                            }
+                            &:nth-child(1){
+                                .break__points{
+                                    .break__img{
+                                        svg{
+                                            left: -121px;
+                                        }
+                                    }
+                                    .break__text{
+                                        h5{
+                                            font-size: 21px;
+                                            left: 36%;
+                                        }
+                                        p{
+                                            font-size: 15px;
+                                        }
+                                    }
+                                }
+                            }
+                            &:nth-child(2){
+                                padding-top: 0;
+                                .break__points{
+                                    margin-left: 313px;
+                                    .break__img{
+                                        svg{
+                                            top: -194px;
+                                            left: 3px;
+                                        }
+                                        &:hover ~ .break__text{
+                                            h5{
+                                                left: 100px;
+                                            }
+                                        }
+                                    }
+                                    .break__text{
+                                        max-width: 215px;
+                                        padding: 28px 10px;
+                                        &::before{
+                                            left: 29%;
+                                        }
+                                        h5{
+                                            font-size: 25px;
+                                        }
+                                        p{
+                                            font-size: 19px;
+                                        }
+                                    }
+                                }
+                            }
+                            &:nth-child(3){
+                                .break__points{
+                                    margin-left: 509px;
+                                    .break__img{
+                                        svg{
+                                            top: -279px;
+                                            left: 49px;
+                                        }
+                                        &:hover ~ .break__text{
+                                            h5{
+                                                left: 110px;
+                                            }
+                                        }
+                                    }
+                                    .break__text{
+                                        padding: 20px 5px;
+                                        max-width: 237px;
+                                        h5{
+                                            font-size: 30px;
+                                            left: 93px;
+                                            top: -13px;
+                                        }
+                                        p{
+                                            font-size: 21px;
+                                        }
+                                        &::before{
+                                            left: 30%;
+                                        }
+                                    }
+                                }
+                            }
+                            &:nth-child(4){
+                                .break__points{
+                                    margin-left: 95px;
+                                    margin-top: 20px;
+                                    .break__img{
+                                        svg{
+                                            left: -1px;
+                                            top: -302px;
+                                        }
+                                        &:hover ~ .break__text{
+                                            h5{
+                                                left: 156px;
+                                                top: -19px;
+                                            }
+                                        }
+                                    }
+                                    .break__text{
+                                        max-width: 340px;
+                                        padding: 14px 0;
+                                        h5{
+                                            font-size: 35px;
+                                            top: -23px;
+                                        }
+                                        p{
+                                            font-size: 25px;
+                                        }
+                                        &::before{
+                                            left: 36%;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        section.contact__us{
+            margin-top: -326px;
+        }
+    }
+}
+@media screen and (max-width: 822px){
+    .header-overflow.overflow-animated {
+        left: 38px;
+        max-height: 170px;
+        p{
+            font-size: 16px;
+        }
+        h1{
+            font-size: 100px;
+            padding-right: 47px;
+        }
+    }
+    header{
+        .container.banner-wrapper{
+            .top-menu.menu-screen{
+                padding: 22px;
+                .menu-wrapper{
+                    .menu-item.label{
+                        label{
+                            right: 40px;
+                            top: 71px;
+                        }
+                    }
+                }
+            }
+            .banner-item{
+                position: relative;
+                .banner-item-text{
+                    margin-top: 398px;
+                    margin-left: 46px;
+                    p{
+                        line-height: 27px;
+                    }
+                }
+                .banner-item-animation{
+                    transform: scale(0.7);
+                    max-width: 50%;
+                    svg{
+                        transform: scale(0) translate(476px,-330px);
+                        margin-right: 0;
+                        margin-left: 65px;
+                        animation: salesMoving 2s ease-in-out;
+                        animation-delay: 3.5s;
+                        animation-fill-mode: forwards;
+                    }
+                    @keyframes salesMoving {
+                        0%{
+                            transform: scale(0) translate(476px,-330px);
+                        }
+                        50%{
+                            transform: scale(0.5) translate(75px, -330px);
+                            margin-left: 35px;
+                        }
+                        100%{
+                            transform: scale(1) translate(58px, -8px);
+                            margin-right: 150px;
+                            margin-left: 0;
+                        }
+                    }
+                }
+                .carHeader-wrapper{
+                    transform: scale(0.7);
+                    left: -570px;
+                    animation: carHmoving 3.3s ease-out forwards 2s;
+                    .wheelsHeader-wrapper{
+                        #whellH{
+                            animation: whellRolingHeadFst 0.3s  2s;
+                            animation-timing-function: linear;
+                            animation-iteration-count: 3;
+                            // transform-origin: 50% 50%;
+                        }
+                        @keyframes whellRolingHeadFst {
+                            to{
+                                transform: rotate(360deg);
+                            }
+                        }   
+                        #whellH2{
+                            animation: whellRolingHead 0.3s 2s;
+                            animation-timing-function: linear;
+                            animation-iteration-count: 3;
+                            // transform-origin: 50% 50%;
+                        }
+                        @keyframes whellRolingHead {
+                            to{
+                                transform: rotate(360deg);
+                            }
+                        } 
+                    }
+                }
+                @keyframes carHmoving {
+                    0%{
+                        left:-570px;
+                    }
+                    20%, 50%, 80%{
+                        left: 330px;
+                    }
+                    100%{
+                        // width: 0;
+                        left: 1000px;
+                    }
+                }
+            }
+        }
+    }
+    main{
+        section.about__us{
+            .container.about{
+                h3{
+                    padding: 0 85px;
+                    &::after{
+                        left: 251px;
+                    }
+                }
+                .about__item{
+                    padding: 0 25px;
+                    flex-direction: column-reverse;
+                    justify-content: center;
+                    .about_item_description{
+                        max-width: 100%;
+                        padding: 60px 30px 30px 60px;
+                        text-align: justify;
+                    }
+                    .about_item_image{
+                        max-width: 100%;
+                    }
+                }
+            }
+        }
+        section.our__mission{
+            margin-top: 100px;
+            .container.mission{
+                padding: 0 35px;
+                margin-top: 70px;
+                .mission__text__item{
+                    margin-left: 24px;
+                    margin-top: 9px;
+                    .text__box{
+                        padding: 22px;
+                        &::after{
+                            margin-left: -15px;
+                            margin-top: -255px;
+                            border: 4px solid rgba(4,154,175,.3);
+                        }
+                        p{
+                            line-height: 27px;
+                        }
+                    }
+                }
+            }
+        }
+        section.our__story{
+            .container.story{
+                padding-top: 65px;
+                .title-story{
+                    transform: translate(44px,151px) skewY(10deg);
+                    h3{
+                        font-size: 31px;
+                        margin-left: 29px;
+                    }
+                }
+                .story__letter{
+                    max-width: 710px;
+                    &::before{
+                        top: -654px;
+                        right: -559px;
+                        transform: skewY(10deg) scale(.23);
+                    }
+                    .letter__item{
+                        p{
+                            font-size: 20px;
+                            line-height: 34px;
+                            margin: 8px 0;
+                        }
+                    }
+                }
+            }
+        }
+        section.why__shop{
+            .container.shop{
+                h3{
+                    padding: 0 30px;
+                }
+                ul{
+                    flex-direction: column;
+                    padding-bottom: 20px;
+                }
+            }
+        }
+        section.why__us{
+            margin-top: 210px;
+            .container.why{
+                padding: 0 32px;
+                .why__us__item{
+                    margin-top: 35px;
+                    ul{
+                        justify-content: center;
+                        li{
+                            max-width: 300px;
+                            .card__item{
+                                padding: 40px;
+                                .icon__item{
+                                    h5{
+                                        font-size: 17px;
+                                    }
+                                }
+                            }
+                            &:nth-child(2){
+                                &::after{
+                                    content: "";
+                                    display: block;
+                                    position: absolute;
+                                    width: 4px;
+                                    height: 4px;
+                                    background: rgba(4,154,175,.3);
+                                    top: 100%;
+                                    border-radius: 50%;
+                                    left: 0;
+                                    transform: translateX(-50%);
+                                }
+                            }
+                            &:nth-child(3){
+                                &::before{
+                                    content: "";
+                                    display: block;
+                                    position: absolute;
+                                    width: 192px;
+                                    height: 2px;
+                                    background: rgba(4,154,175,.3);
+                                    top: 100%;
+                                    left: 50%;
+                                    transform: translateX(-50%);
+                                }
+                            }
+                            &:nth-child(4){
+                                &::after{
+                                    content: "";
+                                    display: block;
+                                    position: absolute;
+                                    width: 4px;
+                                    height: 4px;
+                                    background: rgba(4,154,175,.3);
+                                    top: 100%;
+                                    border-radius: 50%;
+                                    left: 0;
+                                    transform: translateX(-50%);
+                                }
+                                &::before{
+                                    content: "";
+                                    display: block;
+                                    position: absolute;
+                                    width: 2px;
+                                    height: 192px;
+                                    background: rgba(4,154,175,.3);
+                                    top: 50%;
+                                    left: 0;
+                                    transform: translateY(-50%);
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        section.davyway__roadmap{
+            .container.roadmap{
+                .roadmap__title{
+                    height: 235px;
+                    margin-bottom: 0;
+                    h3{
+                        font-size: 36px;
+                    }
+                    p{
+                        font-size: 14px;
+                    }
+                }
+            }
+            .roadmap__city{
+                margin-bottom: 0;
+            }
+            .roadmap__way{
+                .roadway__breakpoints{
+                    .road__img{
+                        margin-top: -55px;
+                        svg{
+                            g#slave_3{
+                                transform: translate(10px, -657px);
+                            }
+                        }
+                    }
+                    ul{
+                        li{
+                            .break__points{
+                                .break__img{
+                                    transform: scale(0.65);
+                                }
+                            }
+                            &:nth-child(1){
+                                .break__points{
+                                    .break__img{
+                                        svg{
+                                            left: -121px;
+                                        }
+                                    }
+                                    .break__text{
+                                        h5{
+                                            font-size: 21px;
+                                            left: 36%;
+                                        }
+                                        p{
+                                            font-size: 15px;
+                                        }
+                                    }
+                                }
+                            }
+                            &:nth-child(2){
+                                padding-top: 0;
+                                .break__points{
+                                    margin-left: 313px;
+                                    .break__img{
+                                        svg{
+                                            top: -194px;
+                                            left: 3px;
+                                        }
+                                        &:hover ~ .break__text{
+                                            h5{
+                                                left: 100px;
+                                            }
+                                        }
+                                    }
+                                    .break__text{
+                                        max-width: 215px;
+                                        padding: 28px 10px;
+                                        &::before{
+                                            left: 29%;
+                                        }
+                                        h5{
+                                            font-size: 25px;
+                                        }
+                                        p{
+                                            font-size: 19px;
+                                        }
+                                    }
+                                }
+                            }
+                            &:nth-child(3){
+                                .break__points{
+                                    margin-left: 509px;
+                                    .break__img{
+                                        svg{
+                                            top: -279px;
+                                            left: 49px;
+                                        }
+                                        &:hover ~ .break__text{
+                                            h5{
+                                                left: 110px;
+                                            }
+                                        }
+                                    }
+                                    .break__text{
+                                        padding: 20px 5px;
+                                        max-width: 237px;
+                                        h5{
+                                            font-size: 30px;
+                                            left: 93px;
+                                            top: -13px;
+                                        }
+                                        p{
+                                            font-size: 21px;
+                                        }
+                                        &::before{
+                                            left: 30%;
+                                        }
+                                    }
+                                }
+                            }
+                            &:nth-child(4){
+                                .break__points{
+                                    margin-left: 95px;
+                                    margin-top: 20px;
+                                    .break__img{
+                                        svg{
+                                            left: -1px;
+                                            top: -302px;
+                                        }
+                                        &:hover ~ .break__text{
+                                            h5{
+                                                left: 156px;
+                                                top: -19px;
+                                            }
+                                        }
+                                    }
+                                    .break__text{
+                                        max-width: 340px;
+                                        padding: 14px 0;
+                                        h5{
+                                            font-size: 35px;
+                                            top: -23px;
+                                        }
+                                        p{
+                                            font-size: 25px;
+                                        }
+                                        &::before{
+                                            left: 36%;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        section.contact__us{
+            margin-top: -326px;
+        }
+    }
+}
+@media screen and (max-width: 768px){
+    .header-overflow.overflow-animated {
+        left: 0;
+        text-align: center;
+        padding-top: 175px;
+        width: 100%;
+        p{
+           padding-right: 0;
+        }
+        h1{
+            font-size: 73px;
+            padding-right: 0
+        }
+    }
+    header{
+        .container.banner-wrapper{
+            .top-menu{
+                padding: 24px 23px;
+                .logo-wrapper{
+                    transform: scale(0.8);
+                }
+                .menu-wrapper{
+                    .menu-item.label{
+                        .top__menu{
+                            .menu__item a{
+                                font-size: 28px;
+                            }
+                        }
+                        label{
+                            top: 63px;
+                            left: 85%;
+                        }
+                    }
+                }
+            }
+            .top-menu.menu-screen{
+                background: rgba(191,191,191,0.5);
+                padding: 5px 23px;
+                .menu-wrapper{
+                    .menu-item.label{
+                        label{
+                            top: 52px;
+                        }
+                    }
+                }
+            }
+            .banner-item{
+                position: relative;
+                flex-direction: column;
+                .banner-item-text{
+                    margin-top: 241px;
+                    margin-left: 16px;
+                    text-align: center;
+                    p{
+                        line-height: 27px;
+                    }
+                }
+                .banner-item-animation{
+                    transform: scale(1);
+                    max-width: 100%;
+                    margin-top: 42px;
+                    margin-left: 67px;
+                    svg{
+                        transform: scale(0) translate(476px,-390px);
+                        margin-right: 0;
+                        margin-left: 65px;
+                        animation: salesMoving 2s ease-in-out;
+                        animation-delay: 3.5s;
+                        animation-fill-mode: forwards;
+                    }
+                    @keyframes salesMoving {
+                        0%{
+                            transform: scale(0) translate(476px,-390px);
+                        }
+                        50%{
+                            transform: scale(0.5) translate(75px, -330px);
+                            margin-left: 35px;
+                        }
+                        100%{
+                            transform: scale(1) translate(58px, -8px);
+                            margin-right: 150px;
+                            margin-left: 0;
+                        }
+                    }
+                }
+                .carHeader-wrapper{
+                    transform: scale(1);
+                    margin-top: 60px;
+                    left: -570px;
+                    animation: carHmoving 3.3s ease-out forwards 2s;
+                    .wheelsHeader-wrapper{
+                        #whellH{
+                            animation: whellRolingHeadFst 0.3s  2s;
+                            animation-timing-function: linear;
+                            animation-iteration-count: 3;
+                            // transform-origin: 50% 50%;
+                        }
+                        @keyframes whellRolingHeadFst {
+                            to{
+                                transform: rotate(360deg);
+                            }
+                        }   
+                        #whellH2{
+                            animation: whellRolingHead 0.3s 2s;
+                            animation-timing-function: linear;
+                            animation-iteration-count: 3;
+                            // transform-origin: 50% 50%;
+                        }
+                        @keyframes whellRolingHead {
+                            to{
+                                transform: rotate(360deg);
+                            }
+                        } 
+                    }
+                }
+                @keyframes carHmoving {
+                    0%{
+                        left:-570px;
+                    }
+                    20%, 50%, 80%{
+                        left: 250px;
+                    }
+                    100%{
+                        // width: 0;
+                        left: 1050px;
+                    }
+                }
+            }
+        }
+        .header-bottom-line{
+            padding: 274px 23px 10px 20px;
+        }
+    }
+    main{
+        // checking
+        // width: 106%;
+        // ---------
+        section.about__us{
+            .container.about{
+                h3{
+                    padding: 0 85px;
+                    &::after{
+                        left: 251px;
+                    }
+                }
+                .about__item{
+                    padding: 0 25px;
+                    flex-direction: column-reverse;
+                    justify-content: center;
+                    .about_item_description{
+                        max-width: 100%;
+                        padding: 47px 10px 30px 24px;
+                        text-align: justify;
+                        p{
+                            margin-bottom: 22px;
+                        }
+                    }
+                    .about_item_image{
+                        max-width: 100%;
+                    }
+                }
+            }
+        }
+        section.our__mission{
+            margin-top: 100px;
+            .container.mission{
+                margin-top: 87px;
+                flex-direction: column;
+                .mission__image__item{
+                    max-width: 100%;
+                }
+                .mission__text__item{
+                    margin-left: 0;
+                    max-width: 100%;
+                    margin-top: 22px;
+                    .text__box{
+                        padding: 22px;
+                        &::after{
+                            margin-left: -15px;
+                            margin-top: -174px;
+                            border: 5px solid rgba(4,154,175,.3);
+                        }
+                        p{
+                            line-height: 27px;
+                        }
+                    }
+                }
+            }
+        }
+        section.our__story{
+            .container.story{
+                padding-top: 65px;
+                .title-story{
+                    transform: translate(25px,146px) skewY(15deg);
+                    max-width: 370px;
+                    h3{
+                        transform: skewY(-15deg);
+                        font-size: 25px;
+                        margin-left: 12px;
+                    }
+                }
+                .story__letter{
+                    // max-width: 710px;
+                    max-width: 100%;
+                    &::before{
+                        top: -662px;
+                        transform: skewY(10deg) scale(.2);
+                        left: -62px;
+                    }
+                    .letter__item{
+                        padding: 71px 72px;
+                        p{
+                            font-size: 24px;
+                            line-height: 31px;
+                            margin: 20px 0;
+                        }
+                    }
+                    &::after{
+                        top: 92%;
+                    }
+                }
+            }
+        }
+        section.why__shop{
+            .container.shop{
+                h3{
+                    padding: 0 30px;
+                    text-align: center;
+                }
+                ul{
+                    flex-direction: column;
+                    padding-bottom: 20px;
+                }
+            }
+        }
+        section.why__us{
+            margin-top: 210px;
+            .container.why{
+                padding: 0 32px;
+                .why__us__item{
+                    margin-top: 35px;
+                    ul{
+                        justify-content: center;
+                        li{
+                            max-width: 300px;
+                            flex: 100%;
+                            margin: 12px;
+                            .card__item{
+                                padding: 39px 0;
+                                .icon__item{
+                                    h5{
+                                        font-size: 17px;
+                                    }
+                                }
+                            }
+                            &::after{
+                                content: '';
+                                display: none;
+                            }
+                            &:nth-child(1){
+                                &::after{
+                                    content: "";
+                                    display: none;
+                                }
+                            }
+                            &:nth-child(2){
+                                &::after{
+                                    content: "";
+                                    display: none;
+                                }
+                            }
+                            &:nth-child(3){
+                                &::after{
+                                    content: "";
+                                    display: none;
+                                }
+                            }
+                            &::before{
+                                    content: "";
+                                    display: block;
+                                    position: absolute;
+                                    width: 192px;
+                                    height: 2px;
+                                    background: rgba(4,154,175,.3);
+                                    top: 100%;
+                                    left: 50%;
+                                    transform: translateX(-50%);
+                            }
+                            &:nth-child(4){
+                                &::before{
+                                    content: "";
+                                    display: block;
+                                    position: absolute;
+                                    width: 192px;
+                                    height: 2px;
+                                    background: rgba(4,154,175,.3);
+                                    top: 100%;
+                                    left: 50%;
+                                    transform: translateX(-50%);
+                                }
+                            }
+                            &:nth-child(5){
+                                &::before{
+                                    content: '';
+                                    display: none;
+                                }
+                                &::after{
+                                    content: '';
+                                    display: none;
+                                }
+                            }
+                        }
+                    }
+                }
+                .section__why__title{
+                    padding: 0;
+                }
+            }
+        }
+        section.davyway__roadmap{
+            .container.roadmap{
+                .roadmap__title{
+                    height: 235px;
+                    margin-bottom: 0;
+                    padding: 0 10px;
+                    h3{
+                        font-size: 24px;
+                    }
+                    p{
+                        font-size: 14px;
+                    }
+                }
+            }
+            .roadmap__city{
+                margin-bottom: 0;
+            }
+            .roadmap__way{
+                max-width: 100%;
+                margin-top: -68px;
+                .roadway__breakpoints{
+                    .road__img{
+                        margin-top: -55px;
+                        svg{
+                            g#slave_3{
+                                transform: translate(10px,-708px) scale(1.1);
+                            }
+                        }
+                    }
+                    ul{
+                        li{
+                            .break__points{
+                                .break__img{
+                                    transform: scale(0.8);
+                                    svg{
+                                        transform: scale(0.8);
+                                    }
+                                }
+                            }
+                            &:nth-child(1){
+                                padding-top: 56px;
+                                margin-left: 82px;
+                                .break__points{
+                                    .break__img{
+                                        svg{
+                                            left: -64px;
+                                            top: -154px;
+                                        }
+                                        &:hover ~ .break__text{
+                                            h5{
+                                                left: 40px;
+                                                font-size: 14px;
+                                            }
+                                        }
+                                    }
+                                    .break__text{
+                                        max-width: 94px;
+                                        h5{
+                                            font-size: 18px;
+                                        }
+                                        p{
+                                            font-size: 13px;
+                                        }
+                                        &:before{
+                                            left: 4px;
+                                        }
+                                    }
+                                }
+                            }
+                            &:nth-child(2){
+                                margin-left: 30%;
+                                margin-top: 3px;
+                                padding: 0;
+                                .break__points{
+                                    margin-left: 35px;
+                                    .break__img{
+                                        svg{
+                                            top: -187px;
+                                            left: -35px;
+                                        }
+                                        &:hover ~ .break__text{
+                                            h5{
+                                                left: 73px;
+                                                font-size: 14px;
+                                            }
+                                        }
+                                    }
+                                    .break__text{
+                                        max-width: 161px;
+                                        padding: 10px;
+                                        h5{
+                                            font-size: 22px;
+                                            top: -12px;
+                                            left: 69px;
+                                        }
+                                        p{
+                                            font-size: 14px;
+                                        }
+                                        &::before{
+                                            left: 37px;
+                                        }
+                                    }
+                                }
+                            }
+                            &:nth-child(3){
+                                padding: 0;
+                                margin-top: 68px;
+                                margin-left: 43%;
+                                .break__points{
+                                    margin-left: 96px;
+                                    .break__img{
+                                        svg{
+                                            top: -219px;
+                                            left: 40px;
+                                            transform: scale(0.75);
+                                        }
+                                        &:hover ~ .break__text h5{
+                                            left: 137px;
+                                        }
+                                    }
+                                    .break__text{
+                                        padding: 20px 37px;
+                                        h5{
+                                            font-size: 25px;
+                                            left: 132px;
+                                            top: -6px;
+                                        }
+                                        p{
+                                            font-size: 15px;
+                                        }
+                                        &::before{
+                                            left: 104px;
+                                        }
+                                    }
+                                }
+                            }
+                            &:nth-child(4){
+                                padding: 0;
+                                margin-top: 91px;
+                                margin-left: 30%;
+                                .break__points{
+                                    margin-left: -1%;
+                                    .break__img{
+                                        svg{
+                                            left: 54px;
+                                            top: -277px;
+                                        }
+                                        &:hover ~ .break__text{
+                                            h5{
+                                                left: 159px;
+                                            }
+                                        }
+                                    }
+                                    .break__text{
+                                        padding: 10px;
+                                        h5{
+                                            font-size: 32px;
+                                            left: 152px;
+                                        }
+                                        p{
+                                            font-size: 21px;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        section.contact__us{
+            margin-top: -250px;
+            .container.contact{
+                .contact__phone{
+                    ul{
+                        flex-direction: column;
+                        text-align: center;
+                        li{
+                            &::before{
+                                left: 16%;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    footer{
+        width: 106%;
+    }
+}
+@media screen and (max-width: 425px){
+    .header-overflow.overflow-animated {
+        left: 0;
+        text-align: center;
+        padding-top: 162px;
+        width: 100%;
+        p{
+           padding-right: 0;
+        }
+        h1{
+            font-size: 73px;
+            padding-right: 0
+        }
+    }
+    header{
+        .container.banner-wrapper{
+            .top-menu{
+                padding: 24px 23px;
+                .logo-wrapper{
+                    transform: scale(0.8);
+                }
+                .menu-wrapper{
+                    .menu-item.label{
+                        .top__menu{
+                            .menu__item a{
+                                font-size: 28px;
+                            }
+                        }
+                        label{
+                            top: 63px;
+                            left: 78%;
+                        }
+                    }
+                }
+            }
+            .top-menu.menu-screen{
+                background: rgba(191,191,191,0.5);
+                padding: 5px 23px;
+                .menu-wrapper{
+                    .menu-item.label{
+                        label{
+                            top: 52px;
+                        }
+                    }
+                }
+            }
+            .banner-item{
+                position: relative;
+                flex-direction: column;
+                .banner-item-text{
+                    margin-top: 241px;
+                    margin-left: 16px;
+                    text-align: center;
+                    p{
+                        line-height: 27px;
+                    }
+                }
+                .banner-item-animation{
+                    transform: scale(0.8);
+                    max-width: 100%;
+                    margin-top: 0;
+                    margin-left: -40px;
+                    svg{
+                        transform: scale(0) translate(476px,-390px);
+                        margin-right: 0;
+                        margin-left: 65px;
+                        animation: salesMoving 2s ease-in-out;
+                        animation-delay: 3.5s;
+                        animation-fill-mode: forwards;
+                    }
+                    @keyframes salesMoving {
+                        0%{
+                            transform: scale(0) translate(476px,-390px);
+                        }
+                        50%{
+                            transform: scale(0.5) translate(75px, -330px);
+                            margin-left: 35px;
+                        }
+                        100%{
+                            transform: scale(1) translate(58px, -8px);
+                            margin-right: 150px;
+                            margin-left: 0;
+                        }
+                    }
+                }
+                .carHeader-wrapper{
+                    transform: scale(0.7);
+                    margin-top: 60px;
+                    left: -570px;
+                    animation: carHmoving 3.3s ease-out forwards 2s;
+                    .wheelsHeader-wrapper{
+                        #whellH{
+                            animation: whellRolingHeadFst 0.3s  2s;
+                            animation-timing-function: linear;
+                            animation-iteration-count: 3;
+                            // transform-origin: 50% 50%;
+                        }
+                        @keyframes whellRolingHeadFst {
+                            to{
+                                transform: rotate(360deg);
+                            }
+                        }   
+                        #whellH2{
+                            animation: whellRolingHead 0.3s 2s;
+                            animation-timing-function: linear;
+                            animation-iteration-count: 3;
+                            // transform-origin: 50% 50%;
+                        }
+                        @keyframes whellRolingHead {
+                            to{
+                                transform: rotate(360deg);
+                            }
+                        } 
+                    }
+                }
+                @keyframes carHmoving {
+                    0%{
+                        left:-570px;
+                    }
+                    20%, 50%, 80%{
+                        left: -36px;
+                    }
+                    100%{
+                        // width: 0;
+                        left: 250px;
+                    }
+                }
+            }
+        }
+        .header-bottom-line{
+            padding: 274px 23px 10px 20px;
+        }
+    }
+    main{
+        // checking
+        // width: 106%;
+        // ---------
+        section.about__us{
+            .container.about{
+                h3{
+                    padding: 0 85px;
+                    &::after{
+                        left: 251px;
+                    }
+                }
+                .about__item{
+                    padding: 0 25px;
+                    flex-direction: column-reverse;
+                    justify-content: center;
+                    .about_item_description{
+                        max-width: 100%;
+                        padding: 47px 10px 30px 24px;
+                        text-align: justify;
+                        p{
+                            margin-bottom: 22px;
+                        }
+                    }
+                    .about_item_image{
+                        max-width: 100%;
+                    }
+                }
+            }
+        }
+        section.our__mission{
+            margin-top: 100px;
+            .container.mission{
+                margin-top: 87px;
+                flex-direction: column;
+                .mission__image__item{
+                    max-width: 100%;
+                }
+                .mission__text__item{
+                    margin-left: 0;
+                    max-width: 100%;
+                    margin-top: 9px;
+                    .text__box{
+                        padding: 22px;
+                        &::after{
+                            margin-left: -15px;
+                            margin-top: -255px;
+                            border: 4px solid rgba(4,154,175,.3);
+                        }
+                        p{
+                            line-height: 27px;
+                        }
+                    }
+                }
+            }
+        }
+        section.our__story{
+            .container.story{
+                padding-top: 65px;
+                .title-story{
+                    transform: translate(25px,146px) skewY(15deg);
+                    max-width: 250px;
+                    h3{
+                        transform: skewY(-15deg);
+                        font-size: 25px;
+                        margin-left: 12px;
+                    }
+                }
+                .story__letter{
+                    // max-width: 710px;
+                    max-width: 370px;
+                    &::before{
+                        top: -715px;
+                        transform: skewY(10deg) scale(.14);
+                        left: 0;
+                        right: -109px;
+                    }
+                    .letter__item{
+                        padding: 71px 25px;
+                        p{
+                            font-size: 20px;
+                            line-height: 31px;
+                            margin: 1px 0;
+                        }
+                    }
+                    &::after{
+                        top: 92%;
+                    }
+                }
+            }
+        }
+        section.why__shop{
+            .container.shop{
+                h3{
+                    padding: 0 30px;
+                    text-align: center;
+                }
+                ul{
+                    flex-direction: column;
+                    padding-bottom: 20px;
+                }
+            }
+        }
+        section.why__us{
+            margin-top: 210px;
+            .container.why{
+                padding: 0 32px;
+                .why__us__item{
+                    margin-top: 35px;
+                    ul{
+                        justify-content: center;
+                        li{
+                            max-width: 300px;
+                            flex: 100%;
+                            .card__item{
+                                padding: 39px 0;
+                                .icon__item{
+                                    h5{
+                                        font-size: 17px;
+                                    }
+                                }
+                            }
+                            &::after{
+                                content: '';
+                                display: none;
+                            }
+                            &:nth-child(1){
+                                &::after{
+                                    content: "";
+                                    display: none;
+                                }
+                            }
+                            &:nth-child(2){
+                                &::after{
+                                    content: "";
+                                    display: none;
+                                }
+                            }
+                            &:nth-child(3){
+                                &::after{
+                                    content: "";
+                                    display: none;
+                                }
+                            }
+                            &::before{
+                                    content: "";
+                                    display: block;
+                                    position: absolute;
+                                    width: 192px;
+                                    height: 2px;
+                                    background: rgba(4,154,175,.3);
+                                    top: 100%;
+                                    left: 50%;
+                                    transform: translateX(-50%);
+                            }
+                            &:nth-child(4){
+                                &::before{
+                                    content: "";
+                                    display: block;
+                                    position: absolute;
+                                    width: 192px;
+                                    height: 2px;
+                                    background: rgba(4,154,175,.3);
+                                    top: 100%;
+                                    left: 50%;
+                                    transform: translateX(-50%);
+                                }
+                            }
+                            &:nth-child(5){
+                                &::before{
+                                    content: '';
+                                    display: none;
+                                }
+                                &::after{
+                                    content: '';
+                                    display: none;
+                                }
+                            }
+                        }
+                    }
+                }
+                .section__why__title{
+                    padding: 0;
+                }
+            }
+        }
+        section.davyway__roadmap{
+            .container.roadmap{
+                .roadmap__title{
+                    height: 235px;
+                    margin-bottom: 0;
+                    padding: 0 10px;
+                    h3{
+                        font-size: 24px;
+                    }
+                    p{
+                        font-size: 14px;
+                    }
+                }
+            }
+            .roadmap__city{
+                margin-bottom: 0;
+            }
+            .roadmap__way{
+                max-width: 100%;
+                margin-top: -68px;
+                .roadway__breakpoints{
+                    .road__img{
+                        margin-top: -140px;
+                        svg{
+                            g#slave_3{
+                                transform: translate(10px, -1325px);
+                            }
+                        }
+                    }
+                    ul{
+                        li{
+                            .break__points{
+                                .break__img{
+                                    transform: scale(0.5);
+                                    svg{
+                                        transform: scale(0.7);
+                                    }
+                                }
+                            }
+                            &:nth-child(1){
+                                padding-top: 33px;
+                                margin-left: 9px;
+                                .break__points{
+                                    .break__img{
+                                        svg{
+                                            left: -134px;
+                                            top: -154px;
+                                        }
+                                        &:hover ~ .break__text{
+                                            h5{
+                                                left: 40px;
+                                                font-size: 14px;
+                                            }
+                                        }
+                                    }
+                                    .break__text{
+                                        max-width: 94px;
+                                        h5{
+                                            font-size: 18px;
+                                        }
+                                        p{
+                                            font-size: 13px;
+                                        }
+                                        &:before{
+                                            left: 4px;
+                                        }
+                                    }
+                                }
+                            }
+                            &:nth-child(2){
+                                margin-left: 71px;
+                                margin-top: -36px;
+                                padding: 0;
+                                .break__points{
+                                    margin-left: 35px;
+                                    .break__img{
+                                        svg{
+                                            top: -170px;
+                                            left: -67px;
+                                        }
+                                        &:hover ~ .break__text{
+                                            h5{
+                                                left: 73px;
+                                                font-size: 14px;
+                                            }
+                                        }
+                                    }
+                                    .break__text{
+                                        max-width: 161px;
+                                        padding: 10px;
+                                        h5{
+                                            font-size: 22px;
+                                            top: -12px;
+                                            left: 69px;
+                                        }
+                                        p{
+                                            font-size: 14px;
+                                        }
+                                        &::before{
+                                            left: 37px;
+                                        }
+                                    }
+                                }
+                            }
+                            &:nth-child(3){
+                                padding: 0;
+                                margin-top: 0;
+                                margin-left: 77px;
+                                .break__points{
+                                    margin-left: 96px;
+                                    .break__img{
+                                        svg{
+                                            top: -200px;
+                                            left: 78px;
+                                            transform: scale(0.65);
+                                        }
+                                    }
+                                    .break__text{
+                                        padding: 20px 37px;
+                                        h5{
+                                            font-size: 25px;
+                                            left: 132px;
+                                            top: -6px;
+                                        }
+                                        p{
+                                            font-size: 15px;
+                                        }
+                                    }
+                                }
+                            }
+                            &:nth-child(4){
+                                padding: 0;
+                                margin-top: 75px;
+                                margin-left: 46px;
+                                .break__points{
+                                    margin-left: -1%;
+                                    .break__img{
+                                        svg{
+                                            left: 66px;
+                                            top: -287px;
+                                        }
+                                        &:hover ~ .break__text{
+                                            h5{
+                                                left: 159px;
+                                            }
+                                        }
+                                    }
+                                    .break__text{
+                                        padding: 10px;
+                                        h5{
+                                            font-size: 27px;
+                                            left: 152px;
+                                        }
+                                        p{
+                                            font-size: 16px;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        section.contact__us{
+            margin-top: -442px;
+            .container.contact{
+                .contact__phone{
+                    ul{
+                        flex-direction: column;
+                        text-align: center;
+                        li{
+                            &::before{
+                                left: 16%;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    footer{
+        width: 106%;
+    }
+}

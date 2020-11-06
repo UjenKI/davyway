@@ -56,4 +56,10 @@ body{
     
     
 }
+header{
+    display: none;
+}
+header, main, footer, .header-overflow{
+    opacity: 0;
+}
 

@@ -7,7 +7,7 @@
     top: 0;
     left: 0;
     overflow: hidden;
-    transition: 0.1s ease-out;
+    transition: 0.3s ease-out;
     z-index: 1000;
     svg#city__bgk{
         width: 100%;
@@ -564,7 +564,7 @@
                             animation-fill-mode: forwards;
                             animation-delay: 6s;
                             rect{
-                                fill: rgba(255, 255, 255, 0.1);
+                                fill: rgba(255, 255, 255, 0);
                                 animation: rectColor 0.6s ease-in-out;
                                 animation-fill-mode: forwards;
                                 animation-delay: 6s;
@@ -572,6 +572,17 @@
                             @keyframes rectColor{
                                 to{
                                     fill: rgba(255,255,255,1);
+                                }
+                            }
+                            rect.dead-circle{
+                                animation: toOpacity 0.3s ease-in-out;
+                                animation-fill-mode: forwards;
+                                transition: 0.3s ease-in-out;
+                                animation-delay: 1s;
+                            }
+                            @keyframes toOpacity {
+                                to{
+                                    fill: rgba(255, 255, 255, 0);
                                 }
                             }
                         }
@@ -603,6 +614,18 @@
                             animation-fill-mode: forwards;
                             // animation-delay: 2s;
                             transition: 0.3s ease-in-out;
+                            text#Choose_the_right_way_with{
+                                transition: 0.3s ease-in-out;
+                                animation: textStyling 1s ease-in-out;
+                                animation-fill-mode: forwards;
+                                animation-delay: 6.66s;
+                            }
+                            @keyframes textStyling {
+                                to{
+                                    font-size: 18px;
+                                    fill: #4D4D4D;
+                                }
+                            }
                         }
                         @keyframes forZoom {
                             from{
@@ -610,8 +633,8 @@
                                 width: 313px;
                             }
                             to{
-                                transform: translate(438px,-2772px) scale(1) rotate(0deg);
-                                width: 463px;
+                                transform: translate(489px,-2761px) scale(0.9) rotate(0deg);
+                                width: 343px;
                             }
                         }
                         // animation: textScaleCenter 2s ease-in-out;
@@ -640,10 +663,17 @@
             }
         }
 }
+.preloader.header-position{
+    width: 63%;
+    height: 66vh;
+    transition: 1s ease-in-out;
+    position: absolute;
+    z-index: 1;
+}   
+// .preloader.preloader-transform{
+//     transform: scale(8.0) translate(28px, 108px);
+//     transition: 0.6s ease-in-out;
     
-.preloader.preloader-transform{
-    transform: scale(8.0) translate(28px, 108px);
-    transition: 0.6s ease-in-out;
-}
+// }
 
 

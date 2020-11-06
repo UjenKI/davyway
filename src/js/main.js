@@ -24,10 +24,6 @@ const cardTextBox = document.querySelectorAll('.card__text__box');
 const roadMap = document.querySelector('.davyway__roadmap');
 const topMenuFixed = document.querySelector('.top-menu');
 
-header.style.display = 'none';
-main.style.display = 'none';
-footer.style.display = 'none';
-
 setTimeout(() =>{
     boxes.forEach(item => {
         item.style.opacity = 1;
@@ -41,30 +37,30 @@ setTimeout(() =>{
         el.style.opacity = 1;
         el.style.transition = '0.2s ease-in';
     })
-}, 1500);
+}, 500);
 
 setTimeout(() =>{
     figures.forEach(fig => {
         fig.style.opacity = 1;
         fig.style.transition = '0.3s ease-out';
     })
-}, 2500);
+}, 1000);
 
 setTimeout(() => {
     figures[2].classList.add('figureThreeMoving');
     figures[1].classList.add('figureTwoMoving');
     figures[0].classList.add('figureOneMoving');
-}, 3500);
+}, 2000);
 
 setTimeout(() => {
     car.classList.add('car-arrived');
-}, 4000);
+}, 3000);
 
 setTimeout(() => {
     whells.forEach(whell => {
         whell.classList.add('whell-stopped');
     })
-}, 4500);
+}, 3200);
 
 setTimeout(() => {
     boxTransported.forEach(boxTr => {
@@ -76,11 +72,11 @@ setTimeout(() => {
     elipses[1].style.display = 'none';
     elipses[0].style.display = 'none';
 
-}, 7000);
+}, 4000);
 
 setTimeout(() => {
     boxMerged.classList.add('box-merged');
-}, 8000);
+}, 5000);
 
 setTimeout(() => {
     whells.forEach(whell => {
@@ -91,17 +87,41 @@ setTimeout(() => {
     car.classList.add('car-center-moved');
     carBody.classList.add('carBody-animated');
     cityAnimate.classList.add('city-animate');
-}, 9000);
+}, 5500);
 
 setTimeout(() => {
     car.classList.add('zoom-in');
-}, 12000);
+}, 8000);
 
 setTimeout(() => {
     const newTextAnimation = document.querySelector('.svgText');
     newTextAnimation.classList.add('newAnimation');
-}, 18000);
+}, 14000);
 
+setTimeout(() => {
+    const billboardSVG = document.querySelector('.billBoard');
+    const forZomming = document.querySelector('.forZomming');
+    const cityBgk = document.querySelector('#city__bgk');
+    console.log(billboardSVG, forZomming, cityBgk);
+    billboardSVG.style.opacity = 0;
+    forZomming.style.opacity = 0;
+    cityBgk.style.opacity = 0;
+    headerOverfow.style.opacity = 1;
+    header.style.opacity = 1;
+    main.style.opacity = 1;
+    footer.style.opacity = 1;
+}, 15000);
+
+setTimeout(() => {
+    // allPreloader.style.opacity = 0;
+    const rect = document.querySelector('#Rectangle_40');
+    rect.classList.add('dead-circle');
+    
+}, 21000);
+
+setTimeout(() => {
+    allPreloader.classList.add('header-position');
+}, 21001);
 
 
 // setTimeout(() => {
@@ -117,21 +137,21 @@ setTimeout(() => {
 //     allPreloader.style.display = 'none';
 // }, 17500);
 // -----------------
-// setTimeout(() => {
-//     header.style.display = 'block';
-// }, 17900);
+setTimeout(() => {
+    header.style.display = 'block';
+}, 17900);
 // ---------------
 // ----------
 // --------------
-// setTimeout(() => {
-//     headerOverfow.style.zIndex = 99;
-//     headerOverfow.style.position = 'absolute';
-//     headerOverfow.style.opacity = 1;
-// },18000);
+setTimeout(() => {
+    headerOverfow.style.zIndex = 99;
+    headerOverfow.style.position = 'absolute';
+    headerOverfow.style.opacity = 1;
+},22050);
 
-// setTimeout(() => {
-//     headerOverfow.classList.add('overflow-animated');
-// }, 18000);
+setTimeout(() => {
+    headerOverfow.classList.add('overflow-animated');
+}, 22100);
 setTimeout(() => {
     whellsH.forEach(itm => {
         itm.classList.add('whell-stopped');

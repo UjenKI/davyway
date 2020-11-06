@@ -1614,9 +1614,6 @@ var readMoreBtn = document.querySelectorAll('.read__more');
 var cardTextBox = document.querySelectorAll('.card__text__box');
 var roadMap = document.querySelector('.davyway__roadmap');
 var topMenuFixed = document.querySelector('.top-menu');
-header.style.display = 'none';
-main.style.display = 'none';
-footer.style.display = 'none';
 setTimeout(function () {
   boxes.forEach(function (item) {
     item.style.opacity = 1;
@@ -1630,26 +1627,26 @@ setTimeout(function () {
     el.style.opacity = 1;
     el.style.transition = '0.2s ease-in';
   });
-}, 1500);
+}, 500);
 setTimeout(function () {
   figures.forEach(function (fig) {
     fig.style.opacity = 1;
     fig.style.transition = '0.3s ease-out';
   });
-}, 2500);
+}, 1000);
 setTimeout(function () {
   figures[2].classList.add('figureThreeMoving');
   figures[1].classList.add('figureTwoMoving');
   figures[0].classList.add('figureOneMoving');
-}, 3500);
+}, 2000);
 setTimeout(function () {
   car.classList.add('car-arrived');
-}, 4000);
+}, 3000);
 setTimeout(function () {
   whells.forEach(function (whell) {
     whell.classList.add('whell-stopped');
   });
-}, 4500);
+}, 3200);
 setTimeout(function () {
   boxTransported.forEach(function (boxTr) {
     boxTr.classList.add('box-transported');
@@ -1659,10 +1656,10 @@ setTimeout(function () {
   });
   elipses[1].style.display = 'none';
   elipses[0].style.display = 'none';
-}, 7000);
+}, 4000);
 setTimeout(function () {
   boxMerged.classList.add('box-merged');
-}, 8000);
+}, 5000);
 setTimeout(function () {
   whells.forEach(function (whell) {
     whell.classList.remove('whell-stopped');
@@ -1672,14 +1669,35 @@ setTimeout(function () {
   car.classList.add('car-center-moved');
   carBody.classList.add('carBody-animated');
   cityAnimate.classList.add('city-animate');
-}, 9000);
+}, 5500);
 setTimeout(function () {
   car.classList.add('zoom-in');
-}, 12000);
+}, 8000);
 setTimeout(function () {
   var newTextAnimation = document.querySelector('.svgText');
   newTextAnimation.classList.add('newAnimation');
-}, 18000); // setTimeout(() => {
+}, 14000);
+setTimeout(function () {
+  var billboardSVG = document.querySelector('.billBoard');
+  var forZomming = document.querySelector('.forZomming');
+  var cityBgk = document.querySelector('#city__bgk');
+  console.log(billboardSVG, forZomming, cityBgk);
+  billboardSVG.style.opacity = 0;
+  forZomming.style.opacity = 0;
+  cityBgk.style.opacity = 0;
+  headerOverfow.style.opacity = 1;
+  header.style.opacity = 1;
+  main.style.opacity = 1;
+  footer.style.opacity = 1;
+}, 15000);
+setTimeout(function () {
+  // allPreloader.style.opacity = 0;
+  var rect = document.querySelector('#Rectangle_40');
+  rect.classList.add('dead-circle');
+}, 21000);
+setTimeout(function () {
+  allPreloader.classList.add('header-position');
+}, 21001); // setTimeout(() => {
 //     bilboard.classList.add('bilboard-animated');
 // }, 12500);
 // setTimeout(() => {
@@ -1689,21 +1707,21 @@ setTimeout(function () {
 //     allPreloader.style.display = 'none';
 // }, 17500);
 // -----------------
-// setTimeout(() => {
-//     header.style.display = 'block';
-// }, 17900);
-// ---------------
+
+setTimeout(function () {
+  header.style.display = 'block';
+}, 17900); // ---------------
 // ----------
 // --------------
-// setTimeout(() => {
-//     headerOverfow.style.zIndex = 99;
-//     headerOverfow.style.position = 'absolute';
-//     headerOverfow.style.opacity = 1;
-// },18000);
-// setTimeout(() => {
-//     headerOverfow.classList.add('overflow-animated');
-// }, 18000);
 
+setTimeout(function () {
+  headerOverfow.style.zIndex = 99;
+  headerOverfow.style.position = 'absolute';
+  headerOverfow.style.opacity = 1;
+}, 22050);
+setTimeout(function () {
+  headerOverfow.classList.add('overflow-animated');
+}, 22100);
 setTimeout(function () {
   whellsH.forEach(function (itm) {
     itm.classList.add('whell-stopped');

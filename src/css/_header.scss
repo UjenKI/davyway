@@ -1,9 +1,8 @@
 .header-overflow{
-    // display: none;
+    display: none;
     background: #ffffff;
     font-family: Helvetica, sans-serif;
     font-weight: 400;
-    opacity: 0;
     transition: 1.7s ease-out;
     width: 100%;
     text-align: center;
@@ -393,7 +392,7 @@ header{
                 svg{
                     transform: scale(0);
                     animation: salesMoving 2s ease-in-out;
-                    animation-delay: 3.5s;
+                    animation-delay: 10s;
                     animation-fill-mode: forwards;
                 }
                 @keyframes salesMoving {
@@ -416,7 +415,7 @@ header{
                 display: block;
                 left: -50%;
                 top: 290px;
-                animation: carHmoving 3.3s ease-out forwards 2s;
+                animation: carHmoving 3.3s ease-out forwards 9s;
                 @keyframes carHmoving {
                     0%{
                         left:-50%
@@ -431,7 +430,7 @@ header{
                 }
                 svg{
                     animation: svgOpacity 0.3s forwards;
-                    animation-delay: 5.3s;
+                    animation-delay: 15.3s;
                 }
                 @keyframes svgOpacity {
                     to{
@@ -443,7 +442,7 @@ header{
                     margin-left: 138px;
                     animation: carBodyAnimate 1s ease-in-out forwards;
                     animation-iteration-count: 3;
-                    animation-delay: 0s;
+                    animation-delay: 9s;
                 }
                 @keyframes carBodyAnimate{
                     0%{

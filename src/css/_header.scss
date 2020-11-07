@@ -358,9 +358,16 @@ header{
             .banner-item-text{
                 margin-top: 500px;
                 margin-left: 72px;
+                display: block;
+                position: relative;
                 p{
                     font-size: 16px;
                     text-transform: none;
+                    display: block;
+                    position: absolute;
+                    top: 0;
+                    left: -2vw;
+                    width: 475px;
                 }
             }
             .banner-item-animation{

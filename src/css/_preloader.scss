@@ -610,7 +610,7 @@
                         svg.svgText.newAnimation{
                             transform: translate(492px,-2828px) scale(1.2) rotate(10deg);
                             width: 313px;
-                            animation: forZoom 1s ease-in-out;
+                            animation: forZoom 3s ease-in-out;
                             animation-fill-mode: forwards;
                             // animation-delay: 2s;
                             transition: 0.3s ease-in-out;
@@ -628,12 +628,18 @@
                             }
                         }
                         @keyframes forZoom {
-                            from{
+                            0%{
                                 transform: translate(492px,-2828px) scale(1.1) rotate(10deg);
                                 width: 313px;
                             }
-                            to{
+                            20%, 30%, 40%, 50%, 60%, 70%, 80%{
                                 transform: translate(489px,-2761px) scale(0.9) rotate(0deg);
+                                width: 343px;
+                                // transform: translate(372px,-2761px) scale(.9) rotate(0deg);
+                                // width: 343px;
+                            }
+                            100%{
+                                transform: translate(372px,-2761px) scale(.9) rotate(0deg);
                                 width: 343px;
                             }
                         }
@@ -661,6 +667,8 @@
     transition: 1s ease-in-out;
     position: absolute;
     z-index: 1;
+    // -----
+    margin-left: 8vw;
 } 
 
 

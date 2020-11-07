@@ -1833,7 +1833,7 @@ readMoreBtn.forEach(function (btn, itemBlock) {
 });
 
 function checkScreenWidth() {
-  if (window.scrollY > 700 && window.screen.width < 1600) {
+  if (window.scrollY > 124 && window.screen.width < 1600) {
     topMenuFixed.classList.add('menu-screen');
   } else {
     topMenuFixed.classList.remove('menu-screen');

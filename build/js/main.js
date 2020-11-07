@@ -1627,26 +1627,26 @@ setTimeout(function () {
     el.style.opacity = 1;
     el.style.transition = '0.2s ease-in';
   });
-}, 500);
+}, 10);
 setTimeout(function () {
   figures.forEach(function (fig) {
     fig.style.opacity = 1;
     fig.style.transition = '0.3s ease-out';
   });
-}, 1000);
+}, 600);
 setTimeout(function () {
   figures[2].classList.add('figureThreeMoving');
   figures[1].classList.add('figureTwoMoving');
   figures[0].classList.add('figureOneMoving');
-}, 2000);
+}, 800);
 setTimeout(function () {
   car.classList.add('car-arrived');
-}, 3000);
+}, 1000);
 setTimeout(function () {
   whells.forEach(function (whell) {
     whell.classList.add('whell-stopped');
   });
-}, 3200);
+}, 1100);
 setTimeout(function () {
   boxTransported.forEach(function (boxTr) {
     boxTr.classList.add('box-transported');
@@ -1656,10 +1656,10 @@ setTimeout(function () {
   });
   elipses[1].style.display = 'none';
   elipses[0].style.display = 'none';
-}, 4000);
+}, 1500);
 setTimeout(function () {
   boxMerged.classList.add('box-merged');
-}, 5000);
+}, 2100);
 setTimeout(function () {
   whells.forEach(function (whell) {
     whell.classList.remove('whell-stopped');
@@ -1669,14 +1669,14 @@ setTimeout(function () {
   car.classList.add('car-center-moved');
   carBody.classList.add('carBody-animated');
   cityAnimate.classList.add('city-animate');
-}, 5500);
+}, 2500);
 setTimeout(function () {
   car.classList.add('zoom-in');
-}, 8000);
+}, 5500);
 setTimeout(function () {
   var newTextAnimation = document.querySelector('.svgText');
   newTextAnimation.classList.add('newAnimation');
-}, 14000);
+}, 8500);
 setTimeout(function () {
   var billboardSVG = document.querySelector('.billBoard');
   var forZomming = document.querySelector('.forZomming');
@@ -1689,28 +1689,17 @@ setTimeout(function () {
   header.style.opacity = 1;
   main.style.opacity = 1;
   footer.style.opacity = 1;
-}, 15000);
-setTimeout(function () {
-  // allPreloader.style.opacity = 0;
-  var rect = document.querySelector('#Rectangle_40');
-  rect.classList.add('dead-circle');
-}, 21000);
-setTimeout(function () {
-  allPreloader.classList.add('header-position');
-}, 21001); // setTimeout(() => {
-//     bilboard.classList.add('bilboard-animated');
-// }, 12500);
-// setTimeout(() => {
-//     logoZoom.classList.add('logo-zoom-animated');
-// }, 13001);
-// setTimeout(() => {
-//     allPreloader.style.display = 'none';
-// }, 17500);
-// -----------------
-
+}, 10000);
 setTimeout(function () {
   header.style.display = 'block';
-}, 17900); // ---------------
+}, 9900);
+setTimeout(function () {
+  var rect = document.querySelector('#Rectangle_40');
+  rect.classList.add('dead-circle');
+}, 10500);
+setTimeout(function () {
+  allPreloader.classList.add('header-position');
+}, 10600); // ---------------
 // ----------
 // --------------
 
@@ -1727,8 +1716,6 @@ setTimeout(function () {
     itm.classList.add('whell-stopped');
   });
 }, 23000);
-setTimeout(function () {// carHeaderWrapper.classList.add('aWay');
-}, 24000);
 setTimeout(function () {
   var menu = document.querySelector('.top__menu'),
       label = document.querySelector('.for-burger'),
@@ -1774,7 +1761,6 @@ function menuActive() {
   }
 
   if (!menuInput) {
-    // menuItem.classList.add('skew-true');
     menuItem.style.display = 'block';
     menuItem.style.top = 0;
     menuItem.style.opacity = 1;
@@ -1784,15 +1770,9 @@ function menuActive() {
       menuItem.style.width = '100%';
     } else {
       menuItem.style.width = '93%';
-    } // if(chekerFixed.classList.contains('fixed-item')){
-    //     menuItem.style.width = '90%';
-    // } else {
-    //     menuItem.style.width = '100%';
-    // }
+    }
 
-
-    open.innerHTML = 'CLOSE'; // close.style.opacity = 1;
-
+    open.innerHTML = 'CLOSE';
     setTimeout(function () {
       menuItem.classList.remove('skew-true');
       menuItem.classList.add('skew-false');
@@ -1805,8 +1785,7 @@ function menuActive() {
       });
     }, 1000);
   } else {
-    open.innerHTML = 'MENU'; // close.style.opacity = 0;
-
+    open.innerHTML = 'MENU';
     menuItem.style.top = '-2000px';
     setTimeout(function () {}, 1000);
     setTimeout(function () {
@@ -1851,41 +1830,7 @@ readMoreBtn.forEach(function (btn, itemBlock) {
       btn.innerHTML = 'READ MORE';
     }
   });
-}); // function scrollOpacity(){
-//     const roadTitle = document.querySelector('.roadmap');
-//     if(window.scrollY > 6335 && window.screen.width > 1000){
-//         roadTitle.style.opacity = 0;
-//     } else if(window.scrollY > 6411 && window.screen.width <= 1000 && window.screen.width > 992){
-//         roadTitle.style.opacity = 0;
-//     } else if(window.scrollY > 7260 && window.screen.width <= 992 && window.screen.width > 903){
-//         roadTitle.style.opacity = 0;
-//     } else if(window.scrollY > 7525 && window.screen.width <= 903 && window.screen.width > 717){
-//         roadTitle.style.opacity = 0;
-//     } else if(window.scrollY > 7525 && window.screen.width <=717 && window.screen.width > 695){
-//         roadTitle.style.opacity = 0;
-//     } else if(window.scrollY > 7525 && window.screen.width <=695 && window.screen.width > 678){
-//         roadTitle.style.opacity = 0;
-//     } else if(window.scrollY > 7610 && window.screen.width <=678 && window.screen.width > 663){
-//         roadTitle.style.opacity = 0;
-//     } else if(window.scrollY > 8584 && window.screen.width <=663 && window.screen.width > 618){
-//         roadTitle.style.opacity = 0;
-//     } else if(window.scrollY > 8666 && window.screen.width <=618 && window.screen.width > 573){
-//         roadTitle.style.opacity = 0;
-//     } else if(window.scrollY > 8713 && window.screen.width <=573 && window.screen.width > 537){
-//         roadTitle.style.opacity = 0;
-//     } else if(window.scrollY > 8803 && window.screen.width <=537 && window.screen.width > 425){
-//         roadTitle.style.opacity = 0;
-//     } else if(window.scrollY > 9263 && window.screen.width <=425 && window.screen.width > 425){
-//         roadTitle.style.opacity = 0;
-//     } else if(window.scrollY > 9583 && window.screen.width <=375){
-//         roadTitle.style.opacity = 0;
-//     } else {
-//         roadTitle.style.opacity = 1;
-//     }
-// }
-// setInterval(() => {
-//     scrollOpacity();
-// }, 10);
+});
 
 function checkScreenWidth() {
   if (window.scrollY > 700 && window.screen.width < 1600) {

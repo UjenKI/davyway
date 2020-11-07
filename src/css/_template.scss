@@ -58,7 +58,7 @@ main{
         }
     }
     section.our__mission{
-        margin-top: 127px;
+        padding-top: 127px;
         .container.mission{
             display: flex;
             justify-content: center;
@@ -103,7 +103,7 @@ main{
     }
     section.our__story{
         .container.story{
-            padding-top: 222px;
+            padding-top: 100px;
             .title-story{
                 display: block;
                 max-width: 645px;
@@ -177,7 +177,8 @@ main{
         }
     }
     section.why__us{
-        margin-top: 250px;
+        padding-top: 132px;
+        margin-top: 114px;
         .container.why{
             .section__why__title{
                 text-align: center;
@@ -402,7 +403,8 @@ main{
         }
     }
     section.why__shop{
-        padding-top: 180px;
+        padding-top: 100px;
+        margin-top: 80px;
         .container.shop{
             h3{
                 display: block;

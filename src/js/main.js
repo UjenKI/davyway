@@ -37,30 +37,30 @@ setTimeout(() =>{
         el.style.opacity = 1;
         el.style.transition = '0.2s ease-in';
     })
-}, 500);
+}, 10);
 
 setTimeout(() =>{
     figures.forEach(fig => {
         fig.style.opacity = 1;
         fig.style.transition = '0.3s ease-out';
     })
-}, 1000);
+}, 600);
 
 setTimeout(() => {
     figures[2].classList.add('figureThreeMoving');
     figures[1].classList.add('figureTwoMoving');
     figures[0].classList.add('figureOneMoving');
-}, 2000);
+}, 800);
 
 setTimeout(() => {
     car.classList.add('car-arrived');
-}, 3000);
+}, 1000);
 
 setTimeout(() => {
     whells.forEach(whell => {
         whell.classList.add('whell-stopped');
     })
-}, 3200);
+}, 1100);
 
 setTimeout(() => {
     boxTransported.forEach(boxTr => {
@@ -72,11 +72,11 @@ setTimeout(() => {
     elipses[1].style.display = 'none';
     elipses[0].style.display = 'none';
 
-}, 4000);
+}, 1500);
 
 setTimeout(() => {
     boxMerged.classList.add('box-merged');
-}, 5000);
+}, 2100);
 
 setTimeout(() => {
     whells.forEach(whell => {
@@ -87,16 +87,16 @@ setTimeout(() => {
     car.classList.add('car-center-moved');
     carBody.classList.add('carBody-animated');
     cityAnimate.classList.add('city-animate');
-}, 5500);
+}, 2500);
 
 setTimeout(() => {
     car.classList.add('zoom-in');
-}, 8000);
+}, 5500);
 
 setTimeout(() => {
     const newTextAnimation = document.querySelector('.svgText');
     newTextAnimation.classList.add('newAnimation');
-}, 14000);
+}, 8500);
 
 setTimeout(() => {
     const billboardSVG = document.querySelector('.billBoard');
@@ -110,36 +110,21 @@ setTimeout(() => {
     header.style.opacity = 1;
     main.style.opacity = 1;
     footer.style.opacity = 1;
-}, 15000);
+}, 10000);
 
 setTimeout(() => {
-    // allPreloader.style.opacity = 0;
+    header.style.display = 'block';
+}, 9900);
+
+setTimeout(() => {
     const rect = document.querySelector('#Rectangle_40');
     rect.classList.add('dead-circle');
-    
-}, 21000);
+}, 10500);
 
 setTimeout(() => {
     allPreloader.classList.add('header-position');
-}, 21001);
+}, 10600);
 
-
-// setTimeout(() => {
-//     bilboard.classList.add('bilboard-animated');
-// }, 12500);
-
-
-// setTimeout(() => {
-//     logoZoom.classList.add('logo-zoom-animated');
-// }, 13001);
-
-// setTimeout(() => {
-//     allPreloader.style.display = 'none';
-// }, 17500);
-// -----------------
-setTimeout(() => {
-    header.style.display = 'block';
-}, 17900);
 // ---------------
 // ----------
 // --------------
@@ -157,11 +142,6 @@ setTimeout(() => {
         itm.classList.add('whell-stopped');
     })
 }, 23000);
-setTimeout(() => {
-    // carHeaderWrapper.classList.add('aWay');
-
-    
-}, 24000);
 setTimeout(() => {
     const menu = document.querySelector('.top__menu'),
           label = document.querySelector('.for-burger'),
@@ -206,7 +186,6 @@ function menuActive(){
             },1000);
           }
     if(!menuInput){
-        // menuItem.classList.add('skew-true');
         menuItem.style.display = 'block';
         menuItem.style.top = 0;
         menuItem.style.opacity = 1;
@@ -216,13 +195,7 @@ function menuActive(){
         } else {
             menuItem.style.width = '93%';
         }
-        // if(chekerFixed.classList.contains('fixed-item')){
-        //     menuItem.style.width = '90%';
-        // } else {
-        //     menuItem.style.width = '100%';
-        // }
         open.innerHTML = 'CLOSE';
-        // close.style.opacity = 1;
         setTimeout(() => {
             menuItem.classList.remove('skew-true');
             menuItem.classList.add('skew-false');
@@ -236,8 +209,6 @@ function menuActive(){
         },1000);
     } else {
         open.innerHTML = 'MENU';
-        
-        // close.style.opacity = 0;
         menuItem.style.top = '-2000px';
         setTimeout(() => {
         },1000);
@@ -284,41 +255,7 @@ readMoreBtn.forEach((btn, itemBlock) => {
     })
 });
 
-// function scrollOpacity(){
-//     const roadTitle = document.querySelector('.roadmap');
-//     if(window.scrollY > 6335 && window.screen.width > 1000){
-//         roadTitle.style.opacity = 0;
-//     } else if(window.scrollY > 6411 && window.screen.width <= 1000 && window.screen.width > 992){
-//         roadTitle.style.opacity = 0;
-//     } else if(window.scrollY > 7260 && window.screen.width <= 992 && window.screen.width > 903){
-//         roadTitle.style.opacity = 0;
-//     } else if(window.scrollY > 7525 && window.screen.width <= 903 && window.screen.width > 717){
-//         roadTitle.style.opacity = 0;
-//     } else if(window.scrollY > 7525 && window.screen.width <=717 && window.screen.width > 695){
-//         roadTitle.style.opacity = 0;
-//     } else if(window.scrollY > 7525 && window.screen.width <=695 && window.screen.width > 678){
-//         roadTitle.style.opacity = 0;
-//     } else if(window.scrollY > 7610 && window.screen.width <=678 && window.screen.width > 663){
-//         roadTitle.style.opacity = 0;
-//     } else if(window.scrollY > 8584 && window.screen.width <=663 && window.screen.width > 618){
-//         roadTitle.style.opacity = 0;
-//     } else if(window.scrollY > 8666 && window.screen.width <=618 && window.screen.width > 573){
-//         roadTitle.style.opacity = 0;
-//     } else if(window.scrollY > 8713 && window.screen.width <=573 && window.screen.width > 537){
-//         roadTitle.style.opacity = 0;
-//     } else if(window.scrollY > 8803 && window.screen.width <=537 && window.screen.width > 425){
-//         roadTitle.style.opacity = 0;
-//     } else if(window.scrollY > 9263 && window.screen.width <=425 && window.screen.width > 425){
-//         roadTitle.style.opacity = 0;
-//     } else if(window.scrollY > 9583 && window.screen.width <=375){
-//         roadTitle.style.opacity = 0;
-//     } else {
-//         roadTitle.style.opacity = 1;
-//     }
-// }
-// setInterval(() => {
-//     scrollOpacity();
-// }, 10);
+
 
 function checkScreenWidth(){
     if(window.scrollY > 700 && window.screen.width < 1600){

@@ -509,7 +509,7 @@
         left: 50%;
         transform: scale(1) translateX(-50%);
         animation: carMoving 0.6s  ease-in-out;
-        animation-iteration-count: 6;
+        animation-iteration-count: 3;
     }
     @keyframes carMoving {
         0%{
@@ -524,7 +524,7 @@
     }
     .car-wrapper.car-arrived.car-center-moved.zoom-in{
         animation: carZoomIn 0.6s ease-in-out;
-         animation-delay: 1s;
+        //  animation-delay: 0.5s;
          animation-fill-mode: forwards;
          .carBody-wrapper{
             //  --------------------------------------
@@ -534,9 +534,9 @@
                     transform: translate(10px, -6px);
                 }
                 #Group_159{
-                    animation: davywayZoom 3s ease-out;
+                    animation: davywayZoom 1.5s ease-out;
                     animation-fill-mode: forwards;
-                    animation-delay: 3s;
+                    animation-delay: 1s;
                 }
                 @keyframes davywayZoom {
                     to{
@@ -547,9 +547,9 @@
                     svg.billBoard{
                         width: 3px;
                         transform: translate(680px,-804px);
-                        animation: svgZoomIn 3s ease-in-out;
+                        animation: svgZoomIn 1.5s ease-in-out;
                         animation-fill-mode: forwards;
-                        animation-delay: 3s;
+                        animation-delay: 1s;
                     }
                     @keyframes svgZoomIn {
                         to{
@@ -562,12 +562,12 @@
                             transform: translate(-188px,-1901px) scale(.01);
                             animation: circleDiametrScale 2s ease-in-out;
                             animation-fill-mode: forwards;
-                            animation-delay: 6s;
+                            animation-delay: 3s;
                             rect{
                                 fill: rgba(255, 255, 255, 0);
                                 animation: rectColor 0.6s ease-in-out;
                                 animation-fill-mode: forwards;
-                                animation-delay: 6s;
+                                animation-delay: 3s;
                             }
                             @keyframes rectColor{
                                 to{
@@ -578,7 +578,7 @@
                                 animation: toOpacity 0.3s ease-in-out;
                                 animation-fill-mode: forwards;
                                 transition: 0.3s ease-in-out;
-                                animation-delay: 1s;
+                                // animation-delay: 1s;
                             }
                             @keyframes toOpacity {
                                 to{
@@ -597,9 +597,9 @@
                             // transform: translate(682px,-2856px) scale(0.1);
                             transform: translate(682px,-2856px) scale(1);
                             width: 10px;
-                            animation: textZoomIn 3s ease-in-out;
+                            animation: textZoomIn 1.5s ease-in-out;
                             animation-fill-mode: forwards;
-                            animation-delay: 3s;
+                            animation-delay: 1s;
                         }
                         @keyframes textZoomIn {
                             to{
@@ -608,7 +608,7 @@
                             }
                         }
                         svg.svgText.newAnimation{
-                            transform: translate(492px,-2828px) scale(1) rotate(10deg);
+                            transform: translate(492px,-2828px) scale(1.2) rotate(10deg);
                             width: 313px;
                             animation: forZoom 1s ease-in-out;
                             animation-fill-mode: forwards;
@@ -618,7 +618,7 @@
                                 transition: 0.3s ease-in-out;
                                 animation: textStyling 1s ease-in-out;
                                 animation-fill-mode: forwards;
-                                animation-delay: 6.66s;
+                                animation-delay: 2s;
                             }
                             @keyframes textStyling {
                                 to{
@@ -629,7 +629,7 @@
                         }
                         @keyframes forZoom {
                             from{
-                                transform: translate(492px,-2828px) scale(1) rotate(10deg);
+                                transform: translate(492px,-2828px) scale(1.1) rotate(10deg);
                                 width: 313px;
                             }
                             to{
@@ -637,15 +637,7 @@
                                 width: 343px;
                             }
                         }
-                        // animation: textScaleCenter 2s ease-in-out;
-                        // animation-fill-mode: forwards;
-                        // animation-delay: 6s;
                     }
-                    // @keyframes textScaleCenter {
-                    //     to{
-                    //         transform: translate(469px, 701px) rotate(-9.5deg) scale(1.2);
-                    //     }
-                    // }
                 }
                 @keyframes billboardZoonIn {
                     to{
@@ -669,11 +661,6 @@
     transition: 1s ease-in-out;
     position: absolute;
     z-index: 1;
-}   
-// .preloader.preloader-transform{
-//     transform: scale(8.0) translate(28px, 108px);
-//     transition: 0.6s ease-in-out;
-    
-// }
+} 
 
 

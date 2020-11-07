@@ -62,4 +62,29 @@ header{
 header, main, footer, .header-overflow{
     opacity: 0;
 }
+#Rectangle_217-4, #Rectangle_217-2, #Rectangle_217-6{
+    rect{
+        &:nth-child(1){
+            stroke: rgb(1, 187, 214);
+        }
+    }
+}
+#Ellipse_17-4, #Ellipse_18-4, #Path_123-4, #Path_124-4, #Ellipse_18-4, #Line_32-4, #Line_33-4, #Path_123-3, #Path_124-3, #Ellipse_17-6, #Path_123-6, #Path_124-6, #Ellipse_18-6, #Line_32-6, #Line_33-6{
+    stroke-width: 0;
+}
+#Path_122-18, #Path_122-16, #Path_122-14, #Path_122-12, #Path_122-10, #Path_122-8{
+    stroke-width: 1px;
+}
+#Path_140{
+    fill: #7fddea;
+    path{
+        &:nth-child(2){
+            stroke: #000000;
+            stroke-width: 2px;
+        }
+    }
+}
+#Path_82{
+    fill: #00bbd5;
+}
 

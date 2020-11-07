@@ -1,4 +1,5 @@
-const boxes = document.querySelectorAll('g[data-name="boxTogether"]');
+window.addEventListener('DOMContentLoaded', () => {
+    const boxes = document.querySelectorAll('g[data-name="boxTogether"]');
 const boxBack = document.querySelectorAll('g[data-name="boxBack"]');
 const elipses = document.querySelectorAll('ellipse[data-name="Ellipse 4"]');
 const figures = document.querySelectorAll('g[data-name="figure"]');
@@ -24,107 +25,118 @@ const cardTextBox = document.querySelectorAll('.card__text__box');
 const roadMap = document.querySelector('.davyway__roadmap');
 const topMenuFixed = document.querySelector('.top-menu');
 
-setTimeout(() =>{
-    boxes.forEach(item => {
-        item.style.opacity = 1;
-        item.style.transition = '0.2s';
-    });
-    boxBack.forEach(back => {
-        back.style.opacity = 1;
-        back.style.transition = '0.2s ease-in';
-    })
-    elipses.forEach(el => {
-        el.style.opacity = 1;
-        el.style.transition = '0.2s ease-in';
-    })
-}, 10);
+if(window.screenX <= 620){
+    allPreloader.style.opacity = 1;
+    setTimeout(() =>{
+        boxes.forEach(item => {
+            item.style.opacity = 1;
+            item.style.transition = '0.2s';
+        });
+        boxBack.forEach(back => {
+            back.style.opacity = 1;
+            back.style.transition = '0.2s ease-in';
+        })
+        elipses.forEach(el => {
+            el.style.opacity = 1;
+            el.style.transition = '0.2s ease-in';
+        })
+    }, 10);
+    
+    setTimeout(() =>{
+        figures.forEach(fig => {
+            fig.style.opacity = 1;
+            fig.style.transition = '0.3s ease-out';
+        })
+    }, 600);
+    
+    setTimeout(() => {
+        figures[2].classList.add('figureThreeMoving');
+        figures[1].classList.add('figureTwoMoving');
+        figures[0].classList.add('figureOneMoving');
+    }, 800);
+    
+    setTimeout(() => {
+        car.classList.add('car-arrived');
+    }, 1000);
+    
+    setTimeout(() => {
+        whells.forEach(whell => {
+            whell.classList.add('whell-stopped');
+        })
+    }, 1100);
+    
+    setTimeout(() => {
+        boxTransported.forEach(boxTr => {
+            boxTr.classList.add('box-transported');
+        })
+        elipses.forEach(elps => {
+            elps.classList.add('elips-moving');
+        })
+        elipses[1].style.display = 'none';
+        elipses[0].style.display = 'none';
+    
+    }, 1500);
+    
+    setTimeout(() => {
+        boxMerged.classList.add('box-merged');
+    }, 2100);
+    
+    setTimeout(() => {
+        whells.forEach(whell => {
+            whell.classList.remove('whell-stopped');
+            whell.classList.add('whell-running');
+        });
+        factories.classList.add('factories-moved');
+        car.classList.add('car-center-moved');
+        carBody.classList.add('carBody-animated');
+        cityAnimate.classList.add('city-animate');
+    }, 2500);
+    
+    setTimeout(() => {
+        car.classList.add('zoom-in');
+    }, 4350);
+    
+    setTimeout(() => {
+        const newTextAnimation = document.querySelector('.svgText');
+        newTextAnimation.classList.add('newAnimation');
+    }, 8500);
+    
+    setTimeout(() => {
+        const billboardSVG = document.querySelector('.billBoard');
+        const forZomming = document.querySelector('.forZomming');
+        const cityBgk = document.querySelector('#city__bgk');
+        console.log(billboardSVG, forZomming, cityBgk);
+        billboardSVG.style.opacity = 0;
+        forZomming.style.opacity = 0;
+        cityBgk.style.opacity = 0;
+        headerOverfow.style.opacity = 1;
+        header.style.opacity = 1;
+        main.style.opacity = 1;
+        footer.style.opacity = 1;
+    }, 10000);
+    
+    setTimeout(() => {
+        header.style.display = 'block';
+    }, 9900);
+    
+    setTimeout(() => {
+        const rect = document.querySelector('#Rectangle_40');
+        rect.classList.add('dead-circle');
+    }, 10500);
+    
+    setTimeout(() => {
+        allPreloader.classList.add('header-position');
+    }, 10600);
+}
 
-setTimeout(() =>{
-    figures.forEach(fig => {
-        fig.style.opacity = 1;
-        fig.style.transition = '0.3s ease-out';
-    })
-}, 600);
 
-setTimeout(() => {
-    figures[2].classList.add('figureThreeMoving');
-    figures[1].classList.add('figureTwoMoving');
-    figures[0].classList.add('figureOneMoving');
-}, 800);
-
-setTimeout(() => {
-    car.classList.add('car-arrived');
-}, 1000);
-
-setTimeout(() => {
-    whells.forEach(whell => {
-        whell.classList.add('whell-stopped');
-    })
-}, 1100);
-
-setTimeout(() => {
-    boxTransported.forEach(boxTr => {
-        boxTr.classList.add('box-transported');
-    })
-    elipses.forEach(elps => {
-        elps.classList.add('elips-moving');
-    })
-    elipses[1].style.display = 'none';
-    elipses[0].style.display = 'none';
-
-}, 1500);
-
-setTimeout(() => {
-    boxMerged.classList.add('box-merged');
-}, 2100);
-
-setTimeout(() => {
-    whells.forEach(whell => {
-        whell.classList.remove('whell-stopped');
-        whell.classList.add('whell-running');
-    });
-    factories.classList.add('factories-moved');
-    car.classList.add('car-center-moved');
-    carBody.classList.add('carBody-animated');
-    cityAnimate.classList.add('city-animate');
-}, 2500);
-
-setTimeout(() => {
-    car.classList.add('zoom-in');
-}, 5500);
-
-setTimeout(() => {
-    const newTextAnimation = document.querySelector('.svgText');
-    newTextAnimation.classList.add('newAnimation');
-}, 8500);
-
-setTimeout(() => {
-    const billboardSVG = document.querySelector('.billBoard');
-    const forZomming = document.querySelector('.forZomming');
-    const cityBgk = document.querySelector('#city__bgk');
-    console.log(billboardSVG, forZomming, cityBgk);
-    billboardSVG.style.opacity = 0;
-    forZomming.style.opacity = 0;
-    cityBgk.style.opacity = 0;
+if(window.screenX <= 620){
+    headerOverfow.style.zIndex = 99;
+    headerOverfow.style.position = 'absolute';
     headerOverfow.style.opacity = 1;
-    header.style.opacity = 1;
-    main.style.opacity = 1;
-    footer.style.opacity = 1;
-}, 10000);
 
-setTimeout(() => {
-    header.style.display = 'block';
-}, 9900);
-
-setTimeout(() => {
-    const rect = document.querySelector('#Rectangle_40');
-    rect.classList.add('dead-circle');
-}, 10500);
-
-setTimeout(() => {
-    allPreloader.classList.add('header-position');
-}, 10600);
-
+    headerOverfow.classList.add('overflow-animated');
+}
 // ---------------
 // ----------
 // --------------
@@ -285,6 +297,8 @@ const logoBtn = document.querySelector('.logo-wrapper');
 logoBtn.addEventListener('click', () => {
     window.scrollTo(0, 0);
 })
+})
+
 
 
 

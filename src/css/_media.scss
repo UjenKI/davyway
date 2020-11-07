@@ -32,6 +32,37 @@
             }
         }
     }
+    header{
+        .container.banner-wrapper{
+            .banner-item{
+                position: relative;
+                .banner-item-text{
+                    margin-top: 398px;
+                    margin-left: 46px;
+                    p{
+                        line-height: 27px;
+                        left: 0vw;
+                    }
+                }
+                // .carHeader-wrapper{
+                //     animation: carHmoving 3.3s ease-out forwards 2s;
+                //     top: 200px;
+                // }
+                // @keyframes carHmoving {
+                //     0%{
+                //         left:-50%;
+                //     }
+                //     20%, 50%, 80%{
+                //         left: 58%;
+                //     }
+                //     100%{
+                //         // width: 0;
+                //         left: 120%;
+                //     }
+                // }
+            }
+        }
+    }
 }
 @media screen and (max-width: 1240px){
     .preloader{
@@ -87,6 +118,7 @@
                     margin-left: 46px;
                     p{
                         line-height: 27px;
+
                     }
                 }
                 .carHeader-wrapper{
@@ -3226,7 +3258,13 @@
     }
 }
 @media screen and (max-width: 620px){
-    .preloader.header-position{
+    header, .header-overflow{
+        display: block;
+    }
+    header, main, footer, .header-overflow{
+        opacity: 1;
+    }
+    .preloader{
         display: none;
     }
     .header-overflow.overflow-animated{

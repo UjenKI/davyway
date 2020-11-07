@@ -1589,274 +1589,288 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var core_js_modules_web_dom_collections_for_each__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_web_dom_collections_for_each__WEBPACK_IMPORTED_MODULE_1__);
 
 
-var boxes = document.querySelectorAll('g[data-name="boxTogether"]');
-var boxBack = document.querySelectorAll('g[data-name="boxBack"]');
-var elipses = document.querySelectorAll('ellipse[data-name="Ellipse 4"]');
-var figures = document.querySelectorAll('g[data-name="figure"]');
-var car = document.querySelector('.car-wrapper');
-var whells = document.querySelectorAll('svg[data-whells="whells"]');
-var boxTransported = document.querySelectorAll('g[data-fullbox="transported"]');
-var boxMerged = document.querySelector('#allBoxes');
-var factories = document.querySelector('#factories');
-var carBody = document.querySelector('.carBody-wrapper');
-var cityAnimate = document.querySelector("#allCity");
-var allPreloader = document.querySelector('.preloader');
-var bilboard = document.querySelector('.bilboard-wrapper');
-var preloaderBanner = document.querySelector('.preloader-banner');
-var logoZoom = document.querySelector('.davWord-wrapper');
-var headerOverfow = document.querySelector('.header-overflow');
-var header = document.querySelector('header');
-var main = document.querySelector('main');
-var footer = document.querySelector('footer');
-var whellsH = document.querySelectorAll('svg[data-whells="wHells"]');
-var carHeaderWrapper = document.querySelector('.carHeader-wrapper');
-var readMoreBtn = document.querySelectorAll('.read__more');
-var cardTextBox = document.querySelectorAll('.card__text__box');
-var roadMap = document.querySelector('.davyway__roadmap');
-var topMenuFixed = document.querySelector('.top-menu');
-setTimeout(function () {
-  boxes.forEach(function (item) {
-    item.style.opacity = 1;
-    item.style.transition = '0.2s';
-  });
-  boxBack.forEach(function (back) {
-    back.style.opacity = 1;
-    back.style.transition = '0.2s ease-in';
-  });
-  elipses.forEach(function (el) {
-    el.style.opacity = 1;
-    el.style.transition = '0.2s ease-in';
-  });
-}, 10);
-setTimeout(function () {
-  figures.forEach(function (fig) {
-    fig.style.opacity = 1;
-    fig.style.transition = '0.3s ease-out';
-  });
-}, 600);
-setTimeout(function () {
-  figures[2].classList.add('figureThreeMoving');
-  figures[1].classList.add('figureTwoMoving');
-  figures[0].classList.add('figureOneMoving');
-}, 800);
-setTimeout(function () {
-  car.classList.add('car-arrived');
-}, 1000);
-setTimeout(function () {
-  whells.forEach(function (whell) {
-    whell.classList.add('whell-stopped');
-  });
-}, 1100);
-setTimeout(function () {
-  boxTransported.forEach(function (boxTr) {
-    boxTr.classList.add('box-transported');
-  });
-  elipses.forEach(function (elps) {
-    elps.classList.add('elips-moving');
-  });
-  elipses[1].style.display = 'none';
-  elipses[0].style.display = 'none';
-}, 1500);
-setTimeout(function () {
-  boxMerged.classList.add('box-merged');
-}, 2100);
-setTimeout(function () {
-  whells.forEach(function (whell) {
-    whell.classList.remove('whell-stopped');
-    whell.classList.add('whell-running');
-  });
-  factories.classList.add('factories-moved');
-  car.classList.add('car-center-moved');
-  carBody.classList.add('carBody-animated');
-  cityAnimate.classList.add('city-animate');
-}, 2500);
-setTimeout(function () {
-  car.classList.add('zoom-in');
-}, 5500);
-setTimeout(function () {
-  var newTextAnimation = document.querySelector('.svgText');
-  newTextAnimation.classList.add('newAnimation');
-}, 8500);
-setTimeout(function () {
-  var billboardSVG = document.querySelector('.billBoard');
-  var forZomming = document.querySelector('.forZomming');
-  var cityBgk = document.querySelector('#city__bgk');
-  console.log(billboardSVG, forZomming, cityBgk);
-  billboardSVG.style.opacity = 0;
-  forZomming.style.opacity = 0;
-  cityBgk.style.opacity = 0;
-  headerOverfow.style.opacity = 1;
-  header.style.opacity = 1;
-  main.style.opacity = 1;
-  footer.style.opacity = 1;
-}, 10000);
-setTimeout(function () {
-  header.style.display = 'block';
-}, 9900);
-setTimeout(function () {
-  var rect = document.querySelector('#Rectangle_40');
-  rect.classList.add('dead-circle');
-}, 10500);
-setTimeout(function () {
-  allPreloader.classList.add('header-position');
-}, 10600); // ---------------
-// ----------
-// --------------
+window.addEventListener('DOMContentLoaded', function () {
+  var boxes = document.querySelectorAll('g[data-name="boxTogether"]');
+  var boxBack = document.querySelectorAll('g[data-name="boxBack"]');
+  var elipses = document.querySelectorAll('ellipse[data-name="Ellipse 4"]');
+  var figures = document.querySelectorAll('g[data-name="figure"]');
+  var car = document.querySelector('.car-wrapper');
+  var whells = document.querySelectorAll('svg[data-whells="whells"]');
+  var boxTransported = document.querySelectorAll('g[data-fullbox="transported"]');
+  var boxMerged = document.querySelector('#allBoxes');
+  var factories = document.querySelector('#factories');
+  var carBody = document.querySelector('.carBody-wrapper');
+  var cityAnimate = document.querySelector("#allCity");
+  var allPreloader = document.querySelector('.preloader');
+  var bilboard = document.querySelector('.bilboard-wrapper');
+  var preloaderBanner = document.querySelector('.preloader-banner');
+  var logoZoom = document.querySelector('.davWord-wrapper');
+  var headerOverfow = document.querySelector('.header-overflow');
+  var header = document.querySelector('header');
+  var main = document.querySelector('main');
+  var footer = document.querySelector('footer');
+  var whellsH = document.querySelectorAll('svg[data-whells="wHells"]');
+  var carHeaderWrapper = document.querySelector('.carHeader-wrapper');
+  var readMoreBtn = document.querySelectorAll('.read__more');
+  var cardTextBox = document.querySelectorAll('.card__text__box');
+  var roadMap = document.querySelector('.davyway__roadmap');
+  var topMenuFixed = document.querySelector('.top-menu');
 
-setTimeout(function () {
-  headerOverfow.style.zIndex = 99;
-  headerOverfow.style.position = 'absolute';
-  headerOverfow.style.opacity = 1;
-}, 22050);
-setTimeout(function () {
-  headerOverfow.classList.add('overflow-animated');
-}, 22100);
-setTimeout(function () {
-  whellsH.forEach(function (itm) {
-    itm.classList.add('whell-stopped');
-  });
-}, 23000);
-setTimeout(function () {
-  var menu = document.querySelector('.top__menu'),
-      label = document.querySelector('.for-burger'),
-      logoWrapper = document.querySelector('.logo-wrapper');
-  headerOverfow.style.zIndex = 1;
-  menu.style.zIndex = 8;
-  label.style.zIndex = 9;
-  logoWrapper.style.zIndex = 9;
-}, 18000);
-var labelFor = document.querySelector('.for-burger');
-
-function menuActive() {
-  var menuInput = document.querySelector('#burger').checked,
-      menuItem = document.querySelector('.top__menu'),
-      open = document.querySelector('.open'),
-      chekerFixed = document.querySelector('.top-menu'),
-      close = document.querySelector('.close');
-
-  function closeAll() {
-    open.innerHTML = 'MENU';
-    menuItem.style.top = '-2000px';
-    document.querySelector('#burger').checked = false;
-    setTimeout(function () {}, 1000);
+  if (window.screenX <= 620) {
+    allPreloader.style.opacity = 1;
     setTimeout(function () {
-      menuItem.style.display = 'none';
-      menuItem.style.top = '6000px';
-      menuItem.style.opacity = 0;
-      menuItem.style.width = '0px';
+      boxes.forEach(function (item) {
+        item.style.opacity = 1;
+        item.style.transition = '0.2s';
+      });
+      boxBack.forEach(function (back) {
+        back.style.opacity = 1;
+        back.style.transition = '0.2s ease-in';
+      });
+      elipses.forEach(function (el) {
+        el.style.opacity = 1;
+        el.style.transition = '0.2s ease-in';
+      });
+    }, 10);
+    setTimeout(function () {
+      figures.forEach(function (fig) {
+        fig.style.opacity = 1;
+        fig.style.transition = '0.3s ease-out';
+      });
     }, 600);
     setTimeout(function () {
-      menuItem.style.display = 'block';
-    }, 700);
+      figures[2].classList.add('figureThreeMoving');
+      figures[1].classList.add('figureTwoMoving');
+      figures[0].classList.add('figureOneMoving');
+    }, 800);
     setTimeout(function () {
-      menuItem.classList.remove('skew-false');
-      menuItem.classList.add('skew-true');
-      menuItem.children.forEach(function (elem) {
-        elem.classList.add('skew-it');
-        elem.classList.remove('skew-no');
-        elem.classList.remove('fade-in');
-        elem.classList.add('fade-out');
-      });
+      car.classList.add('car-arrived');
     }, 1000);
+    setTimeout(function () {
+      whells.forEach(function (whell) {
+        whell.classList.add('whell-stopped');
+      });
+    }, 1100);
+    setTimeout(function () {
+      boxTransported.forEach(function (boxTr) {
+        boxTr.classList.add('box-transported');
+      });
+      elipses.forEach(function (elps) {
+        elps.classList.add('elips-moving');
+      });
+      elipses[1].style.display = 'none';
+      elipses[0].style.display = 'none';
+    }, 1500);
+    setTimeout(function () {
+      boxMerged.classList.add('box-merged');
+    }, 2100);
+    setTimeout(function () {
+      whells.forEach(function (whell) {
+        whell.classList.remove('whell-stopped');
+        whell.classList.add('whell-running');
+      });
+      factories.classList.add('factories-moved');
+      car.classList.add('car-center-moved');
+      carBody.classList.add('carBody-animated');
+      cityAnimate.classList.add('city-animate');
+    }, 2500);
+    setTimeout(function () {
+      car.classList.add('zoom-in');
+    }, 4350);
+    setTimeout(function () {
+      var newTextAnimation = document.querySelector('.svgText');
+      newTextAnimation.classList.add('newAnimation');
+    }, 8500);
+    setTimeout(function () {
+      var billboardSVG = document.querySelector('.billBoard');
+      var forZomming = document.querySelector('.forZomming');
+      var cityBgk = document.querySelector('#city__bgk');
+      console.log(billboardSVG, forZomming, cityBgk);
+      billboardSVG.style.opacity = 0;
+      forZomming.style.opacity = 0;
+      cityBgk.style.opacity = 0;
+      headerOverfow.style.opacity = 1;
+      header.style.opacity = 1;
+      main.style.opacity = 1;
+      footer.style.opacity = 1;
+    }, 10000);
+    setTimeout(function () {
+      header.style.display = 'block';
+    }, 9900);
+    setTimeout(function () {
+      var rect = document.querySelector('#Rectangle_40');
+      rect.classList.add('dead-circle');
+    }, 10500);
+    setTimeout(function () {
+      allPreloader.classList.add('header-position');
+    }, 10600);
   }
 
-  if (!menuInput) {
-    menuItem.style.display = 'block';
-    menuItem.style.top = 0;
-    menuItem.style.opacity = 1;
-    menuItem.style.width = '93%';
+  if (window.screenX <= 620) {
+    headerOverfow.style.zIndex = 99;
+    headerOverfow.style.position = 'absolute';
+    headerOverfow.style.opacity = 1;
+    headerOverfow.classList.add('overflow-animated');
+  } // ---------------
+  // ----------
+  // --------------
 
-    if (window.screen.width < 1600) {
-      menuItem.style.width = '100%';
-    } else {
+
+  setTimeout(function () {
+    headerOverfow.style.zIndex = 99;
+    headerOverfow.style.position = 'absolute';
+    headerOverfow.style.opacity = 1;
+  }, 22050);
+  setTimeout(function () {
+    headerOverfow.classList.add('overflow-animated');
+  }, 22100);
+  setTimeout(function () {
+    whellsH.forEach(function (itm) {
+      itm.classList.add('whell-stopped');
+    });
+  }, 23000);
+  setTimeout(function () {
+    var menu = document.querySelector('.top__menu'),
+        label = document.querySelector('.for-burger'),
+        logoWrapper = document.querySelector('.logo-wrapper');
+    headerOverfow.style.zIndex = 1;
+    menu.style.zIndex = 8;
+    label.style.zIndex = 9;
+    logoWrapper.style.zIndex = 9;
+  }, 18000);
+  var labelFor = document.querySelector('.for-burger');
+
+  function menuActive() {
+    var menuInput = document.querySelector('#burger').checked,
+        menuItem = document.querySelector('.top__menu'),
+        open = document.querySelector('.open'),
+        chekerFixed = document.querySelector('.top-menu'),
+        close = document.querySelector('.close');
+
+    function closeAll() {
+      open.innerHTML = 'MENU';
+      menuItem.style.top = '-2000px';
+      document.querySelector('#burger').checked = false;
+      setTimeout(function () {}, 1000);
+      setTimeout(function () {
+        menuItem.style.display = 'none';
+        menuItem.style.top = '6000px';
+        menuItem.style.opacity = 0;
+        menuItem.style.width = '0px';
+      }, 600);
+      setTimeout(function () {
+        menuItem.style.display = 'block';
+      }, 700);
+      setTimeout(function () {
+        menuItem.classList.remove('skew-false');
+        menuItem.classList.add('skew-true');
+        menuItem.children.forEach(function (elem) {
+          elem.classList.add('skew-it');
+          elem.classList.remove('skew-no');
+          elem.classList.remove('fade-in');
+          elem.classList.add('fade-out');
+        });
+      }, 1000);
+    }
+
+    if (!menuInput) {
+      menuItem.style.display = 'block';
+      menuItem.style.top = 0;
+      menuItem.style.opacity = 1;
       menuItem.style.width = '93%';
-    }
 
-    open.innerHTML = 'CLOSE';
-    setTimeout(function () {
-      menuItem.classList.remove('skew-true');
-      menuItem.classList.add('skew-false');
-      menuItem.children.forEach(function (elem) {
-        elem.classList.remove('skew-it');
-        elem.classList.add('skew-no');
-        elem.classList.remove('skew-it');
-        elem.classList.add('fade-in');
-        elem.classList.remove('fade-out');
-      });
-    }, 1000);
-  } else {
-    open.innerHTML = 'MENU';
-    menuItem.style.top = '-2000px';
-    setTimeout(function () {}, 1000);
-    setTimeout(function () {
-      menuItem.style.display = 'none';
-      menuItem.style.top = '6000px';
-      menuItem.style.opacity = 0;
-      menuItem.style.width = '0px';
-    }, 600);
-    setTimeout(function () {
-      menuItem.style.display = 'block';
-    }, 700);
-    setTimeout(function () {
-      menuItem.classList.remove('skew-false');
-      menuItem.classList.add('skew-true');
-      menuItem.children.forEach(function (elem) {
-        elem.classList.add('skew-it');
-        elem.classList.remove('skew-no');
-        elem.classList.remove('fade-in');
-        elem.classList.add('fade-out');
-      });
-    }, 1000);
-  }
+      if (window.screen.width < 1600) {
+        menuItem.style.width = '100%';
+      } else {
+        menuItem.style.width = '93%';
+      }
 
-  menuItem.children.forEach(function (child) {
-    child.addEventListener('click', closeAll);
-  });
-}
-
-labelFor.addEventListener('click', function () {
-  menuActive();
-});
-readMoreBtn.forEach(function (btn, itemBlock) {
-  var readingBox = false;
-  btn.addEventListener('click', function () {
-    if (readingBox === false) {
-      cardTextBox[itemBlock].style.maxHeight = '300px';
-      readingBox = true;
-      btn.innerHTML = 'READ LESS';
+      open.innerHTML = 'CLOSE';
+      setTimeout(function () {
+        menuItem.classList.remove('skew-true');
+        menuItem.classList.add('skew-false');
+        menuItem.children.forEach(function (elem) {
+          elem.classList.remove('skew-it');
+          elem.classList.add('skew-no');
+          elem.classList.remove('skew-it');
+          elem.classList.add('fade-in');
+          elem.classList.remove('fade-out');
+        });
+      }, 1000);
     } else {
-      cardTextBox[itemBlock].style.maxHeight = '100px';
-      readingBox = false;
-      btn.innerHTML = 'READ MORE';
+      open.innerHTML = 'MENU';
+      menuItem.style.top = '-2000px';
+      setTimeout(function () {}, 1000);
+      setTimeout(function () {
+        menuItem.style.display = 'none';
+        menuItem.style.top = '6000px';
+        menuItem.style.opacity = 0;
+        menuItem.style.width = '0px';
+      }, 600);
+      setTimeout(function () {
+        menuItem.style.display = 'block';
+      }, 700);
+      setTimeout(function () {
+        menuItem.classList.remove('skew-false');
+        menuItem.classList.add('skew-true');
+        menuItem.children.forEach(function (elem) {
+          elem.classList.add('skew-it');
+          elem.classList.remove('skew-no');
+          elem.classList.remove('fade-in');
+          elem.classList.add('fade-out');
+        });
+      }, 1000);
     }
-  });
-});
 
-function checkScreenWidth() {
-  if (window.scrollY > 124 && window.screen.width < 1600) {
-    topMenuFixed.classList.add('menu-screen');
-  } else {
-    topMenuFixed.classList.remove('menu-screen');
+    menuItem.children.forEach(function (child) {
+      child.addEventListener('click', closeAll);
+    });
   }
-}
 
-setInterval(function () {
-  checkScreenWidth();
-}, 10);
-
-function whellRollingInterval() {
-  whellsH.forEach(function (wheelH) {
-    wheelH.classList.remove('whell-running');
-    wheelH.classList.add('whell-stopped');
+  labelFor.addEventListener('click', function () {
+    menuActive();
   });
-}
+  readMoreBtn.forEach(function (btn, itemBlock) {
+    var readingBox = false;
+    btn.addEventListener('click', function () {
+      if (readingBox === false) {
+        cardTextBox[itemBlock].style.maxHeight = '300px';
+        readingBox = true;
+        btn.innerHTML = 'READ LESS';
+      } else {
+        cardTextBox[itemBlock].style.maxHeight = '100px';
+        readingBox = false;
+        btn.innerHTML = 'READ MORE';
+      }
+    });
+  });
 
-setTimeout(function () {
-  whellRollingInterval();
-}, 2900);
-var logoBtn = document.querySelector('.logo-wrapper');
-logoBtn.addEventListener('click', function () {
-  window.scrollTo(0, 0);
+  function checkScreenWidth() {
+    if (window.scrollY > 124 && window.screen.width < 1600) {
+      topMenuFixed.classList.add('menu-screen');
+    } else {
+      topMenuFixed.classList.remove('menu-screen');
+    }
+  }
+
+  setInterval(function () {
+    checkScreenWidth();
+  }, 10);
+
+  function whellRollingInterval() {
+    whellsH.forEach(function (wheelH) {
+      wheelH.classList.remove('whell-running');
+      wheelH.classList.add('whell-stopped');
+    });
+  }
+
+  setTimeout(function () {
+    whellRollingInterval();
+  }, 2900);
+  var logoBtn = document.querySelector('.logo-wrapper');
+  logoBtn.addEventListener('click', function () {
+    window.scrollTo(0, 0);
+  });
 });
 
 /***/ })

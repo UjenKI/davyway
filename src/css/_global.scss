@@ -4,6 +4,7 @@
 }
 html {
     scroll-behavior: smooth;
+    position: relative;
   }
 body{
     scroll-behavior: smooth;
@@ -11,7 +12,7 @@ body{
     font-size: 14px;
     font-weight: 400;
     position: relative;
-    overflow-x: hidden;
+    // overflow-x: hidden;
     color: #3C3B3B;
     .container{
         max-width: 1231px;
@@ -49,7 +50,9 @@ body{
             position: absolute;
             bottom: -31px;
             left: 50%;
-            transform: translateX(-50%);
+            -webkit-transform: translateX(-50%);
+                -ms-transform: translateX(-50%);
+                    transform: translateX(-50%);
 
         }
     }

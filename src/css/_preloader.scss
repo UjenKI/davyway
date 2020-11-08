@@ -8,15 +8,22 @@
     top: 0;
     left: 0;
     overflow: hidden;
+    -webkit-transition: 0.3s ease-out;
+    -o-transition: 0.3s ease-out;
     transition: 0.3s ease-out;
     z-index: 1000;
     svg#city__bgk{
         width: 100%;
         #allCity.city-animate{
+            -webkit-transform: translateX(-2000px);
+            -ms-transform: translateX(-2000px);
             transform: translateX(-2000px);
-            transition: 2.3s ease;
+            -webkit-transition: 2s ease;
+            -o-transition: 2s ease;
+            transition: 2s ease;
         }
         #trumpet{
+            -webkit-animation: trumpetJump 1s infinite alternate;
             animation: trumpetJump 1s infinite alternate;
         }
         @keyframes trumpetJump {
@@ -28,7 +35,9 @@
             }
         }
         #clouds{
+            -webkit-animation: cloudFly 1s infinite linear;
             animation: cloudFly 1s infinite linear;
+            -webkit-animation-delay: 1.05s;
             animation-delay: 1.05s;
         }
         @keyframes cloudFly {
@@ -41,18 +50,24 @@
             }
         }
         #circleWindowOne{
+            -webkit-animation: windowBlick 1s infinite;
             animation: windowBlick 1s infinite;
         }
         #circleWindowTwo{
-            animation: windowBlick 1s infinite;
-            animation-delay: 1s;
+            -webkit-animation: windowBlick 1s infinite;
+                    animation: windowBlick 1s infinite;
+            -webkit-animation-delay: 1s;
+                    animation-delay: 1s;
         }
         #circleWindowThree{
-            animation: windowBlick 1s infinite;
-            animation-delay: 2s;
+            -webkit-animation: windowBlick 1s infinite;
+                    animation: windowBlick 1s infinite;
+            -webkit-animation-delay: 2s;
+                    animation-delay: 2s;
         }
         #secBuildTrumpOne{
-            animation: wo 0.3s infinite alternate ease-in;
+            -webkit-animation: wo 0.3s infinite alternate ease-in;
+                    animation: wo 0.3s infinite alternate ease-in;
         }
         @keyframes wo {
             0%{
@@ -63,8 +78,10 @@
             }
         }
         #secBuildTrumpTwo{
-            animation: woo 0.3s infinite alternate ease-in;
-            animation-delay: 0.3s;
+            -webkit-animation: woo 0.3s infinite alternate ease-in;
+                    animation: woo 0.3s infinite alternate ease-in;
+            -webkit-animation-delay: 0.3s;
+                    animation-delay: 0.3s;
         }
         @keyframes woo {
             0%{
@@ -75,7 +92,8 @@
             }
         }
         #secBuildTrumpThree{
-            animation: wooo 0.3s infinite alternate ease-in;
+            -webkit-animation: wooo 0.3s infinite alternate ease-in;
+                    animation: wooo 0.3s infinite alternate ease-in;
         }
         @keyframes wooo {
             0%{
@@ -86,7 +104,8 @@
             }
         }
         #bigSmokeOne{
-            animation: smokingOne 1s infinite ease-in-out;
+            -webkit-animation: smokingOne 1s infinite ease-in-out;
+                    animation: smokingOne 1s infinite ease-in-out;
         }
         @keyframes smokingOne {
             0%{
@@ -100,8 +119,10 @@
             }
         }
         #bigSmokeTwo{
-            animation: smokingTwo 0.7s infinite ease-in-out;
-            animation-delay: 1s;
+            -webkit-animation: smokingTwo 0.7s infinite ease-in-out;
+                    animation: smokingTwo 0.7s infinite ease-in-out;
+            -webkit-animation-delay: 1s;
+                    animation-delay: 1s;
         }
         @keyframes smokingTwo {
             0%{
@@ -115,8 +136,10 @@
             }
         }
         #bigSmokeThree{
-            animation: smokingThree 0.8s infinite ease-in-out;
-            animation-delay: 0.1s;
+            -webkit-animation: smokingThree 0.8s infinite ease-in-out;
+                    animation: smokingThree 0.8s infinite ease-in-out;
+            -webkit-animation-delay: 0.1s;
+                    animation-delay: 0.1s;
         }
         @keyframes smokingThree {
             0%{
@@ -130,8 +153,11 @@
             }
         }
         #smallSmokeOne{
-            animation: smokOne 0.8s infinite ease-in-out;
-            transform-origin: left;
+            -webkit-animation: smokOne 0.8s infinite ease-in-out;
+                    animation: smokOne 0.8s infinite ease-in-out;
+            -webkit-transform-origin: left;
+                -ms-transform-origin: left;
+                    transform-origin: left;
 
         }
         @keyframes smokOne {
@@ -146,7 +172,8 @@
             }
         }
         #thrdBuildTrumpOne{
-            animation: trumpedThird 0.8s infinite ease-in;
+            -webkit-animation: trumpedThird 0.8s infinite ease-in;
+                    animation: trumpedThird 0.8s infinite ease-in;
         }
         @keyframes trumpedThird {
             0%{
@@ -160,8 +187,10 @@
             }
         }
         #thrdBuildTrumpTwo{
-            animation: trumpedThirdTwo 0.9s infinite ease-in;
-            animation-delay: 0.3s;
+            -webkit-animation: trumpedThirdTwo 0.9s infinite ease-in;
+                    animation: trumpedThirdTwo 0.9s infinite ease-in;
+            -webkit-animation-delay: 0.3s;
+                    animation-delay: 0.3s;
         }
         @keyframes trumpedThirdTwo {
             0%{
@@ -175,7 +204,8 @@
             }
         }
         #thrdBuildTrumpThree{
-            animation: trumpedThree 0.9s infinite ease-in;
+            -webkit-animation: trumpedThree 0.9s infinite ease-in;
+                    animation: trumpedThree 0.9s infinite ease-in;
         }
         @keyframes trumpedThree {
             0%{
@@ -189,7 +219,8 @@
             }
         }
         #thrdBuildTrumpFour{
-            animation: trumpedFour 0.8s infinite ease-in;
+            -webkit-animation: trumpedFour 0.8s infinite ease-in;
+                    animation: trumpedFour 0.8s infinite ease-in;
         }
         @keyframes  trumpedFour{
             0%{
@@ -203,7 +234,8 @@
             }
         }
         #cloudFly{
-            animation: cloud 0.8s infinite ease-in;
+            -webkit-animation: cloud 0.8s infinite ease-in;
+                    animation: cloud 0.8s infinite ease-in;
         }
         @keyframes cloud {
             0%{
@@ -217,48 +249,86 @@
             }
         }
         .factories-moved{
-            transform: translate(-1474px, 0);
-            transition: 1.2s ease-in;
+            -webkit-transform: translate(-1474px, 0);
+                -ms-transform: translate(-1474px, 0);
+                    transform: translate(-1474px, 0);
+            -webkit-transition: 1s ease-in;
+            -o-transition: 1s ease-in;
+            transition: 1s ease-in;
         }
         .box-transported{
-            transform: scale(0.3) translate(-158px, 674px);
+            -webkit-transform: scale(0.3) translate(-158px, 674px);
+                -ms-transform: scale(0.3) translate(-158px, 674px);
+                    transform: scale(0.3) translate(-158px, 674px);
+            -webkit-transition: 0.5s ease-in-out;
+            -o-transition: 0.5s ease-in-out;
             transition: 0.5s ease-in-out;
         }
         #fullbox2.box-transported{
-            transform: scale(.3) translate(-158px, 625px);
+            -webkit-transform: scale(.3) translate(-158px, 625px);
+                -ms-transform: scale(.3) translate(-158px, 625px);
+                    transform: scale(.3) translate(-158px, 625px);
         }
         #fullbox3.box-transported{
-            transform: scale(.3) translate(-158px, 569px);
+            -webkit-transform: scale(.3) translate(-158px, 569px);
+                -ms-transform: scale(.3) translate(-158px, 569px);
+                    transform: scale(.3) translate(-158px, 569px);
         }
         .box-merged{
-            transform: translate(73px, 10px);
+            -webkit-transform: translate(73px, 10px);
+                -ms-transform: translate(73px, 10px);
+                    transform: translate(73px, 10px);
             opacity: 0;
+            -webkit-transition: 0.2s ease-in;
+            -o-transition: 0.2s ease-in;
             transition: 0.2s ease-in;
         }
         .elips-moving{
-            transform: scale(.4) translate(1617px,2500px);
+            -webkit-transform: scale(.4) translate(1617px,2500px);
+                -ms-transform: scale(.4) translate(1617px,2500px);
+                    transform: scale(.4) translate(1617px,2500px);
+            -webkit-transition: 0.5s ease-in-out;
+            -o-transition: 0.5s ease-in-out;
             transition: 0.5s ease-in-out;
         }
         [data-name="boxTogether"],[data-name="boxBack"], [data-name="Ellipse 4"], [data-name="figure"]{
             opacity: 0;
         }
         .figureThreeMoving{
-            transform: translate(33px, -7px) scale(2);
+            -webkit-transform: translate(33px, -7px) scale(2);
+                -ms-transform: translate(33px, -7px) scale(2);
+                    transform: translate(33px, -7px) scale(2);
+            -webkit-transition: 0.3s ease-in-out;
+            -o-transition: 0.3s ease-in-out;
             transition: 0.3s ease-in-out;
         }
         .figureTwoMoving{
-            transform: translate(28px, -16px) scale(3);
+            -webkit-transform: translate(28px, -16px) scale(3);
+                -ms-transform: translate(28px, -16px) scale(3);
+                    transform: translate(28px, -16px) scale(3);
+            -webkit-transition: 0.3s ease-in-out;
+            -o-transition: 0.3s ease-in-out;
             transition: 0.3s ease-in-out;
         }
         .figureOneMoving{
-            transform: translate(30px,-13px) scale(1.5);
+            -webkit-transform: translate(30px,-13px) scale(1.5);
+                -ms-transform: translate(30px,-13px) scale(1.5);
+                    transform: translate(30px,-13px) scale(1.5);
+            -webkit-transition: 0.3s ease-in-out;
+            -o-transition: 0.3s ease-in-out;
             transition: 0.3s ease-in-out;
         }
         #car{
-            transform: translate(-620px, -251px) scale(0.5);
+            -webkit-transform: translate(-620px, -251px) scale(0.5);
+                -ms-transform: translate(-620px, -251px) scale(0.5);
+                    transform: translate(-620px, -251px) scale(0.5);
         }
         #car.autoCar{
-            transform: translate(-568px, -1045px) scale(1);
+            -webkit-transform: translate(-568px, -1045px) scale(1);
+                -ms-transform: translate(-568px, -1045px) scale(1);
+                    transform: translate(-568px, -1045px) scale(1);
+            -webkit-transition: 0.3s ease-out;
+            -o-transition: 0.3s ease-out;
             transition: 0.3s ease-out;
         }
         
@@ -266,8 +336,12 @@
     .car-wrapper{
         position: absolute;
         top: 311px;
+        -webkit-transition: 0.5s ease-in-out;
+        -o-transition: 0.5s ease-in-out;
         transition: 0.5s ease-in-out;
-        transform: scale(0.5);
+        -webkit-transform: scale(0.5);
+        -ms-transform: scale(0.5);
+                transform: scale(0.5);
         left: -385px;
         max-height: 210px;
         
@@ -278,7 +352,9 @@
             max-width: 200px;
             // -------------
             .davWord-wrapper{
-                transform: scale(.20);
+                -webkit-transform: scale(.20);
+                    -ms-transform: scale(.20);
+                        transform: scale(.20);
                 display: block;
                 margin-top: -170px;
                 margin-left: 17px;
@@ -286,12 +362,14 @@
                 height: 143px;
             }
             .davWord-wrapper.logo-zoom-animated{
-                // transform: scale(3.7) translate(-142px,-27.4px);
-                // transition: 3.5s ease-out;
-                animation: logoZoom 2.5s ease-in-out;
-                animation-iteration-count: 1;
-                animation-fill-mode: forwards;  
-                animation-direction: alternate;
+                -webkit-animation: logoZoom 2.5s ease-in-out;
+                        animation: logoZoom 2.5s ease-in-out;
+                -webkit-animation-iteration-count: 1;
+                        animation-iteration-count: 1;
+                -webkit-animation-fill-mode: forwards;
+                        animation-fill-mode: forwards;  
+                -webkit-animation-direction: alternate;  
+                        animation-direction: alternate;
             }
             @keyframes logoZoom {
                 0%{
@@ -306,11 +384,15 @@
             }
             // ---------------
             .zoomIn-wrapper{
+                -webkit-transform: translate(-81px,-1327px) scale(0.18);
+                -ms-transform: translate(-81px,-1327px) scale(0.18);
                 transform: translate(-81px,-1327px) scale(0.18);
                 .billboardZoom-wrapper{
                     svg.billBoard{
                         width: 3px;
-                        transform: translate(680px,-804px);
+                        -webkit-transform: translate(680px,-804px);
+                            -ms-transform: translate(680px,-804px);
+                                transform: translate(680px,-804px);
                     }
                     .circleZoom{
                         display: block;
@@ -321,11 +403,15 @@
                         position: absolute;
                         top: 33%;
                         left: 50%;
-                        transform: translate(-50%, -33%);
+                        -webkit-transform: translate(-50%, -33%);
+                            -ms-transform: translate(-50%, -33%);
+                                transform: translate(-50%, -33%);
                     }
                     .circle-davyway-wrapper{
                         svg{
-                            transform: translate(-188px,-1901px) scale(.01);
+                            -webkit-transform: translate(-188px,-1901px) scale(.01);
+                            -ms-transform: translate(-188px,-1901px) scale(.01);
+                                transform: translate(-188px,-1901px) scale(.01);
                             rect{
                                 fill: rgba(255, 255, 255, 0.1);
                             }
@@ -333,6 +419,8 @@
                     }
                     .text-board-wrapper{
                         svg{
+                            -webkit-transform: translate(632px,-2856px) scale(0.1);
+                            -ms-transform: translate(632px,-2856px) scale(0.1);
                             transform: translate(632px,-2856px) scale(0.1);
                             width: 10px;
                         }
@@ -342,32 +430,54 @@
             // -------------
         }
         .carBody-wrapper.carBody-animated{
+            -webkit-animation: carBodyAnimated 1.1s ease-in-out;
             animation: carBodyAnimated 1.1s ease-in-out;
-            animation-iteration-count: 2;
+            -webkit-animation-iteration-count: 2;
+                    animation-iteration-count: 2;
             .bilboard-wrapper.bilboard-animated{
                 opacity: 1;
+                -webkit-transition: opacity 0.3s ease-out;
+                -o-transition: opacity 0.3s ease-out;
                 transition: opacity 0.3s ease-out;
                 margin-top: -648px;
                 margin-left: 232px;
-                transform: scale(0.01);
-                animation: builboardZomm 2.5s ease-in-out;
-                animation-iteration-count: 1;
-                animation-duration: 1.9s;
-                animation-fill-mode: forwards;
-                animation-direction: alternate;
-                #boardSvg{
-                    transform: translate(-76px, 0);
-                    animation: svgBigger 1s ease-in-out;
-                    animation-delay: 3.8s;
-                    animation-iteration-count: 1;
-                    animation-fill-mode: forwards;
-                    #boardblack{
-                        animation: bilbordLighting 2.5s ease-in-out;
+                -webkit-transform: scale(0.01);
+                -ms-transform: scale(0.01);
+                        transform: scale(0.01);
+                -webkit-animation: builboardZomm 2.5s ease-in-out;
+                        animation: builboardZomm 2.5s ease-in-out;
+                -webkit-animation-iteration-count: 1;
                         animation-iteration-count: 1;
-                        animation-duration: 2.2s;
+                -webkit-animation-duration: 1.9s;
+                        animation-duration: 1.9s;
+                -webkit-animation-fill-mode: forwards;
                         animation-fill-mode: forwards;
+                -webkit-animation-direction: alternate;
                         animation-direction: alternate;
-                    }
+                #boardSvg{
+                    -webkit-transform: translate(-76px, 0);
+                    -ms-transform: translate(-76px, 0);
+                    transform: translate(-76px, 0);
+                    -webkit-animation: svgBigger 1s ease-in-out;
+                            animation: svgBigger 1s ease-in-out;
+                    -webkit-animation-delay: 3.8s;
+                            animation-delay: 3.8s;
+                    -webkit-animation-iteration-count: 1;
+                            animation-iteration-count: 1;
+                    -webkit-animation-fill-mode: forwards;
+                            animation-fill-mode: forwards;
+                        #boardblack{
+                                -webkit-animation: bilbordLighting 2.5s ease-in-out;
+                                        animation: bilbordLighting 2.5s ease-in-out;
+                                -webkit-animation-iteration-count: 1;
+                                        animation-iteration-count: 1;
+                                -webkit-animation-duration: 2.2s;
+                                        animation-duration: 2.2s;
+                                -webkit-animation-fill-mode: forwards;
+                                        animation-fill-mode: forwards;
+                                -webkit-animation-direction: alternate;
+                                        animation-direction: alternate;
+                        }
                     @keyframes bilbordLighting {
                         0%{
                             opacity: 1;
@@ -378,12 +488,18 @@
                     }
                     circle{
                         fill: #fff;
-                        transform: translate(402px, 189px) scale(1);
+                        -webkit-transform: translate(402px, 189px) scale(1);
+                            -ms-transform: translate(402px, 189px) scale(1);
+                                transform: translate(402px, 189px) scale(1);
                         opacity: 0;
-                        animation: circleAnimate 1s ease-in-out;
-                        animation-delay: 3.8s;
-                        animation-iteration-count: 1;
-                        animation-fill-mode: forwards;
+                        -webkit-animation: circleAnimate 1s ease-in-out;
+                                animation: circleAnimate 1s ease-in-out;
+                        -webkit-animation-delay: 3.8s;
+                                animation-delay: 3.8s;
+                        -webkit-animation-iteration-count: 1;
+                                animation-iteration-count: 1;
+                        -webkit-animation-fill-mode: forwards;
+                                animation-fill-mode: forwards;
                     }
                     @keyframes circleAnimate {
                         to{
@@ -392,22 +508,32 @@
                         }
                     }
                     #bilboard-text{
+                        -webkit-animation: textTransform 1s ease-out;
                         animation: textTransform 1s ease-out;
-                        animation-delay: 4s;
-                        animation-iteration-count: 1;
-                        animation-fill-mode: forwards;
+                        -webkit-animation-delay: 4s;
+                                animation-delay: 4s;
+                        -webkit-animation-iteration-count: 1;
+                                animation-iteration-count: 1;
+                        -webkit-animation-fill-mode: forwards;
+                                animation-fill-mode: forwards;
                         #Choose_the_right_way_with{
+                            -webkit-transform: translate(326px, 184px) rotate(6.5);
+                            -ms-transform: translate(326px, 184px) rotate(6.5);
                             transform: translate(326px, 184px) rotate(6.5);
                         }
                     }
                     @keyframes textTransform{
                         to{
+                            -webkit-transform: scale(0.6) rotate(-6deg) translate(239px,374px);
+                            -ms-transform: scale(0.6) rotate(-6deg) translate(239px,374px);
                             transform: scale(0.6) rotate(-6deg) translate(239px,374px);
                         }
                     }
                 }
                 @keyframes svgBigger{
                     to{
+                        -webkit-transform: translate(-76px, 0) scale(2.6);
+                        -ms-transform: translate(-76px, 0) scale(2.6);
                         transform: translate(-76px, 0) scale(2.6);
                     }
                 }
@@ -417,116 +543,174 @@
                 0%{
                     margin-top: -648px;
                     margin-left: 232px;
+                    -webkit-transform: scale(0.01);
+                    -ms-transform: scale(0.01);
                     transform: scale(0.01);
                 }
                 100%{
                     margin-top: -657px;
                     margin-left: 207px;
+                    -webkit-transform: scale(.038);
+                    -ms-transform: scale(.038);
                     transform: scale(.038);
                 }
             }
         }
         @keyframes carBodyAnimated {
             0%{
-                transform: scale(0.95);
+                -webkit-transform: scale(0.95);
+                    -ms-transform: scale(0.95);
+                        transform: scale(0.95);
             }
             50%{
-                transform: scaleX(1.001) scaleY(1.021);
+                -webkit-transform: scaleX(1.001) scaleY(1.021);
+                    -ms-transform: scaleX(1.001) scaleY(1.021);
+                        transform: scaleX(1.001) scaleY(1.021);
             }
             100%{
-                transform: scale(0.95);
+                -webkit-transform: scale(0.95);
+                    -ms-transform: scale(0.95);
+                        transform: scale(0.95);
             }
         }
         .whells-wrapper{
+            display: -webkit-box;
+            display: -ms-flexbox;
             display: flex;
-            justify-content: space-between;
+            -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                    justify-content: space-between;
             margin: 26px 72px 17px 145px;
             #whell{
-                animation: whellRolingFst 0.3s infinite;
+                -webkit-animation: whellRolingFst 0.4s infinite;
+                animation: whellRolingFst 0.4s infinite;
+                -webkit-animation-timing-function: linear;
                 animation-timing-function: linear;
                 // transform-origin: 50% 50%;
             }
             @keyframes whellRolingFst {
                 to{
+                    -webkit-transform: rotate(360deg);
+                    -ms-transform: rotate(360deg);
                     transform: rotate(360deg);
                 }
             }
             #whell2{
-                animation: whellRoling 0.3s infinite;
+                -webkit-animation: whellRoling 0.4s infinite;
+                animation: whellRoling 0.4s infinite;
+                -webkit-animation-timing-function: linear;
                 animation-timing-function: linear;
                 // transform-origin: 50% 50%;
             }
             @keyframes whellRoling {
                 to{
-                    transform: rotate(360deg);
+                    -webkit-transform: rotate(360deg);
+                        -ms-transform: rotate(360deg);
+                            transform: rotate(360deg);
                 }
             }
             #whell.whell-stopped, #whell2.whell-stopped{
-                animation-play-state: paused;
+                -webkit-animation-play-state: paused;
+                        animation-play-state: paused;
             }
             #whell.whell-running, #whell2.whell-running{
-                animation-play-state: running;
+                -webkit-animation-play-state: running;
+                        animation-play-state: running;
+                        animation-iteration-count: 8;
             }
         }
         #Line_128{
-            animation: smallLineAnimated 1.355s infinite;
-            animation-delay: 9.2s;
+            -webkit-animation: smallLineAnimated 1.355s infinite;
+                    animation: smallLineAnimated 1.355s infinite;
+            -webkit-animation-delay: 9.2s;
+                    animation-delay: 9.2s;
         }
         @keyframes smallLineAnimated {
             0%{
-                transform: translate(668px, 1496px);
+                -webkit-transform: translate(668px, 1496px);
+                    -ms-transform: translate(668px, 1496px);
+                        transform: translate(668px, 1496px);
             }
             50%{
-                transform: translate(644px, 1496px) scaleX(1.5);
+                -webkit-transform: translate(644px, 1496px) scaleX(1.5);
+                    -ms-transform: translate(644px, 1496px) scaleX(1.5);
+                        transform: translate(644px, 1496px) scaleX(1.5);
             }
             100%{
-                transform: translate(668px, 1496px);
+                -webkit-transform: translate(668px, 1496px);
+                    -ms-transform: translate(668px, 1496px);
+                        transform: translate(668px, 1496px);
             }
         }
         #Path_296{
-            animation: bigLineAnimated 1.355s infinite;
-            animation-delay: 9.2s;
+            -webkit-animation: bigLineAnimated 1.355s infinite;
+                    animation: bigLineAnimated 1.355s infinite;
+            -webkit-animation-delay: 9.2s;
+                    animation-delay: 9.2s;
         }
         @keyframes bigLineAnimated {
             0%{
-                transform: translate(672px, 1510px);
+                -webkit-transform: translate(672px, 1510px);
+                    -ms-transform: translate(672px, 1510px);
+                        transform: translate(672px, 1510px);
             }
             50%{
-                transform: translate(672px, 1510px) scaleX(1.5);
+                -webkit-transform: translate(672px, 1510px) scaleX(1.5);
+                    -ms-transform: translate(672px, 1510px) scaleX(1.5);
+                        transform: translate(672px, 1510px) scaleX(1.5);
             }
             100%{
-                transform: translate(672px, 1510px);
+                -webkit-transform: translate(672px, 1510px);
+                    -ms-transform: translate(672px, 1510px);
+                        transform: translate(672px, 1510px);
             }
         }
 
     }
     .car-wrapper.car-arrived{
+        -webkit-transition: 0.4s ease-in-out;
+        -o-transition: 0.4s ease-in-out;
         transition: 0.4s ease-in-out;
         left: 127px;
-        transform: scale(1);
+        -webkit-transform: scale(1);
+            -ms-transform: scale(1);
+                transform: scale(1);
     }
     .car-wrapper.car-arrived.car-center-moved{
+        -webkit-transition: 0.5s ease-in-out;
+        -o-transition: 0.5s ease-in-out;
         transition: 0.5s ease-in-out;
         left: 50%;
-        transform: scale(1) translateX(-50%);
-        animation: carMoving 0.6s  ease-in-out;
-        animation-iteration-count: 2;
+        -webkit-transform: scale(1) translateX(-50%);
+            -ms-transform: scale(1) translateX(-50%);
+                transform: scale(1) translateX(-50%);
+        -webkit-animation: carMoving 0.6s  ease-in-out;
+                animation: carMoving 0.6s  ease-in-out;
+        -webkit-animation-iteration-count: 2;
+                animation-iteration-count: 2;
     }
     @keyframes carMoving {
         0%{
-            transform: scale(1) translateX(-50%) translateY(0);
+            -webkit-transform: scale(1) translateX(-50%) translateY(0);
+                -ms-transform: scale(1) translateX(-50%) translateY(0);
+                    transform: scale(1) translateX(-50%) translateY(0);
         }
         50%{
-            transform: scale(1) translateX(-50%) translateY(2px);
+            -webkit-transform: scale(1) translateX(-50%) translateY(2px);
+                -ms-transform: scale(1) translateX(-50%) translateY(2px);
+                    transform: scale(1) translateX(-50%) translateY(2px);
         }
         100%{
-            transform: scale(1) translateX(-50%) translateY(0);
+            -webkit-transform: scale(1) translateX(-50%) translateY(0);
+                -ms-transform: scale(1) translateX(-50%) translateY(0);
+                    transform: scale(1) translateX(-50%) translateY(0);
         }
     }
     .car-wrapper.car-arrived.car-center-moved.zoom-in{
-        animation: carZoomIn 0.6s ease-in-out;
-        //  animation-delay: 0.5s;
-         animation-fill-mode: forwards;
+        -webkit-animation: carZoomIn 0.8s ease-in-out;
+         animation: carZoomIn 0.8s ease-in-out;
+         -webkit-animation-fill-mode: forwards;
+                 animation-fill-mode: forwards;
          .carBody-wrapper{
             //  --------------------------------------
             .zoomIn-wrapper{
@@ -535,49 +719,73 @@
                     transform: translate(10px, -6px);
                 }
                 #Group_159{
-                    animation: davywayZoom 3.2s ease-in-out;
-                    animation-fill-mode: forwards;
-                    animation-delay: 0.3s;
+                    -webkit-animation: davywayZoom 3.3s ease-in-out;
+                            animation: davywayZoom 3.3s ease-in-out;
+                    -webkit-animation-fill-mode: forwards;
+                            animation-fill-mode: forwards;
+                    -webkit-animation-delay: 0.3s;
+                            animation-delay: 0.3s;
                 }
                 @keyframes davywayZoom {
                     to{
-                        transform: translate(-3900px,-2786px) scale(15);
+                        -webkit-transform: translate(-3900px,-2786px) scale(15);
+                            -ms-transform: translate(-3900px,-2786px) scale(15);
+                                transform: translate(-3900px,-2786px) scale(15);
                     }
                 } 
                 .billboardZoom-wrapper{
                     svg.billBoard{
                         width: 3px;
-                        transform: translate(680px,-804px);
-                        animation: svgZoomIn 2.5s ease-in-out;
-                        animation-fill-mode: forwards;
-                        animation-delay: 0.7s;
+                        -webkit-transform: translate(680px,-804px);
+                            -ms-transform: translate(680px,-804px);
+                                transform: translate(680px,-804px);
+                        -webkit-animation: svgZoomIn 2.7s ease-in-out;
+                                animation: svgZoomIn 2.7s ease-in-out;
+                        -webkit-animation-fill-mode: forwards;
+                                animation-fill-mode: forwards;
+                        -webkit-animation-delay: 0.7s;
+                                animation-delay: 0.7s;
                     }
                     @keyframes svgZoomIn {
                         to{
                             width: 463px;
-                            transform: translate(410px, -667px);
+                            -webkit-transform: translate(410px, -667px);
+                                -ms-transform: translate(410px, -667px);
+                                    transform: translate(410px, -667px);
                         }
                     }
                     .circle-davyway-wrapper{
                         svg{
+                            -webkit-transform: translate(-188px,-1901px) scale(.01);
+                            -ms-transform: translate(-188px,-1901px) scale(.01);
                             transform: translate(-188px,-1901px) scale(.01);
-                            animation: circleDiametrScale 2s ease-in-out;
-                            animation-fill-mode: forwards;
-                            animation-delay: 4s;
-                            rect{
-                                fill: rgba(255, 255, 255, 0);
-                                animation: rectColor 0.6s ease-in-out;
-                                animation-fill-mode: forwards;
-                                animation-delay: 4s;
-                            }
+                            -webkit-animation: circleDiametrScale 2s ease-in-out;
+                                    animation: circleDiametrScale 2s ease-in-out;
+                            -webkit-animation-fill-mode: forwards;
+                                    animation-fill-mode: forwards;
+                            -webkit-animation-delay: 4s;
+                                    animation-delay: 4s;
+                                    rect{
+                                        fill: rgba(255, 255, 255, 0);
+                                        -webkit-animation: rectColor 0.6s ease-in-out;
+                                                animation: rectColor 0.6s ease-in-out;
+                                        -webkit-animation-fill-mode: forwards;
+                                                animation-fill-mode: forwards;
+                                        -webkit-animation-delay: 4s;
+                                                animation-delay: 4s;
+                                    }
                             @keyframes rectColor{
                                 to{
                                     fill: rgba(255,255,255,1);
                                 }
                             }
                             rect.dead-circle{
+                                -webkit-animation: toOpacity 0.3s ease-in-out;
                                 animation: toOpacity 0.3s ease-in-out;
-                                animation-fill-mode: forwards;
+                                -webkit-animation-fill-mode: forwards;
+                                        animation-fill-mode: forwards;
+                                -webkit-transition: 0.3s ease-in-out;
+                                -o-transition: 0.3s ease-in-out;
                                 transition: 0.3s ease-in-out;
                                 // animation-delay: 1s;
                             }
@@ -589,37 +797,60 @@
                         }
                         @keyframes circleDiametrScale {
                             to{
-                                transform: translate(-188px,-1801px) scale(2.5);
+                                -webkit-transform: translate(-188px,-1801px) scale(2.5);
+                                    -ms-transform: translate(-188px,-1801px) scale(2.5);
+                                        transform: translate(-188px,-1801px) scale(2.5);
                             }
                         }
                     }
                     .text-board-wrapper{
                         svg{
                             // transform: translate(682px,-2856px) scale(0.1);
+                            -webkit-transform: translate(682px,-2856px) scale(1);
+                            -ms-transform: translate(682px,-2856px) scale(1);
                             transform: translate(682px,-2856px) scale(1);
                             width: 10px;
-                            animation: textZoomIn 2.5s ease-in-out;
-                            animation-fill-mode: forwards;
-                            animation-delay: 0.7s;
+                            -webkit-animation: textZoomIn 2.5s ease-in-out;
+                                    animation: textZoomIn 2.5s ease-in-out;
+                            -webkit-animation-fill-mode: forwards;
+                                    animation-fill-mode: forwards;
+                            -webkit-animation-delay: 0.7s;
+                                    animation-delay: 0.7s;
+                                    text#Choose_the_right_way_with{
+                                        transform: translate(451px, 318px) rotate(3deg);
+                                    }
                         }
                         @keyframes textZoomIn {
                             to{
-                                transform: translate(492px,-2828px) scale(1) rotate(10deg);
+                                -webkit-transform: translate(492px,-2828px) scale(1) rotate(8deg);
+                                    -ms-transform: translate(492px,-2828px) scale(1) rotate(8deg);
+                                        transform: translate(492px,-2828px) scale(1) rotate(8deg);
                                 width: 313px;
                             }
                         }
                         svg.svgText.newAnimation{
-                            transform: translate(492px,-2828px) scale(1.2) rotate(10deg);
+                            -webkit-transform: translate(492px,-2828px) scale(1.2) rotate(8deg);
+                            -ms-transform: translate(492px,-2828px) scale(1.2) rotate(8deg);
+                            transform: translate(492px,-2828px) scale(1.2) rotate(8deg);
                             width: 313px;
-                            animation: forZoom 3s ease-in-out;
-                            animation-fill-mode: forwards;
-                            // animation-delay: 2s;
+                            -webkit-animation: forZoom 3s ease-in-out;
+                                    animation: forZoom 3s ease-in-out;
+                            -webkit-animation-fill-mode: forwards;
+                                    animation-fill-mode: forwards;
+                            -webkit-transition: 0.3s ease-in-out;
+                            -o-transition: 0.3s ease-in-out;
                             transition: 0.3s ease-in-out;
                             text#Choose_the_right_way_with{
+                                transform: translate(451px, 318px) rotate(0deg);
+                                -webkit-transition: 0.3s ease-in-out;
+                                -o-transition: 0.3s ease-in-out;
                                 transition: 0.3s ease-in-out;
-                                animation: textStyling 1s ease-in-out;
-                                animation-fill-mode: forwards;
-                                animation-delay: 2s;
+                                -webkit-animation: textStyling 1s ease-in-out;
+                                        animation: textStyling 1s ease-in-out;
+                                -webkit-animation-fill-mode: forwards;
+                                        animation-fill-mode: forwards;
+                                -webkit-animation-delay: 2s;
+                                        animation-delay: 2s;
                             }
                             @keyframes textStyling {
                                 to{
@@ -630,17 +861,21 @@
                         }
                         @keyframes forZoom {
                             0%{
-                                transform: translate(492px,-2828px) scale(1.1) rotate(10deg);
+                                -webkit-transform: translate(492px,-2828px) scale(1.1) rotate(10deg);
+                                    -ms-transform: translate(492px,-2828px) scale(1.1) rotate(10deg);
+                                        transform: translate(492px,-2828px) scale(1.1) rotate(10deg);
                                 width: 313px;
                             }
                             20%, 30%, 40%, 50%, 60%, 70%, 80%{
-                                transform: translate(489px,-2761px) scale(0.9) rotate(0deg);
+                                -webkit-transform: translate(489px,-2761px) scale(0.9) rotate(0deg);
+                                    -ms-transform: translate(489px,-2761px) scale(0.9) rotate(0deg);
+                                        transform: translate(489px,-2761px) scale(0.9) rotate(0deg);
                                 width: 343px;
-                                // transform: translate(372px,-2761px) scale(.9) rotate(0deg);
-                                // width: 343px;
                             }
                             100%{
-                                transform: translate(372px,-2761px) scale(.9) rotate(0deg);
+                                -webkit-transform: translate(431px,-2761px) scale(.9) rotate(0deg);
+                                    -ms-transform: translate(431px,-2761px) scale(.9) rotate(0deg);
+                                        transform: translate(431px,-2761px) scale(.9) rotate(0deg);
                                 width: 343px;
                             }
                         }
@@ -648,7 +883,9 @@
                 }
                 @keyframes billboardZoonIn {
                     to{
-                        transform: translate(474px, -680px) scale(1);
+                        -webkit-transform: translate(474px, -680px) scale(1);
+                            -ms-transform: translate(474px, -680px) scale(1);
+                                transform: translate(474px, -680px) scale(1);
                     }
                 }
             }
@@ -657,19 +894,31 @@
        
      }
      @keyframes carZoomIn{
-            to{
-                transform: translate(20px,428px) scale(8.5);
-            }
+        to{
+            -webkit-transform: translate(20px,428px) scale(8.5);
+                -ms-transform: translate(20px,428px) scale(8.5);
+                    transform: translate(20px,428px) scale(8.5);
         }
+        }
+    p.inline-text{
+        opacity: 0;
+    }
 }
 .preloader.header-position{
-    width: 63%;
+    width: 650px;
     height: 66vh;
+    -webkit-transition: 1s ease-in-out;
+    -o-transition: 1s ease-in-out;
     transition: 1s ease-in-out;
     position: absolute;
     z-index: 1;
-    // -----
-    margin-left: 8vw;
-} 
+    left: 11%;
+    p.inline-text{
+        opacity: 1;
+        font-size: 16px;
+        margin-top: -170px;
+        margin-left: 9px;
+    }
+}
 
 

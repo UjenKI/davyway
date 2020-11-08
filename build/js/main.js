@@ -1616,7 +1616,7 @@ window.addEventListener('DOMContentLoaded', function () {
   var roadMap = document.querySelector('.davyway__roadmap');
   var topMenuFixed = document.querySelector('.top-menu');
 
-  if (window.screenX <= 620) {
+  if (window.screenX <= 992) {
     allPreloader.style.opacity = 1;
     setTimeout(function () {
       boxes.forEach(function (item) {
@@ -1706,8 +1706,8 @@ window.addEventListener('DOMContentLoaded', function () {
     }, 10600);
   }
 
-  if (window.screenX <= 620) {
-    headerOverfow.style.zIndex = 99;
+  if (window.screenX <= 992) {
+    // headerOverfow.style.zIndex = 99;
     headerOverfow.style.position = 'absolute';
     headerOverfow.style.opacity = 1;
     headerOverfow.classList.add('overflow-animated');
@@ -1717,7 +1717,7 @@ window.addEventListener('DOMContentLoaded', function () {
 
 
   setTimeout(function () {
-    headerOverfow.style.zIndex = 99;
+    // headerOverfow.style.zIndex = 99;
     headerOverfow.style.position = 'absolute';
     headerOverfow.style.opacity = 1;
   }, 22050);

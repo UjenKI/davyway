@@ -27,6 +27,47 @@
         }
     }
 }
+@media screen and (max-width: 1480px){
+    header{
+        .container.banner-wrapper{
+            .banner-item{
+                .carHeader-wrapper{
+                    z-index: 999;
+                    position: absolute;
+                    display: block;
+                    left: -50%;
+                    top: 290px;
+                    -webkit-animation: carHmoving 3s ease-out forwards 2s;
+                    animation: carHmoving 3s ease-out forwards 2s;
+                }
+                @-webkit-keyframes carHmoving {
+                    0%{
+                        left:-50%
+                    }
+                    20%, 50%, 80%{
+                        left: 64%;
+                    }
+                    100%{
+                        width: 0;
+                        left: 100%;
+                    }
+                }
+                @keyframes carHmoving {
+                    0%{
+                        left:-50%
+                    }
+                    20%, 50%, 80%{
+                        left: 64%;
+                    }
+                    100%{
+                        width: 0;
+                        left: 100%;
+                    }
+                }
+            }
+        }
+    }
+}
 @media screen and (max-width: 1440px){
     header{
         .container.banner-wrapper{
@@ -49,6 +90,47 @@
                                 transform: translateY(-349px);
                             }
                         }
+                    }
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: 1360px){
+    header{
+        .container.banner-wrapper{
+            .banner-item{
+                .carHeader-wrapper{
+                    z-index: 999;
+                    position: absolute;
+                    display: block;
+                    left: -50%;
+                    top: 290px;
+                    -webkit-animation: carHmoving 3s ease-out forwards 2s;
+                    animation: carHmoving 3s ease-out forwards 2s;
+                }
+                @-webkit-keyframes carHmoving {
+                    0%{
+                        left:-50%
+                    }
+                    20%, 50%, 80%{
+                        left: 60%;
+                    }
+                    100%{
+                        width: 0;
+                        left: 100%;
+                    }
+                }
+                @keyframes carHmoving {
+                    0%{
+                        left:-50%
+                    }
+                    20%, 50%, 80%{
+                        left: 60%;
+                    }
+                    100%{
+                        width: 0;
+                        left: 100%;
                     }
                 }
             }
@@ -128,6 +210,35 @@
                     p{
                         line-height: 27px;
                         left: 0vw;
+                    }
+                }
+                .carHeader-wrapper{
+                    top: 235px;
+                    -webkit-animation: carHmoving 3s ease-out forwards 2s;
+                    animation: carHmoving 3s ease-out forwards 2s;
+                }
+                @-webkit-keyframes carHmoving {
+                    0%{
+                        left:-50%
+                    }
+                    20%, 50%, 80%{
+                        left: 60%;
+                    }
+                    100%{
+                        width: 0;
+                        left: 120%;
+                    }
+                }
+                @keyframes carHmoving {
+                    0%{
+                        left:-50%
+                    }
+                    20%, 50%, 80%{
+                        left: 60%;
+                    }
+                    100%{
+                        width: 0;
+                        left: 120%;
                     }
                 }
             }
@@ -481,6 +592,36 @@
                             top: 73px;
                             right: 37px;
                         }
+                    }
+                }
+            }
+            .banner-item{
+                .carHeader-wrapper{
+                    -webkit-animation: carHmoving 3s ease-out forwards 2s;
+                        animation: carHmoving 3s ease-out forwards 2s;
+                }
+                @-webkit-keyframes carHmoving {
+                    0%{
+                        left:-50%
+                    }
+                    20%, 50%, 80%{
+                        left: 57%;
+                    }
+                    100%{
+                        width: 0;
+                        left: 120%;
+                    }
+                }
+                @keyframes carHmoving {
+                    0%{
+                        left:-50%
+                    }
+                    20%, 50%, 80%{
+                        left: 57%;
+                    }
+                    100%{
+                        width: 0;
+                        left: 120%;
                     }
                 }
             }
@@ -853,6 +994,20 @@
         }
     }
 
+}
+@media screen and (max-width: 1000px){
+    header{
+        .container.banner-wrapper{
+            .banner-item{
+                .banner-item-animation{
+                    transform: scale(0.7);
+                }
+                .carHeader-wrapper{
+                    transform: scale(0.7);
+                }
+            }
+        }
+    }
 }
 @media screen and (max-width: 992px){
     .preloader{
@@ -2430,7 +2585,7 @@
                         left:-570px;
                     }
                     20%, 50%, 80%{
-                        left: 330px;
+                        left: 430px;
                     }
                     100%{
                         left: 1000px;
@@ -2441,7 +2596,7 @@
                         left:-570px;
                     }
                     20%, 50%, 80%{
-                        left: 330px;
+                        left: 430px;
                     }
                     100%{
                         left: 1000px;
@@ -2939,7 +3094,7 @@
                         left:-570px;
                     }
                     20%, 50%, 80%{
-                        left: 330px;
+                        left: 380px;
                     }
                     100%{
                         left: 1000px;
@@ -2950,7 +3105,7 @@
                         left:-570px;
                     }
                     20%, 50%, 80%{
-                        left: 330px;
+                        left: 380px;
                     }
                     100%{
                         left: 1000px;
@@ -3481,7 +3636,7 @@
                     -webkit-transform: scale(1);
                         -ms-transform: scale(1);
                             transform: scale(1);
-                    margin-top: 60px;
+                    margin-top: 80px;
                     left: -570px;
                     -webkit-animation: carHmoving 3.3s ease-out forwards 2s;
                             animation: carHmoving 3.3s ease-out forwards 2s;
@@ -3533,7 +3688,7 @@
                         left:-570px;
                     }
                     20%, 50%, 80%{
-                        left: 250px;
+                        left: 100px;
                     }
                     100%{
                         left: 1050px;
@@ -3544,7 +3699,7 @@
                         left:-570px;
                     }
                     20%, 50%, 80%{
-                        left: 250px;
+                        left: 100px;
                     }
                     100%{
                         left: 1050px;
@@ -4001,6 +4156,15 @@
                     }
                 } 
             } 
+            .top-menu.menu-screen{
+                .menu-wrapper{
+                    .menu-item.label{
+                        label{
+                            left: 84%;
+                        }
+                    }
+                }
+            }
         } 
     }
     main{
@@ -4021,6 +4185,42 @@
                                 margin-top: 31px;
                             }
                         }
+                    }
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: 590px){
+    header{
+        .container.banner-wrapper{
+            .banner-item{
+                .carHeader-wrapper{
+                    -webkit-animation: carHmoving 3s ease-out forwards 2s;
+                    animation: carHmoving 3s ease-out forwards 2s;
+                }
+                @-webkit-keyframes carHmoving {
+                    0%{
+                        left:-570px;
+                    }
+                    20%, 50%, 80%{
+                        left: 50px;
+                    }
+                    100%{
+                        width: 0;
+                        left: 1050px;
+                    }
+                }
+                @keyframes carHmoving {
+                    0%{
+                        left:-570px;
+                    }
+                    20%, 50%, 80%{
+                        left: 50px;
+                    }
+                    100%{
+                        width: 0;
+                        left: 1050px;
                     }
                 }
             }

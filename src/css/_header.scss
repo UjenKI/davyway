@@ -56,9 +56,9 @@ header{
             position: fixed;
             width: 100%;
             opacity: 0;
-            max-width: 1846px;
-            left: 50%;
-            transform: translateX(-45%);
+            // max-width: 1615px;
+            left: 0;
+            transform: translateX(0);
             top: 0;
             z-index: 9;
             display: -webkit-box;
@@ -71,8 +71,8 @@ header{
                 -ms-flex-align: center;
                     align-items: center;
             padding: 55px 70px;
-            -webkit-animation: transitionAnimate 1s ease-in-out forwards;
-                    animation: transitionAnimate 1s ease-in-out forwards;
+            -webkit-animation: transitionAnimate 0.5s ease-in-out forwards;
+                    animation: transitionAnimate 0.5s ease-in-out forwards;
             -webkit-transition: 0.3s;
             -o-transition: 0.3s;
             transition: 0.3s;
@@ -199,9 +199,9 @@ header{
                             -ms-transform: rotate(-90deg);
                                 transform: rotate(-90deg);
                     }
-                    .top__menu{
-                        margin-left: -20px;
-                    }
+                    // .top__menu{
+                    //     margin-left: -50px;
+                    // }
                     .top__menu.skew-true{
                         -webkit-transform: translateY(7%) skewY(7deg);
                             -ms-transform: translateY(7%) skewY(7deg);
@@ -427,11 +427,14 @@ header{
         }
         .top-menu.menu-screen{
             background: rgba(220,220,220,0.6);
-            padding: 23px;
+            padding: 8px 23px;
+            .logo-wrapper{
+                transform: scale(0.8);
+            }
             .menu-wrapper{
                 .menu-item.label{
                     label{
-                        top: 73px;
+                        top: 57px;
                         right: 46px;
                     }
                 }
@@ -782,6 +785,7 @@ header{
                 justify-content: space-between;
         .header-bottom-item{
             display: block;
+            z-index: 2;
             a{
                 cursor: pointer;
                 text-transform: none;

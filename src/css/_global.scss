@@ -2,6 +2,11 @@
     margin: 0;
     padding: 0;
 }
+html,body{
+    // -webkit-overflow-scrolling : touch !important;
+    // overflow: auto !important;
+    // height: 100% !important;
+}
 html {
     scroll-behavior: smooth;
     position: relative;
@@ -12,7 +17,7 @@ body{
     font-size: 14px;
     font-weight: 400;
     position: relative;
-    // overflow-x: hidden;
+    overflow-x: hidden;
     color: #3C3B3B;
     .container{
         max-width: 1231px;

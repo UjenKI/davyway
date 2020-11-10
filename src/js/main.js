@@ -25,7 +25,7 @@ const cardTextBox = document.querySelectorAll('.card__text__box');
 const roadMap = document.querySelector('.davyway__roadmap');
 const topMenuFixed = document.querySelector('.top-menu');
 
-if(window.screenX <= 992){
+if(window.screenX <= 1200){
     allPreloader.style.opacity = 1;
     setTimeout(() =>{
         boxes.forEach(item => {
@@ -130,7 +130,7 @@ if(window.screenX <= 992){
 }
 
 
-if(window.screenX <= 992){
+if(window.screenX <= 1200){
     // headerOverfow.style.zIndex = 99;
     headerOverfow.style.position = 'absolute';
     headerOverfow.style.opacity = 1;
@@ -201,11 +201,19 @@ function menuActive(){
         menuItem.style.display = 'block';
         menuItem.style.top = 0;
         menuItem.style.opacity = 1;
-        menuItem.style.width = '93%';
-        if(window.screen.width < 1600){
-            menuItem.style.width = '100%';
-        } else {
+        menuItem.style.width = '96%';
+        if(window.screen.width < 1600 && window.screen.width > 425){
             menuItem.style.width = '93%';
+            if(window.screen.width <= 768){
+                menuItem.style.width = '95%';
+            }
+            if(chekerFixed.classList.contains('menu-screen')){
+                menuItem.style.width = '97%';
+            }
+        }else if(window.screen.width <= 425){
+            menuItem.style.width = '101%';
+        } else {
+            menuItem.style.width = '96%';
         }
         open.innerHTML = 'CLOSE';
         setTimeout(() => {
@@ -218,7 +226,7 @@ function menuActive(){
                 elem.classList.add('fade-in');
                 elem.classList.remove('fade-out');
             })
-        },1000);
+        },500);
     } else {
         open.innerHTML = 'MENU';
         menuItem.style.top = '-2000px';
@@ -242,7 +250,7 @@ function menuActive(){
                 elem.classList.remove('fade-in');
                 elem.classList.add('fade-out');
             })
-        },1000);
+        },500);
     }
         menuItem.children.forEach(child => {
             child.addEventListener('click', closeAll);

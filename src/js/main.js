@@ -25,7 +25,7 @@ const cardTextBox = document.querySelectorAll('.card__text__box');
 const roadMap = document.querySelector('.davyway__roadmap');
 const topMenuFixed = document.querySelector('.top-menu');
 
-if(window.screenX <= 1200){
+if(window.screenX <= 620){
     allPreloader.style.opacity = 1;
     setTimeout(() =>{
         boxes.forEach(item => {
@@ -130,7 +130,7 @@ if(window.screenX <= 1200){
 }
 
 
-if(window.screenX <= 1200){
+if(window.screenX <= 620){
     // headerOverfow.style.zIndex = 99;
     headerOverfow.style.position = 'absolute';
     headerOverfow.style.opacity = 1;

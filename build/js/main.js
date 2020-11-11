@@ -1741,6 +1741,7 @@ window.addEventListener('DOMContentLoaded', function () {
   var labelFor = document.querySelector('.for-burger');
 
   function menuActive() {
+    var bodyTag = document.querySelector('body');
     var menuInput = document.querySelector('#burger').checked,
         menuItem = document.querySelector('.top__menu'),
         open = document.querySelector('.open'),
@@ -1749,6 +1750,7 @@ window.addEventListener('DOMContentLoaded', function () {
 
     function closeAll() {
       open.innerHTML = 'MENU';
+      bodyTag.style.overflow = 'auto';
       menuItem.style.top = '-2000px';
       document.querySelector('#burger').checked = false;
       setTimeout(function () {}, 1000);
@@ -1799,6 +1801,7 @@ window.addEventListener('DOMContentLoaded', function () {
       setTimeout(function () {
         menuItem.classList.remove('skew-true');
         menuItem.classList.add('skew-false');
+        bodyTag.style.overflow = 'hidden';
         menuItem.children.forEach(function (elem) {
           elem.classList.remove('skew-it');
           elem.classList.add('skew-no');
@@ -1810,6 +1813,7 @@ window.addEventListener('DOMContentLoaded', function () {
     } else {
       open.innerHTML = 'MENU';
       menuItem.style.top = '-2000px';
+      bodyTag.style.overflow = 'auto';
       setTimeout(function () {}, 1000);
       setTimeout(function () {
         menuItem.style.display = 'none';
@@ -1867,6 +1871,18 @@ window.addEventListener('DOMContentLoaded', function () {
     checkScreenWidth();
   }, 10);
 
+  function checkLargeScreen() {
+    if (window.scrollY > 124 && window.screen.width > 1600) {
+      topMenuFixed.classList.add('menu-reduce');
+    } else {
+      topMenuFixed.classList.remove('menu-reduce');
+    }
+  }
+
+  setInterval(function () {
+    checkLargeScreen();
+  }, 10);
+
   function whellRollingInterval() {
     whellsH.forEach(function (wheelH) {
       wheelH.classList.remove('whell-running');
@@ -1881,6 +1897,83 @@ window.addEventListener('DOMContentLoaded', function () {
   logoBtn.addEventListener('click', function () {
     window.scrollTo(0, 0);
   });
+}); // -----------scrollSpy----------
+
+var about = document.querySelector('#about'),
+    mission = document.querySelector('#mission'),
+    story = document.querySelector('#story'),
+    us = document.querySelector('#us'),
+    shop = document.querySelector('#shop'),
+    road = document.querySelector('#road'),
+    contact = document.querySelector('#contact'),
+    aboutLink = document.querySelector('.two__item'),
+    missionLink = document.querySelector('.three__item'),
+    storyLink = document.querySelector('.four__item'),
+    usLink = document.querySelector('.five__item'),
+    shopLink = document.querySelector('.six__item'),
+    roadLink = document.querySelector('.seven__item'),
+    contactLink = document.querySelector('.last__item');
+window.addEventListener('scroll', function () {
+  var winDows = window.pageYOffset;
+
+  if (about.offsetTop <= winDows && mission.offsetTop > winDows) {
+    console.log('about');
+    missionLink.classList.remove('active-link');
+    storyLink.classList.remove('active-link');
+    usLink.classList.remove('active-link');
+    shopLink.classList.remove('active-link');
+    roadLink.classList.remove('active-link');
+    contactLink.classList.remove('active-link');
+    aboutLink.classList.add('active-link');
+  } else if (mission.offsetTop <= winDows && story.offsetTop > winDows) {
+    missionLink.classList.add('active-link');
+    storyLink.classList.remove('active-link');
+    usLink.classList.remove('active-link');
+    shopLink.classList.remove('active-link');
+    roadLink.classList.remove('active-link');
+    contactLink.classList.remove('active-link');
+    aboutLink.classList.remove('active-link');
+  } else if (story.offsetTop <= winDows && us.offsetTop > winDows) {
+    missionLink.classList.remove('active-link');
+    storyLink.classList.add('active-link');
+    usLink.classList.remove('active-link');
+    shopLink.classList.remove('active-link');
+    roadLink.classList.remove('active-link');
+    contactLink.classList.remove('active-link');
+    aboutLink.classList.remove('active-link');
+  } else if (us.offsetTop <= winDows && shop.offsetTop > winDows) {
+    missionLink.classList.remove('active-link');
+    storyLink.classList.remove('active-link');
+    usLink.classList.add('active-link');
+    shopLink.classList.remove('active-link');
+    roadLink.classList.remove('active-link');
+    contactLink.classList.remove('active-link');
+    aboutLink.classList.remove('active-link');
+  } else if (shop.offsetTop <= winDows && road.offsetTop > winDows) {
+    missionLink.classList.remove('active-link');
+    storyLink.classList.remove('active-link');
+    usLink.classList.remove('active-link');
+    shopLink.classList.add('active-link');
+    roadLink.classList.remove('active-link');
+    contactLink.classList.remove('active-link');
+    aboutLink.classList.remove('active-link');
+  } else if (road.offsetTop <= winDows && contact.offsetTop > winDows) {
+    missionLink.classList.remove('active-link');
+    storyLink.classList.remove('active-link');
+    usLink.classList.remove('active-link');
+    shopLink.classList.remove('active-link');
+    roadLink.classList.remove('active-link');
+    contactLink.classList.add('active-link');
+    aboutLink.classList.remove('active-link');
+  } else if (winDows == 0) {
+    missionLink.classList.remove('active-link');
+    storyLink.classList.remove('active-link');
+    usLink.classList.remove('active-link');
+    shopLink.classList.remove('active-link');
+    roadLink.classList.remove('active-link');
+    contactLink.classList.remove('active-link');
+    aboutLink.classList.remove('active-link');
+  }
 });
 
 /***/ })

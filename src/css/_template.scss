@@ -470,6 +470,17 @@ main{
                                         margin-left: 13px;
                                     }
                                 }
+                                &:hover ~ #img__box__id{
+                                    top: -10px;
+                                    svg{
+                                        #Rectangle_340-2{
+                                            fill:#049AAF;
+                                        }
+                                        #Polygon_2-2{
+                                            fill:#049AAF;
+                                        }
+                                    }
+                                }
                             }
                             
                         }
@@ -652,13 +663,15 @@ main{
                                 svg{
                                     #Ellipse_44{
                                         fill: #038DA0;
+                                        stroke: #038DA0;
                                     }
                                 }
                             }
                             &:hover ~ .break__text{
-                                background: -webkit-gradient(linear, left top, left bottom, from(#048DA0), to(#00A9BF));
-                                background: -o-linear-gradient(top, #048DA0, #00A9BF);
-                                background: linear-gradient(to bottom, #048DA0, #00A9BF);
+                                background: -webkit-gradient(linear, left top, left bottom, from(rgba(4, 141, 160, 1)), to(rgba(0, 169, 191, 1)));
+                                background: -o-linear-gradient(top, rgba(4, 141, 160, 1), rgba(0, 169, 191, 1));
+                                background: linear-gradient(to bottom, rgba(4, 141, 159, 1), rgba(0, 169, 191, 1));
+                                transition: 0.3s ease-in-out;
                                 color: #fff;
                                 -webkit-box-shadow: 0 3px 9px -2px rgba(0,0,0,.66);
                                         box-shadow: 0 3px 9px -2px rgba(0,0,0,.66);
@@ -674,6 +687,7 @@ main{
                             }
                         }
                         .break__text{
+                            background: linear-gradient(to bottom, rgba(4, 141, 160, 0), rgba(0, 169, 191, 0));
                             text-align: center;
                             max-width: 511px;
                             display: block;

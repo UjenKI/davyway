@@ -662,9 +662,6 @@
                 h3{
                     padding: 0 30px;
                 }
-                ul{
-
-                }
             }
         }
         section.our__story{
@@ -4131,9 +4128,6 @@
             }
         }
     }
-    footer{
-        // width: 106%;
-    }
 }
 @media screen and (max-width: 760px){
     main{
@@ -4323,6 +4317,70 @@
         }
     }
 }
+@media screen and (max-width: 570px){
+    main{
+        section.davyway__roadmap{
+            .roadmap__way{
+                margin-top: -110px;
+                .roadway__breakpoints{
+                    .road__img{
+                        svg{
+                            g#slave_3{
+                                transform: translate(10px,-959px) scale(1.1);
+                            }
+                        }
+                    }
+                    ul{
+                        li{
+                            &:nth-child(1){
+                                .break__points{
+                                    .break__img{
+                                        svg{
+                                            left: -38px;
+                                            top: -154px;
+                                        }
+                                    }
+                                }
+                            }
+                            &:nth-child(2){
+                                margin-left: 24%;
+                                margin-top: -11px;
+                                .break__points{
+                                    .break__img{
+                                        svg{
+                                            left: -6px;
+                                        }
+                                    }
+                                }
+                            }
+                            &:nth-child(3){
+                                margin-left: 40%;
+                                .break__points{
+                                    .break__img{
+                                        svg{
+                                            left: 63px;
+                                        }
+                                    }
+                                }
+                            }
+                            &:nth-child(4){
+                                margin-top: 98px;
+                                margin-left: 29%;
+                                .break__points{
+                                    .break__img{
+                                        svg{
+                                            left: 77px;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
 @media screen and (max-width: 556px){
     main{
         section.our__story{
@@ -4369,14 +4427,17 @@
     }
 }
 @media screen and (max-width: 465px){
-    main{
-        section.our__story{
-            .container.story{
-                .story__letter{
-                    &::before{
-                        top: -698px;
-                        transform: skewY(10deg) scale(.145);
-                        left: -317px;
+    html{
+        overflow-x: hidden;
+        main{
+            section.our__story{
+                .container.story{
+                    .story__letter{
+                        &::before{
+                            top: -698px;
+                            transform: skewY(10deg) scale(.145);
+                            left: -317px;
+                        }
                     }
                 }
             }
@@ -4409,8 +4470,15 @@
                 .menu-wrapper{
                     .menu-item.label{
                         .top__menu{
-                            .menu__item a{
-                                font-size: 28px;
+                            padding: 80px 0;
+                            .menu__item {
+                                margin-top: 20px;
+                                a{
+                                    font-size: 25px;
+                                }
+                            }
+                            .menu__item.last__item{
+                                margin-bottom: 70px;
                             }
                         }
                         label{
@@ -4978,9 +5046,6 @@
                 }
             }
         }
-    }
-    footer{
-        // width: 106%;
     }
 }
 @media screen and (max-width: 400px){

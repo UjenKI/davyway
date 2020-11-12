@@ -131,7 +131,6 @@ if(window.screenX <= 620){
 
 
 if(window.screenX <= 620){
-    // headerOverfow.style.zIndex = 99;
     headerOverfow.style.position = 'absolute';
     headerOverfow.style.opacity = 1;
 
@@ -141,7 +140,6 @@ if(window.screenX <= 620){
 // ----------
 // --------------
 setTimeout(() => {
-    // headerOverfow.style.zIndex = 99;
     headerOverfow.style.position = 'absolute';
     headerOverfow.style.opacity = 1;
 },22050);
@@ -398,8 +396,12 @@ window.addEventListener('scroll', () => {
         contactLink.classList.remove('active-link');
         aboutLink.classList.remove('active-link');
     }
-})
+});
 
+const adaptiveSvg = document.querySelector('#city__bgk');
 
-
-
+setInterval(() => {
+    if(window.screen.width <= 1200){
+        adaptiveSvg.removeAttribute('preserveAspectRatio');
+    }
+}, 100);

@@ -1707,7 +1707,6 @@ window.addEventListener('DOMContentLoaded', function () {
   }
 
   if (window.screenX <= 620) {
-    // headerOverfow.style.zIndex = 99;
     headerOverfow.style.position = 'absolute';
     headerOverfow.style.opacity = 1;
     headerOverfow.classList.add('overflow-animated');
@@ -1717,7 +1716,6 @@ window.addEventListener('DOMContentLoaded', function () {
 
 
   setTimeout(function () {
-    // headerOverfow.style.zIndex = 99;
     headerOverfow.style.position = 'absolute';
     headerOverfow.style.opacity = 1;
   }, 22050);
@@ -1975,6 +1973,12 @@ window.addEventListener('scroll', function () {
     aboutLink.classList.remove('active-link');
   }
 });
+var adaptiveSvg = document.querySelector('#city__bgk');
+setInterval(function () {
+  if (window.screen.width <= 1200) {
+    adaptiveSvg.removeAttribute('preserveAspectRatio');
+  }
+}, 100);
 
 /***/ })
 

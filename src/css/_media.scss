@@ -1278,6 +1278,7 @@
     }
     .preloader.header-position{
         width: 730px;
+        height: 100vh;
         p.inline-text{
             transform: translate(30px, -181px);
         }
@@ -1669,11 +1670,55 @@
             .carBody-wrapper{
                 .zoomIn-wrapper{
                     .billboardZomm-wrapper{
+                        svg.billBoard{
+                            width: 3px;
+                            -webkit-transform: translate(680px,-804px);
+                                -ms-transform: translate(680px,-804px);
+                                    transform: translate(680px,-804px);
+                            -webkit-animation: svgZoomIn 2.7s ease-in-out;
+                                    animation: svgZoomIn 2.7s ease-in-out;
+                            -webkit-animation-fill-mode: forwards;
+                                    animation-fill-mode: forwards;
+                            -webkit-animation-delay: 0.7s;
+                                    animation-delay: 0.7s;
+                        }
+                        @keyframes svgZoomIn {
+                            to{
+                                width: 340px;
+                                -webkit-transform: translate(470px, -687px);
+                                    -ms-transform: translate(470px, -687px);
+                                        transform: translate(470px, -687px);
+                            }
+                        }
                         .text-board-wrapper{
+                            svg{
+                                // transform: translate(682px,-2856px) scale(0.1);
+                                -webkit-transform: translate(682px,-2856px) scale(1);
+                                -ms-transform: translate(682px,-2856px) scale(1);
+                                transform: translate(682px,-2856px) scale(1);
+                                width: 10px;
+                                -webkit-animation: textZoomIn 2.5s ease-in-out;
+                                        animation: textZoomIn 2.5s ease-in-out;
+                                -webkit-animation-fill-mode: forwards;
+                                        animation-fill-mode: forwards;
+                                -webkit-animation-delay: 0.7s;
+                                        animation-delay: 0.7s;
+                                        text#Choose_the_right_way_with{
+                                            transform: translate(451px, 318px) rotate(3deg);
+                                        }
+                            }
+                            @keyframes textZoomIn {
+                                to{
+                                    -webkit-transform: translate(492px,-2828px) scale(0.8) rotate(8deg);
+                                        -ms-transform: translate(492px,-2828px) scale(0.8) rotate(8deg);
+                                            transform: translate(492px,-2828px) scale(0.8) rotate(8deg);
+                                    width: 313px;
+                                }
+                            }
                             svg.svgText.newAnimation{
-                                -webkit-transform: translate(492px,-2828px) scale(1.2) rotate(10deg);
-                                    -ms-transform: translate(492px,-2828px) scale(1.2) rotate(10deg);
-                                        transform: translate(492px,-2828px) scale(1.2) rotate(10deg);
+                                -webkit-transform: translate(492px,-2828px) scale(0.8) rotate(10deg);
+                                    -ms-transform: translate(492px,-2828px) scale(0.8) rotate(10deg);
+                                        transform: translate(492px,-2828px) scale(0.8) rotate(10deg);
                                 width: 313px;
                                 -webkit-animation: forZoom 3s ease-in-out;
                                         animation: forZoom 3s ease-in-out;
@@ -5814,7 +5859,6 @@
                         }
                     }
                     .top-menu.menu-screen{
-                        background: rgba(191,191,191,0.5);
                         padding: 0;
                         .menu-wrapper{
                             .menu-item.label{

@@ -5,15 +5,21 @@
 html {
     scroll-behavior: smooth;
     position: relative;
-  }
+    height: calc(100vh - 60px);
+    overflow-x: hidden;
+}
 body{
     scroll-behavior: smooth;
     font-family: 'Helvetica', sans-serif;
     font-size: 14px;
     font-weight: 400;
     position: relative;
-    overflow-x: hidden;
+    overflow-x: hidden !important;
     color: #3C3B3B;
+    // -------------
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    // ----------
     .container{
         max-width: 1231px;
         margin: 0 auto;
@@ -64,6 +70,9 @@ body{
 header{
     display: none;
 }
+// header,main{
+//     overflow-x: hidden;
+// }
 header, main, footer, .header-overflow{
     opacity: 0;
 }

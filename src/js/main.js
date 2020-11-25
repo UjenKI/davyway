@@ -25,6 +25,7 @@ const cardTextBox = document.querySelectorAll('.card__text__box');
 const roadMap = document.querySelector('.davyway__roadmap');
 const topMenuFixed = document.querySelector('.top-menu');
 
+
 if(window.screenX <= 1280){
     allPreloader.style.opacity = 1;
     setTimeout(() =>{
@@ -105,7 +106,6 @@ if(window.screenX <= 1280){
         const billboardSVG = document.querySelector('.billBoard');
         const forZomming = document.querySelector('.forZomming');
         const cityBgk = document.querySelector('#city__bgk');
-        console.log(billboardSVG, forZomming, cityBgk);
         billboardSVG.style.opacity = 0;
         forZomming.style.opacity = 0;
         cityBgk.style.opacity = 0;
@@ -148,10 +148,19 @@ setTimeout(() => {
     headerOverfow.classList.add('overflow-animated');
 }, 22100);
 setTimeout(() => {
-    whellsH.forEach(itm => {
-        itm.classList.add('whell-stopped');
-    })
+    if(window.screen.width > 1024){
+        whellsH.forEach(itm => {
+            itm.classList.add('whell-stopped');
+        })
+    }
 }, 23000);
+// setTimeout(() => {
+//     if(window.screen.width <= 1024){
+//         whellsH.forEach(itm => {
+//             itm.classList.add('whell-stopped');
+//         })
+//     }
+// }, 20000);
 setTimeout(() => {
     const menu = document.querySelector('.top__menu'),
           label = document.querySelector('.for-burger'),
@@ -172,7 +181,6 @@ function menuActive(){
           close = document.querySelector('.close');
           function closeAll(){
             open.innerHTML = 'MENU';
-            bodyTag.style.overflow = 'auto';
             menuItem.style.top = '-2000px';
             document.querySelector('#burger').checked = false;
             setTimeout(() => {
@@ -216,10 +224,10 @@ function menuActive(){
             menuItem.style.width = '96%';
         }
         open.innerHTML = 'CLOSE';
+        // bodyTag.style.overflow = 'hidden';
         setTimeout(() => {
             menuItem.classList.remove('skew-true');
             menuItem.classList.add('skew-false');
-            bodyTag.style.overflow = 'hidden';
 
             menuItem.children.forEach(elem => {
                 elem.classList.remove('skew-it');
@@ -232,7 +240,7 @@ function menuActive(){
     } else {
         open.innerHTML = 'MENU';
         menuItem.style.top = '-2000px';
-        bodyTag.style.overflow = 'auto';
+        // bodyTag.style.overflowY = 'visible';
         setTimeout(() => {
         },1000);
         setTimeout(() => {
@@ -267,7 +275,7 @@ readMoreBtn.forEach((btn, itemBlock) => {
     let readingBox = false;
     btn.addEventListener('click', () => {
         if(readingBox === false){
-            cardTextBox[itemBlock].style.maxHeight = '300px';
+            cardTextBox[itemBlock].style.maxHeight = '400px';
             readingBox = true;
             btn.innerHTML = 'READ LESS';
         } else {
@@ -278,7 +286,7 @@ readMoreBtn.forEach((btn, itemBlock) => {
     })
 });
 
-
+const bodyOverflow = document.querySelector('body');
 
 function checkScreenWidth(){
     if(window.scrollY > 124 && window.screen.width < 1600){
@@ -317,7 +325,7 @@ setTimeout(() => {
 const logoBtn = document.querySelector('.logo-wrapper');
 
 logoBtn.addEventListener('click', () => {
-    window.scrollTo(0, 0);
+    bodyOverflow.scrollTo(0, 0);
 })
 })
 // -----------scrollSpy----------
@@ -334,12 +342,13 @@ const about = document.querySelector('#about'),
       usLink = document.querySelector('.five__item'),
       shopLink = document.querySelector('.six__item'),
       roadLink = document.querySelector('.seven__item'),
-      contactLink = document.querySelector('.last__item');
+      contactLink = document.querySelector('.last__item'),
+      bodyOverflowScroll = document.querySelector('body');
 
-window.addEventListener('scroll', () => {
+    window.addEventListener('scroll', () => {
+    // let winDows = bodyOverflowScroll.scrollTop;
     let winDows = window.pageYOffset;
     if(about.offsetTop <= winDows && mission.offsetTop > winDows){
-        console.log('about');
         missionLink.classList.remove('active-link');
         storyLink.classList.remove('active-link');
         usLink.classList.remove('active-link');
@@ -379,7 +388,15 @@ window.addEventListener('scroll', () => {
         roadLink.classList.remove('active-link');
         contactLink.classList.remove('active-link');
         aboutLink.classList.remove('active-link');
-    } else if(road.offsetTop <= winDows && contact.offsetTop > winDows) {
+    } else if(road.offsetTop <= winDows && contact.offsetTop > winDows && (road.offsetTop + 400) > winDows) {
+        missionLink.classList.remove('active-link');
+        storyLink.classList.remove('active-link');
+        usLink.classList.remove('active-link');
+        shopLink.classList.remove('active-link');
+        roadLink.classList.add('active-link');
+        contactLink.classList.remove('active-link');
+        aboutLink.classList.remove('active-link');
+    }else if((road.offsetTop + 400) < winDows){
         missionLink.classList.remove('active-link');
         storyLink.classList.remove('active-link');
         usLink.classList.remove('active-link');
@@ -396,7 +413,7 @@ window.addEventListener('scroll', () => {
         contactLink.classList.remove('active-link');
         aboutLink.classList.remove('active-link');
     }
-});
+    });
 
 const adaptiveSvg = document.querySelector('#city__bgk');
 
@@ -405,3 +422,4 @@ setInterval(() => {
         adaptiveSvg.removeAttribute('preserveAspectRatio');
     }
 }, 100);
+

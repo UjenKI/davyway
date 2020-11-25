@@ -1685,7 +1685,6 @@ window.addEventListener('DOMContentLoaded', function () {
       var billboardSVG = document.querySelector('.billBoard');
       var forZomming = document.querySelector('.forZomming');
       var cityBgk = document.querySelector('#city__bgk');
-      console.log(billboardSVG, forZomming, cityBgk);
       billboardSVG.style.opacity = 0;
       forZomming.style.opacity = 0;
       cityBgk.style.opacity = 0;
@@ -1723,10 +1722,19 @@ window.addEventListener('DOMContentLoaded', function () {
     headerOverfow.classList.add('overflow-animated');
   }, 22100);
   setTimeout(function () {
-    whellsH.forEach(function (itm) {
-      itm.classList.add('whell-stopped');
-    });
-  }, 23000);
+    if (window.screen.width > 1024) {
+      whellsH.forEach(function (itm) {
+        itm.classList.add('whell-stopped');
+      });
+    }
+  }, 23000); // setTimeout(() => {
+  //     if(window.screen.width <= 1024){
+  //         whellsH.forEach(itm => {
+  //             itm.classList.add('whell-stopped');
+  //         })
+  //     }
+  // }, 20000);
+
   setTimeout(function () {
     var menu = document.querySelector('.top__menu'),
         label = document.querySelector('.for-burger'),
@@ -1748,7 +1756,6 @@ window.addEventListener('DOMContentLoaded', function () {
 
     function closeAll() {
       open.innerHTML = 'MENU';
-      bodyTag.style.overflow = 'auto';
       menuItem.style.top = '-2000px';
       document.querySelector('#burger').checked = false;
       setTimeout(function () {}, 1000);
@@ -1795,11 +1802,11 @@ window.addEventListener('DOMContentLoaded', function () {
         menuItem.style.width = '96%';
       }
 
-      open.innerHTML = 'CLOSE';
+      open.innerHTML = 'CLOSE'; // bodyTag.style.overflow = 'hidden';
+
       setTimeout(function () {
         menuItem.classList.remove('skew-true');
         menuItem.classList.add('skew-false');
-        bodyTag.style.overflow = 'hidden';
         menuItem.children.forEach(function (elem) {
           elem.classList.remove('skew-it');
           elem.classList.add('skew-no');
@@ -1810,8 +1817,8 @@ window.addEventListener('DOMContentLoaded', function () {
       }, 500);
     } else {
       open.innerHTML = 'MENU';
-      menuItem.style.top = '-2000px';
-      bodyTag.style.overflow = 'auto';
+      menuItem.style.top = '-2000px'; // bodyTag.style.overflowY = 'visible';
+
       setTimeout(function () {}, 1000);
       setTimeout(function () {
         menuItem.style.display = 'none';
@@ -1846,7 +1853,7 @@ window.addEventListener('DOMContentLoaded', function () {
     var readingBox = false;
     btn.addEventListener('click', function () {
       if (readingBox === false) {
-        cardTextBox[itemBlock].style.maxHeight = '300px';
+        cardTextBox[itemBlock].style.maxHeight = '400px';
         readingBox = true;
         btn.innerHTML = 'READ LESS';
       } else {
@@ -1856,6 +1863,7 @@ window.addEventListener('DOMContentLoaded', function () {
       }
     });
   });
+  var bodyOverflow = document.querySelector('body');
 
   function checkScreenWidth() {
     if (window.scrollY > 124 && window.screen.width < 1600) {
@@ -1893,7 +1901,7 @@ window.addEventListener('DOMContentLoaded', function () {
   }, 2900);
   var logoBtn = document.querySelector('.logo-wrapper');
   logoBtn.addEventListener('click', function () {
-    window.scrollTo(0, 0);
+    bodyOverflow.scrollTo(0, 0);
   });
 }); // -----------scrollSpy----------
 
@@ -1910,12 +1918,13 @@ var about = document.querySelector('#about'),
     usLink = document.querySelector('.five__item'),
     shopLink = document.querySelector('.six__item'),
     roadLink = document.querySelector('.seven__item'),
-    contactLink = document.querySelector('.last__item');
+    contactLink = document.querySelector('.last__item'),
+    bodyOverflowScroll = document.querySelector('body');
 window.addEventListener('scroll', function () {
+  // let winDows = bodyOverflowScroll.scrollTop;
   var winDows = window.pageYOffset;
 
   if (about.offsetTop <= winDows && mission.offsetTop > winDows) {
-    console.log('about');
     missionLink.classList.remove('active-link');
     storyLink.classList.remove('active-link');
     usLink.classList.remove('active-link');
@@ -1955,7 +1964,15 @@ window.addEventListener('scroll', function () {
     roadLink.classList.remove('active-link');
     contactLink.classList.remove('active-link');
     aboutLink.classList.remove('active-link');
-  } else if (road.offsetTop <= winDows && contact.offsetTop > winDows) {
+  } else if (road.offsetTop <= winDows && contact.offsetTop > winDows && road.offsetTop + 400 > winDows) {
+    missionLink.classList.remove('active-link');
+    storyLink.classList.remove('active-link');
+    usLink.classList.remove('active-link');
+    shopLink.classList.remove('active-link');
+    roadLink.classList.add('active-link');
+    contactLink.classList.remove('active-link');
+    aboutLink.classList.remove('active-link');
+  } else if (road.offsetTop + 400 < winDows) {
     missionLink.classList.remove('active-link');
     storyLink.classList.remove('active-link');
     usLink.classList.remove('active-link');
